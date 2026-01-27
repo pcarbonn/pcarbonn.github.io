@@ -147,42 +147,66 @@
                 </nav>
 
                 <h1 class="text-4xl md:text-5xl font-black leading-tight mb-2 tracking-tight">100-Year Agenda</h1>
-                <p class="text-lg font-medium text-gray-500 mb-8 italic">A life journal for the long term.</p>
+                <p class="text-lg font-medium text-gray-500 mb-8 italic">For a lasting record of your life’s journey.
+                </p>
 
                 <div class="flex items-baseline gap-4 mb-8">
-                    <span class="text-3xl font-black text-[#0A101A]">$49.00</span>
-                    <span class="text-sm font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">In Stock</span>
+                    <span class="text-3xl font-black text-[#0A101A]">16.99 €</span>
+                    <!--<span class="text-sm font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">In Stock</span>-->
                 </div>
 
                 <div class="space-y-6 mb-12">
                     <div class="flex flex-col gap-1 text-sm">
-                        <span class="text-gray-400 font-bold uppercase tracking-wider text-[10px]">Format</span>
-                        <span class="font-bold">Paperback / Hardcover available</span>
+                        <!-- <span class="text-gray-400 font-bold uppercase tracking-wider text-[10px]">Format</span>
+                        <span class="font-bold">Coil binding</span> -->
                     </div>
                     <div class="flex flex-col gap-1 text-sm">
-                        <span class="text-gray-400 font-bold uppercase tracking-wider text-[10px]">Scope</span>
-                        <span class="font-bold">36,500 Days of Legacy</span>
+                        <!-- <span class="text-gray-400 font-bold uppercase tracking-wider text-[10px]">Scope</span>
+                        <span class="font-bold">207 pages</span> -->
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    <button
-                        class="bg-[#22B5F0] hover:bg-[#1DA8DE] text-[#000083] font-black py-4 px-12 rounded-sm transition shadow-lg shadow-[#22B5F0]/20 uppercase tracking-wider text-sm">
-                        Add to Cart
-                    </button>
-                    <button
-                        class="border-2 border-gray-200 hover:border-[#22B5F0] hover:text-[#22B5F0] text-gray-500 font-bold py-4 px-8 rounded-sm transition uppercase tracking-wider text-sm flex items-center justify-center gap-2">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-                            </path>
-                        </svg>
-                        Save for Later
-                    </button>
+                <div class="mb-8">
+                    <div class="flex flex-wrap items-end gap-4">
+                        <div class="flex flex-col gap-2">
+                            <label for="start-year"
+                                class="text-[10px] text-gray-400 uppercase font-black tracking-widest">Starting
+                                Year</label>
+                            <input type="number" id="start-year" name="start-year" min="1950" max="2026" value="2026"
+                                class="w-32 bg-gray-50 border border-gray-200 rounded-sm py-4 px-4 text-sm font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px]">
+                        </div>
+
+                        <button id="add-to-cart"
+                            class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-12 rounded-sm transition shadow-lg shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
+                            Order
+                        </button>
+                    </div>
+                    <div class="h-6">
+                        <p id="year-error" class="text-xs text-red-500 font-bold mt-2 invisible">
+                            The starting year must be between 1950 and 2026.
+                        </p>
+                    </div>
                 </div>
 
+                <script>
+                    const yearInput = document.getElementById('start-year');
+                    const addToCartBtn = document.getElementById('add-to-cart');
+                    const yearError = document.getElementById('year-error');
+
+                    yearInput.addEventListener('input', () => {
+                        const val = parseInt(yearInput.value);
+                        if (isNaN(val) || val < 1950 || val > 2026) {
+                            yearError.classList.remove('invisible');
+                            addToCartBtn.disabled = true;
+                        } else {
+                            yearError.classList.add('invisible');
+                            addToCartBtn.disabled = false;
+                        }
+                    });
+                </script>
+
                 <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest">
-                    Worldwide Shipping available. Estimated delivery 5-7 business days.
+                    Worldwide Shipping available.
                 </p>
             </div>
         </section>
