@@ -26,8 +26,8 @@
                 class="text-lg md:text-xl font-black tracking-tighter uppercase whitespace-nowrap hover:text-[#22B5F0] transition">100-Year
                 Agenda</a>
             <nav class="flex space-x-4 md:space-x-8 text-[10px] md:text-sm font-bold uppercase tracking-widest">
-                <a href="#use" class="hover:text-[#22B5F0] transition">Usage</a>
                 <a href="#features" class="hover:text-[#22B5F0] transition">Features</a>
+                <a href="#use" class="hover:text-[#22B5F0] transition">Usage</a>
                 <a href="#order" class="hover:text-[#22B5F0] transition">Order</a>
             </nav>
         </div>
@@ -172,7 +172,7 @@
                             <label for="start-year"
                                 class="text-[10px] text-gray-400 uppercase font-black tracking-widest">Starting
                                 Year</label>
-                            <input type="number" id="start-year" name="start-year" min="1950" max="2026" value="2026"
+                            <input type="number" id="start-year" name="start-year" min="1950" max="2030" value="2026"
                                 class="w-32 bg-gray-50 border border-gray-200 rounded-sm py-4 px-4 text-sm font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px]">
                         </div>
 
@@ -180,30 +180,29 @@
                             class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-12 rounded-sm transition shadow-lg shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
                             Order
                         </button>
+                        <div
+                            class="inline-flex items-baseline gap-1.5 text-xs font-bold text-gray-400 whitespace-nowrap">
+                            <span>on</span>
+                            <a href="https://www.lulu.com/shop" target="_blank"
+                                class="inline-flex items-center gap-1 text-[#0A101A] hover:text-[#22B5F0] transition-all group">
+                                <span
+                                    class="border-b border-gray-200 group-hover:border-[#22B5F0] pb-0.5">Lulu.com</span>
+                                <svg class="w-3 h-3 opacity-30 group-hover:opacity-100 transition-opacity" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                     <div class="h-6">
                         <p id="year-error" class="text-xs text-red-500 font-bold mt-2 invisible">
-                            The starting year must be between 1950 and 2026.
+                            The starting year must be between 1950 and 2030.
                         </p>
                     </div>
                 </div>
 
-                <script>
-                    const yearInput = document.getElementById('start-year');
-                    const addToCartBtn = document.getElementById('add-to-cart');
-                    const yearError = document.getElementById('year-error');
 
-                    yearInput.addEventListener('input', () => {
-                        const val = parseInt(yearInput.value);
-                        if (isNaN(val) || val < 1950 || val > 2026) {
-                            yearError.classList.remove('invisible');
-                            addToCartBtn.disabled = true;
-                        } else {
-                            yearError.classList.add('invisible');
-                            addToCartBtn.disabled = false;
-                        }
-                    });
-                </script>
 
                 <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest">
                     Worldwide Shipping available.
@@ -211,94 +210,55 @@
             </div>
         </section>
 
-        <!-- Use Section -->
-        <section id="use" class="bg-[#F5F7F9] py-24 border-y border-gray-100 scroll-mt-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-black mb-4 tracking-tight uppercase">Usage</h2>
-                    <div class="h-1 w-16 bg-[#22B5F0] mx-auto"></div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-12">
-                    <div class="bg-white p-8 rounded-sm shadow-sm border border-gray-100">
-                        <div class="text-[#22B5F0] mb-6">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">Century-Long Vision</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Map out the milestone events of your life
-                            across a full century. See the grand arc of your journey at a glance.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-sm shadow-sm border border-gray-100">
-                        <div class="text-[#22B5F0] mb-6">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">Daily Reflection</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Capture brief thoughts or events for every
-                            single day. A minimalist approach to record keeping that lasts decades.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-sm shadow-sm border border-gray-100">
-                        <div class="text-[#22B5F0] mb-6">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">Family Legacy</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Pass down your history to future generations. A
-                            physical artifact that carries your voice through time.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Features Section -->
-        <section id="features" class="py-24 scroll-mt-20">
+        <section id="features" class="bg-[#F5F7F9] py-24 border-y border-gray-100 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-20">
                     <div class="md:w-1/2">
-                        <h2 class="text-3xl font-black mb-8 tracking-tight uppercase">Technical Specifications</h2>
-                        <div class="space-y-4">
-                            <div class="flex justify-between py-4 border-b border-gray-100">
-                                <span
-                                    class="text-gray-400 font-bold uppercase text-[10px] tracking-widest">Dimensions</span>
-                                <span class="font-bold text-sm">A5 (148 x 210 mm)</span>
+                        <h2 class="text-3xl font-black mb-8 tracking-tight uppercase">Features</h2>
+                        <div class="space-y-1">
+                            <div class="py-4 border-b border-gray-100">
+                                <p class="text-sm font-bold leading-tight">Starting year: <span
+                                        class="text-gray-500 font-medium">selectable from 1950 to 2030</span></p>
                             </div>
-                            <div class="flex justify-between py-4 border-b border-gray-100">
-                                <span class="text-gray-400 font-bold uppercase text-[10px] tracking-widest">Pages</span>
-                                <span class="font-bold text-sm">400 Pages (Archival Grade)</span>
+                            <div class="py-4 border-b border-gray-100">
+                                <p class="text-sm font-bold leading-tight">Left page: <span
+                                        class="text-gray-500 font-medium">a clear, minimal yearly calendar for tracking
+                                        dates and milestones.</span></p>
                             </div>
-                            <div class="flex justify-between py-4 border-b border-gray-100">
-                                <span class="text-gray-400 font-bold uppercase text-[10px] tracking-widest">Paper
-                                    Type</span>
-                                <span class="font-bold text-sm">100gsm Acid-Free Cream</span>
+                            <div class="py-4 border-b border-gray-100">
+                                <p class="text-sm font-bold leading-tight">Right page: <span
+                                        class="text-gray-500 font-medium">dedicated space for notes, reflections, and
+                                        detailed records.</span></p>
                             </div>
-                            <div class="flex justify-between py-4 border-b border-gray-100">
-                                <span
-                                    class="text-gray-400 font-bold uppercase text-[10px] tracking-widest">Binding</span>
-                                <span class="font-bold text-sm">Smyth Sewn (Lays Flat)</span>
+                            <div class="py-4 border-b border-gray-100">
+                                <p class="text-sm font-bold leading-tight">Black-and-white interior <span
+                                        class="text-gray-400 font-medium">(to keep costs low)</span></p>
                             </div>
-                            <div class="flex justify-between py-4 border-b border-gray-100">
-                                <span class="text-gray-400 font-bold uppercase text-[10px] tracking-widest">Daily
-                                    Slots</span>
-                                <span class="font-bold text-sm">36,500 Dated Entries</span>
+                            <div class="py-4 border-b border-gray-100">
+                                <p class="text-sm font-bold leading-tight">Coil binding: <span
+                                        class="text-gray-500 font-medium">for durability and easy writing on both left
+                                        and right pages.</span></p>
+                            </div>
+                            <div class="py-4 border-b border-gray-100">
+                                <p class="text-sm font-bold leading-tight">Language-neutral design: <span
+                                        class="text-gray-500 font-medium">suitable for use in any
+                                        language.</span></p>
                             </div>
                         </div>
                     </div>
                     <div
-                        class="md:w-1/2 flex flex-col justify-center bg-[#F5F7F9] p-12 rounded-sm border border-gray-100">
+                        class="md:w-1/2 flex flex-col justify-center bg-white p-12 rounded-sm border border-gray-100 shadow-sm">
                         <h3 class="text-xl font-black mb-4 uppercase tracking-tight">Why Choose This Agenda?</h3>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">
-                            Most journals last a year. The 100-Year Agenda is designed to be the only journal you need
-                            for your entire adult life. Whether you are starting at 20 or 60, it provides a unique
-                            perspective on time that digital apps simply cannot match.
+                            The 100-Year Agenda is more than just a planner—it’s a lasting record of your life’s
+                            journey.
+                            It offers a dedicated space to document the milestones that truly matter, from family
+                            celebrations and professional successes to health history and personal reflections.
+                            <br>
+                            <br>
+                            Spanning a full century, this agenda helps you step away from the frenzy of the
+                            digital present and reconnect with what is essential.
                         </p>
                         <div
                             class="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-[#22B5F0]">
@@ -313,18 +273,111 @@
             </div>
         </section>
 
+        <!-- Use Section -->
+        <section id="use" class="py-24 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-black mb-4 tracking-tight uppercase">The perfect gift</h2>
+                    <div class="h-1 w-16 bg-[#22B5F0] mx-auto"></div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                        <div class="text-[#22B5F0] mb-6">
+                            <!-- Heart (Parents) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">For new parents</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">To document a child’s story from its earliest
+                            beginnings.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                        <div class="text-[#22B5F0] mb-6">
+                            <!-- Users (Wedding) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">For a wedding</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">A diary for two, shared over a lifetime.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                        <div class="text-[#22B5F0] mb-6">
+                            <!-- Academic Cap (Graduation) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4.26 10.174L12 13.162l7.74-2.988a1.5 1.5 0 000-2.827L12 4.3l-7.74 3.05a1.5 1.5 0 000 2.824z M12 13.162v6.09a3 3 0 003-3v-3.09 M12 13.162v6.09a3 3 0 00-3-3v-3.09">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">For a graduation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">A gift that offers long-term perspective..</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                        <div class="text-[#22B5F0] mb-6">
+                            <!-- Sparkles (Reflection/Legacy) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-black mb-3 uppercase tracking-tight">For you</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">A space to reflect on the past and leave a
+                            lasting legacy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Order Section -->
         <section id="order" class="bg-[#0A101A] py-24 text-white text-center scroll-mt-20">
             <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight tracking-tighter uppercase leading-none">
+                <h2
+                    class="text-4xl md:text-5xl font-black mb-12 tracking-tight tracking-tighter uppercase leading-none">
                     Start Your Legacy Today</h2>
-                <p class="text-white/60 text-lg mb-12">The best time to start was yesterday. The second best time is
-                    today.</p>
-                <div class="flex flex-col items-center gap-6">
-                    <button
-                        class="bg-[#22B5F0] hover:bg-[#1DA8DE] text-[#000083] font-black py-5 px-16 rounded-sm transition shadow-2xl shadow-[#22B5F0]/20 uppercase tracking-widest text-base">
-                        Order the 100-Year Agenda
-                    </button>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex flex-wrap items-end justify-center gap-4 mb-4">
+                        <div class="flex flex-col gap-2 text-left">
+                            <label for="start-year-bottom"
+                                class="text-[10px] text-white/40 uppercase font-black tracking-widest">Starting
+                                Year</label>
+                            <input type="number" id="start-year-bottom" name="start-year-bottom" min="1950" max="2030"
+                                value="2026"
+                                class="w-32 bg-white/5 border border-white/10 rounded-sm py-4 px-4 text-sm font-bold text-white focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px]">
+                        </div>
+
+                        <button id="add-to-cart-bottom"
+                            class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-white/10 disabled:text-white/20 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-12 rounded-sm transition shadow-2xl shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
+                            Order
+                        </button>
+                        <div
+                            class="inline-flex items-baseline gap-1.5 text-xs font-bold text-white/40 whitespace-nowrap">
+                            <span>on</span>
+                            <a href="https://www.lulu.com/shop" target="_blank"
+                                class="inline-flex items-center gap-1 text-white hover:text-[#22B5F0] transition-all group">
+                                <span
+                                    class="border-b border-white/10 group-hover:border-[#22B5F0] pb-0.5">Lulu.com</span>
+                                <svg class="w-3 h-3 opacity-30 group-hover:opacity-100 transition-opacity" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-6">
+                        <p id="year-error-bottom" class="text-xs text-red-500 font-bold mt-2 invisible">
+                            The starting year must be between 1950 and 2030.
+                        </p>
+                    </div>
+
                     <div class="flex gap-4 opacity-30 mt-8">
                         <!-- Simplified Credit Card Icons -->
                         <div class="w-10 h-6 bg-white rounded-sm"></div>
@@ -343,16 +396,46 @@
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-sm font-black uppercase tracking-tighter opacity-50">100-Year Agenda</div>
             <div class="text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em]">
-                &copy; 2026 pcarbonn. All rights reserved.
+                &copy; 2026 Pierre Carbonnelle. All rights reserved.
             </div>
             <div class="flex space-x-6 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
-                <a href="#" class="hover:text-[#22B5F0]">Privacy</a>
-                <a href="#" class="hover:text-[#22B5F0]">Terms</a>
-                <a href="#" class="hover:text-[#22B5F0]">Contact</a>
+                <a href="mailto:pierre.carbonnelle@proton.me" class="hover:text-[#22B5F0]">Contact</a>
             </div>
         </div>
     </footer>
 
+    <script>
+        const yearInput = document.getElementById('start-year');
+        const addToCartBtn = document.getElementById('add-to-cart');
+        const yearError = document.getElementById('year-error');
+
+        const yearInputBottom = document.getElementById('start-year-bottom');
+        const addToCartBtnBottom = document.getElementById('add-to-cart-bottom');
+        const yearErrorBottom = document.getElementById('year-error-bottom');
+
+        function validateYear(input, btn, error, otherInput) {
+            const val = parseInt(input.value);
+            if (isNaN(val) || val < 1950 || val > 2030) {
+                error.classList.remove('invisible');
+                btn.disabled = true;
+            } else {
+                error.classList.add('invisible');
+                btn.disabled = false;
+                // Sync other input
+                if (otherInput.value !== input.value) {
+                    otherInput.value = input.value;
+                    // Also clear other error/enable other btn just in case
+                    const otherError = input === yearInput ? yearErrorBottom : yearError;
+                    const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
+                    otherError.classList.add('invisible');
+                    otherBtn.disabled = false;
+                }
+            }
+        }
+
+        yearInput.addEventListener('input', () => validateYear(yearInput, addToCartBtn, yearError, yearInputBottom));
+        yearInputBottom.addEventListener('input', () => validateYear(yearInputBottom, addToCartBtnBottom, yearErrorBottom, yearInput));
+    </script>
 </body>
 
 </html>
