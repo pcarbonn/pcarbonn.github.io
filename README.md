@@ -33,4 +33,4 @@ To watch for changes and rebuild automatically during development:
 npm run watch
 ```
 
-The output CSS is generated in `dist/output.css` and linked in `src/index.html`.
+The output CSS is generated in `docs/output.css` and linked in `docs/index.html`.
