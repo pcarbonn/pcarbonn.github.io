@@ -4,8 +4,8 @@
   "description": "website for www.100-year-agenda.com",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch": "tailwindcss --cwd src -i ./input.css -o ../dist/output.css --watch",
+    "build": "tailwindcss -i ./docs/input.css -o ./docs/output.css",
+    "watch": "tailwindcss --cwd docs -i ./input.css -o ./output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
