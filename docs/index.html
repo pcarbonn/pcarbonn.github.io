@@ -76,8 +76,8 @@
             font-family: 'Inter', sans-serif;
         }
     </style>
-  <script type="module" crossorigin src="/assets/index-BrFPcqkH.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B-eSa8o1.css">
+  <script type="module" crossorigin src="/assets/index-Bl5mgtKG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C7qtjRqK.css">
 </head>
 
 <body class="bg-white text-[#0A101A] antialiased">
@@ -172,8 +172,19 @@
 
                     <!-- Cover Image -->
                     <div
-                        class="relative z-10 overflow-hidden rounded-r-sm shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                        class="relative z-10 rounded-r-sm shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+
                         <img src="./front_cover.png" alt="100-Year Agenda Cover" class="w-full h-auto block">
+
+                        <!-- Bouton d'ouverture -->
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+                        <button
+                            onclick="window.openBookModal()"
+                            class="bg-[#22B5F0] hover:bg-[#1DA8DE] text-sm font-bold py-2 px-6 rounded-full shadow-lg transition-colors whitespace-nowrap"
+                        >
+                            Look inside
+                        </button>
+                        </div>
                         <!-- Binding holes shadow -->
                         <div
                             class="absolute left-0 top-0 bottom-0 w-4 bg-black/10 z-10 flex flex-col justify-between py-4">
@@ -275,10 +286,22 @@
         </section>
 
 
-<div class="flex justify-center">
-  <div id="book" class="shadow-xl">
-  </div>
-</div>
+        <!-- Modal for Look inside-->
+        <div id="modalOverlay" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-5xl overflow-hidden relative">
+            <!-- Barre de titre & Fermeture -->
+            <div class="flex justify-between items-center p-4 border-b">
+            <h2 class="text-lg font-semibold">Look inside</h2>
+            <button onclick="closeBookModal()" class="text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+            </div>
+
+            <!-- Zone du Livre -->
+            <div id="bookWrapper" class="flex justify-center items-center bg-gray-50 p-8 min-h-[500px]">
+            <div id="bookContainer"></div>
+            </div>
+        </div>
+        </div>
+
         <!-- Features Section -->
         <section id="features" class="bg-[#F5F7F9] py-24 border-y border-gray-100 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
