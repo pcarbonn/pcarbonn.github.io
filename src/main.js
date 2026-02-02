@@ -2,9 +2,11 @@ import "./input.css";
 import { PageFlip } from "page-flip";
 
 let flipBook = null;
-const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "page_3.png"];
+const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "page_3.png"
+    , "page_4.png", "page_5.png", "page_6.png", "page_7.png"
+];
 
-window.openBookModal = function() {
+window.openBookModal = function () {
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('hidden');
 
@@ -16,6 +18,12 @@ window.openBookModal = function() {
                 width: 500, // Largeur de base d'une page
                 height: 700, // Hauteur de base d'une page
                 size: "stretch", // S'adapte au conteneur modal
+                // set threshold values:
+                minWidth: 315,
+                maxWidth: 1000,
+                minHeight: 420,
+                maxHeight: 1350,
+
                 showCover: true,
                 usePortrait: true,
                 flippingTime: 500
