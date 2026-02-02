@@ -35,7 +35,7 @@ window.openBookModal = function () {
             // Force an update to ensure it fits the container
             setTimeout(() => flipBook.update(), 100);
         }
-    }, 100);
+    }, 200);
 }
 
 window.closeBookModal = () => {
@@ -53,6 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearInputBottom = document.getElementById('start-year-bottom');
     const addToCartBtnBottom = document.getElementById('add-to-cart-bottom');
     const yearErrorBottom = document.getElementById('year-error-bottom');
+
+    // --- Dynamic Default Year Calculation ---
+    // Rule: Approx. current date minus 10 months
+    const now = new Date();
+    now.setMonth(now.getMonth() - 10);
+    const defaultYear = now.getFullYear();
+
+    if (yearInput) yearInput.value = defaultYear;
+    if (yearInputBottom) yearInputBottom.value = defaultYear;
 
     if (yearInput && yearInputBottom) {
         function validateYear(input, btn, error, otherInput) {
