@@ -18,15 +18,16 @@ window.openBookModal = function () {
                 width: 500, // Base page width
                 height: 700, // Base page height
                 size: "stretch",
-                minWidth: 250,
-                maxWidth: 800,
-                minHeight: 350,
-                maxHeight: 1000,
+                minWidth: 100,
+                maxWidth: 2000,
+                minHeight: 100,
+                maxHeight: 2000,
 
                 showCover: true,
                 usePortrait: true,
                 flippingTime: 500,
-                clickEventForward: true
+                clickEventForward: false,
+                useMouseEvents: true
             });
 
             // IMPORTANT: Charger les images après l'initialisation
@@ -34,8 +35,11 @@ window.openBookModal = function () {
 
             // Force an update to ensure it fits the container
             setTimeout(() => flipBook.update(), 100);
+        } else {
+            // Si déjà initialisé, on s'assure qu'il se recalibre
+            flipBook.update();
         }
-    }, 200);
+    }, 150); // Legerement augmenté pour etre sur que le layout est stable
 }
 
 window.closeBookModal = () => {
