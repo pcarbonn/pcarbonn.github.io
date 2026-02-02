@@ -543,67 +543,6 @@
     </footer>
 
     <script type="module" src="/src/main.js"></script>
-    <script>
-        const yearInput = document.getElementById('start-year');
-        const addToCartBtn = document.getElementById('add-to-cart');
-        const yearError = document.getElementById('year-error');
-
-        const yearInputBottom = document.getElementById('start-year-bottom');
-        const addToCartBtnBottom = document.getElementById('add-to-cart-bottom');
-        const yearErrorBottom = document.getElementById('year-error-bottom');
-
-        function validateYear(input, btn, error, otherInput) {
-            const val = parseInt(input.value);
-            if (isNaN(val) || val < 1000 || val > 9999) {
-                error.classList.add('invisible');
-                btn.disabled = true;
-            }
-            else if (val < 1950) {
-                error.classList.remove('invisible');
-                btn.disabled = true;
-            } else {
-                error.classList.add('invisible');
-                btn.disabled = false;
-                // Sync other input
-                if (otherInput.value !== input.value) {
-                    otherInput.value = input.value;
-                    // Also clear other error/enable other btn just in case
-                    const otherError = input === yearInput ? yearErrorBottom : yearError;
-                    const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
-                    otherError.classList.add('invisible');
-                    otherBtn.disabled = false;
-                }
-            }
-        }
-
-        yearInput.addEventListener('input', () => validateYear(yearInput, addToCartBtn, yearError, yearInputBottom));
-        yearInputBottom.addEventListener('input', () => validateYear(yearInputBottom, addToCartBtnBottom, yearErrorBottom, yearInput));
-    </script>
-    <script>
-        // Copy Link Button Logic for Share Buttons
-        const copyBtn = document.getElementById('copy-link-btn');
-        const feedback = document.getElementById('copy-link-feedback');
-        if (copyBtn) {
-            copyBtn.addEventListener('click', async () => {
-                try {
-                    await navigator.clipboard.writeText(window.location.href);
-                    if (feedback) {
-                        feedback.classList.remove('hidden');
-                        setTimeout(() => feedback.classList.add('hidden'), 1500);
-                    }
-                } catch (e) {
-                    if (feedback) {
-                        feedback.textContent = "Failed to copy";
-                        feedback.classList.remove('hidden');
-                        setTimeout(() => {
-                            feedback.textContent = "Link copied!";
-                            feedback.classList.add('hidden');
-                        }, 1500);
-                    }
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
