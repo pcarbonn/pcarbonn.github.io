@@ -7,6 +7,24 @@ const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "pa
 ];
 
 /**
+ * Load instances from CSV
+ */
+
+let instances = [];
+async function loadInstances() {
+    try {
+        const response = await fetch('/UI.vision/datasources/instances.csv');
+        const text = await response.text();
+        instances = text.split('\n')
+            .filter(line => line.trim() !== '')
+            .map(line => line.split(',').map(item => item.trim()));
+    } catch (e) {
+        console.error("Failed to load instances.csv:", e);
+    }
+}
+loadInstances();
+
+/**
  * Helper to track events with Cloudflare Zaraz
  */
 const trackEvent = (eventName, properties = {}) => {
@@ -119,12 +137,26 @@ document.addEventListener('DOMContentLoaded', () => {
         yearInput.addEventListener('input', () => validateYear(yearInput, addToCartBtn, yearError, yearInputBottom));
         yearInputBottom.addEventListener('input', () => validateYear(yearInputBottom, addToCartBtnBottom, yearErrorBottom, yearInput));
 
+        function handleOrder(year, errorElement) {
+            const row = instances.find(r => r[1] === year.toString());
+            if (row) {
+                const id = row[2];
+                const url = `https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-2025/paperback/product-${id}.html`;
+                window.location.href = url;
+            } else {
+                errorElement.textContent = "This book is not yet available";
+                errorElement.classList.remove('invisible');
+            }
+        }
+
         // --- Tracking Order Clicks ---
         addToCartBtn.addEventListener('click', () => {
             trackEvent("Order Click", { location: "hero", year: yearInput.value });
+            handleOrder(yearInput.value, yearError);
         });
         addToCartBtnBottom.addEventListener('click', () => {
             trackEvent("Order Click", { location: "bottom", year: yearInputBottom.value });
+            handleOrder(yearInputBottom.value, yearErrorBottom);
         });
     }
 
