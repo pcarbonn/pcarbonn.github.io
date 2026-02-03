@@ -42,6 +42,14 @@ window.openBookModal = function () {
     }, 150); // Legerement augmenté pour etre sur que le layout est stable
 }
 
+window.flipNext = function () {
+    if (flipBook) flipBook.flipNext();
+}
+
+window.flipPrev = function () {
+    if (flipBook) flipBook.flipPrev();
+}
+
 window.closeBookModal = () => {
     document.getElementById('modalOverlay').classList.add('hidden');
     // Optionnel : Détruire l'instance si vous voulez libérer la mémoire

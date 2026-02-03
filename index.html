@@ -301,8 +301,27 @@
                 </div>
 
                 <!-- Zone du Livre -->
-                <div id="bookWrapper" class="flex-1 bg-gray-50 p-4 md:p-8 min-h-0 overflow-hidden">
+                <div id="bookWrapper" class="flex-1 bg-gray-50 p-4 md:p-8 min-h-0 overflow-hidden relative">
                     <div id="bookContainer" class="w-full h-full mx-auto"></div>
+
+                    <!-- Navigation Buttons -->
+                    <button onclick="window.flipPrev()"
+                        class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-40 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all hover:scale-110 active:scale-95 group"
+                        aria-label="Previous page">
+                        <svg class="w-6 h-6 group-hover:text-[#22B5F0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="window.flipNext()"
+                        class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-40 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all hover:scale-110 active:scale-95 group"
+                        aria-label="Next page">
+                        <svg class="w-6 h-6 group-hover:text-[#22B5F0]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
