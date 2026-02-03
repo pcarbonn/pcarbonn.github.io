@@ -6,9 +6,25 @@ const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "pa
     , "page_4.png", "page_5.png", "page_6.png", "page_7.png"
 ];
 
+/**
+ * Helper to track events with Cloudflare Zaraz
+ */
+const trackEvent = (eventName, properties = {}) => {
+    if (typeof zaraz !== 'undefined') {
+        try {
+            zaraz.track(eventName, properties);
+        } catch (e) {
+            console.error('Zaraz track error:', e);
+        }
+    }
+};
+
 window.openBookModal = function () {
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('hidden');
+
+    // Track Preview
+    trackEvent("Book Preview Opened");
 
     // On attend un court instant que Tailwind affiche le modal
     // pour obtenir les dimensions réelles du parent
@@ -102,7 +118,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         yearInput.addEventListener('input', () => validateYear(yearInput, addToCartBtn, yearError, yearInputBottom));
         yearInputBottom.addEventListener('input', () => validateYear(yearInputBottom, addToCartBtnBottom, yearErrorBottom, yearInput));
+
+        // --- Tracking Order Clicks ---
+        addToCartBtn.addEventListener('click', () => {
+            trackEvent("Order Click", { location: "hero", year: yearInput.value });
+        });
+        addToCartBtnBottom.addEventListener('click', () => {
+            trackEvent("Order Click", { location: "bottom", year: yearInputBottom.value });
+        });
     }
+
+    // --- Tracking Share Clicks ---
+    const shareTracking = {
+        'share-facebook': 'Facebook',
+        'share-whatsapp': 'WhatsApp',
+        'share-x': 'X (Twitter)',
+        'share-email': 'Email'
+    };
+
+    Object.entries(shareTracking).forEach(([id, platform]) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.addEventListener('click', () => {
+                trackEvent("Share Click", { platform: platform });
+            });
+        }
+    });
 
     // --- Copy Link Logic ---
     const copyBtn = document.getElementById('copy-link-btn');
@@ -111,6 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         copyBtn.addEventListener('click', async () => {
             try {
                 await navigator.clipboard.writeText(window.location.href);
+                trackEvent("Share Click", { platform: 'Copy Link' });
                 if (feedback) {
                     feedback.classList.remove('hidden');
                     setTimeout(() => feedback.classList.add('hidden'), 1500);
