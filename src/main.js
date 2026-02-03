@@ -13,7 +13,7 @@ const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "pa
 let instances = [];
 async function loadInstances() {
     try {
-        const response = await fetch('/UI.vision/datasources/instances.csv');
+        const response = await fetch('UI.vision/datasources/instances.csv');
         const text = await response.text();
         instances = text.split('\n')
             .filter(line => line.trim() !== '')
@@ -110,26 +110,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearInputBottom) yearInputBottom.value = defaultYear;
 
     if (yearInput && yearInputBottom) {
-        function validateYear(input, btn, error, otherInput) {
+        function validateYear(input, btn, errorElement, otherInput) {
             const val = parseInt(input.value);
             if (isNaN(val) || val < 1000 || val > 9999) {
-                error.classList.add('invisible');
+                errorElement.classList.add('invisible');
                 btn.disabled = true;
             }
             else if (val < 1950) {
-                error.classList.remove('invisible');
+                errorElement.textContent = "The starting year must be above 1950.";
+                errorElement.classList.remove('invisible');
                 btn.disabled = true;
             } else {
-                error.classList.add('invisible');
-                btn.disabled = false;
-                // Sync other input
-                if (otherInput.value !== input.value) {
-                    otherInput.value = input.value;
-                    // Also clear other error/enable other btn just in case
-                    const otherError = input === yearInput ? yearErrorBottom : yearError;
-                    const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
-                    otherError.classList.add('invisible');
-                    otherBtn.disabled = false;
+                const row = instances.find(r => r[1] === val.toString());
+                if (row) {
+                    errorElement.classList.add('invisible');
+                    btn.disabled = false;
+                    // Sync other input
+                    if (otherInput.value !== input.value) {
+                        otherInput.value = input.value;
+                        // Also clear other error/enable other btn just in case
+                        const otherError = input === yearInput ? yearErrorBottom : yearError;
+                        const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
+                        otherError.classList.add('invisible');
+                        otherBtn.disabled = false;
+                    }
+                } else {
+                    errorElement.textContent = "This book is not yet available";
+                    errorElement.classList.remove('invisible');
+                    btn.disabled = true;
                 }
             }
         }
