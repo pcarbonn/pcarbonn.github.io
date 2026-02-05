@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const otherError = input === yearInput ? yearErrorBottom : yearError;
                 const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
                 otherError.classList = errorElement.classList;
+                otherError.textContent = errorElement.textContent;
                 otherBtn.disabled = btn.disabled;
             }
         }
