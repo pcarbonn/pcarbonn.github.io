@@ -7,19 +7,21 @@ const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "pa
 ];
 
 /**
- * Load instances from CSV
+ * Load list of compact (1-page per year) published instances from CSV
+ * Format: year,id
+ *      e.g., 2025,rmweyj
  */
 
-let instances = [];
+let compact = [];
 async function loadInstances() {
     try {
-        const response = await fetch('UI.vision/datasources/instances.csv');
+        const response = await fetch('compact.csv');
         const text = await response.text();
-        instances = text.split('\n')
+        compact = text.split('\n')
             .filter(line => line.trim() !== '')
             .map(line => line.split(',').map(item => item.trim()));
     } catch (e) {
-        console.error("Failed to load instances.csv:", e);
+        console.error("Failed to load compact.csv:", e);
     }
 }
 loadInstances();
@@ -121,24 +123,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorElement.classList.remove('invisible');
                 btn.disabled = true;
             } else {
-                const row = instances.find(r => r[1] === val.toString());
+                const row = compact.find(r => r[0] === val.toString());
                 if (row) {
                     errorElement.classList.add('invisible');
                     btn.disabled = false;
-                    // Sync other input
-                    if (otherInput.value !== input.value) {
-                        otherInput.value = input.value;
-                        // Also clear other error/enable other btn just in case
-                        const otherError = input === yearInput ? yearErrorBottom : yearError;
-                        const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
-                        otherError.classList.add('invisible');
-                        otherBtn.disabled = false;
-                    }
                 } else {
                     errorElement.textContent = "This book is not yet available";
                     errorElement.classList.remove('invisible');
                     btn.disabled = true;
                 }
+            }
+            // Sync other input
+            if (otherInput.value !== input.value) {
+                otherInput.value = input.value;
+                // Also clear other error/enable other btn just in case
+                const otherError = input === yearInput ? yearErrorBottom : yearError;
+                const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
+                otherError.classList = errorElement.classList;
+                otherBtn.disabled = btn.disabled;
             }
         }
 
@@ -146,9 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
         yearInputBottom.addEventListener('input', () => validateYear(yearInputBottom, addToCartBtnBottom, yearErrorBottom, yearInput));
 
         function handleOrder(year, errorElement) {
-            const row = instances.find(r => r[1] === year.toString());
+            const row = compact.find(r => r[0] === year.toString());
             if (row) {
-                const id = row[2];
+                const id = row[1];
                 const url = `https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-2025/paperback/product-${id}.html`;
                 window.location.href = url;
             } else {

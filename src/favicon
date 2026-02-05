@@ -1,1 +1,0 @@
-convert -size 64x64 canvas:'#2E4077' -fill white -draw 'rectangle 12,6 52,18' public/favicon.ico
