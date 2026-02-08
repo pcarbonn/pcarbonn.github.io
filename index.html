@@ -299,7 +299,7 @@
                     <div id="bookContainer" class="w-full h-full mx-auto"></div>
 
                     <!-- Navigation Buttons -->
-                    <button onclick="window.flipPrev()"
+                    <button id="prevPageBtn" onclick="window.flipPrev()"
                         class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-40 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all hover:scale-110 active:scale-95 group"
                         aria-label="Previous page">
                         <svg class="w-6 h-6 group-hover:text-[#22B5F0]" fill="none" stroke="currentColor"
@@ -308,7 +308,7 @@
                                 d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
-                    <button onclick="window.flipNext()"
+                    <button id="nextPageBtn" onclick="window.flipNext()"
                         class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-40 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all hover:scale-110 active:scale-95 group"
                         aria-label="Next page">
                         <svg class="w-6 h-6 group-hover:text-[#22B5F0]" fill="none" stroke="currentColor"
@@ -434,8 +434,8 @@
                             </svg>
                         </div>
                         <h3 class="text-lg font-black mb-3 uppercase tracking-tight">For you</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">A space to reflect on the past and leave a
-                            lasting legacy.</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">A space to reflect on the past and tell your
+                            story.</p>
                     </div>
                 </div>
             </div>

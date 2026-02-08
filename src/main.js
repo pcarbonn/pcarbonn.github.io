@@ -69,11 +69,35 @@ window.openBookModal = function () {
             // IMPORTANT: Charger les images après l'initialisation
             flipBook.loadFromImages(images);
 
+            // Listen for page changes to hide/show navigation buttons
+            flipBook.on('flip', (e) => {
+                const pageIndex = e.data;
+                const totalPages = flipBook.getPageCount();
+                document.getElementById('prevPageBtn').style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
+                document.getElementById('nextPageBtn').style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
+            });
+
+            // Initial button state
+            setTimeout(() => {
+                if (flipBook) {
+                    const pageIndex = flipBook.getCurrentPageIndex();
+                    const totalPages = flipBook.getPageCount();
+                    document.getElementById('prevPageBtn').style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
+                    document.getElementById('nextPageBtn').style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
+                }
+            }, 200);
+
             // Force an update to ensure it fits the container
             setTimeout(() => flipBook.update(), 100);
         } else {
             // Si déjà initialisé, on s'assure qu'il se recalibre
             flipBook.update();
+
+            // Update button visibility based on current page
+            const pageIndex = flipBook.getCurrentPageIndex();
+            const totalPages = flipBook.getPageCount();
+            document.getElementById('prevPageBtn').style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
+            document.getElementById('nextPageBtn').style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
         }
     }, 150); // Legerement augmenté pour etre sur que le layout est stable
 }
