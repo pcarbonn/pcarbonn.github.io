@@ -1,0 +1,70 @@
+{
+    "meta": {
+        "title": "L'Agenda de 100 Ans - Un journal pour toute une vie",
+        "description": "L'Agenda de 100 Ans est un précieux témoin de votre parcours de vie. Notez les étapes marquantes, vos réflexions et vos souvenirs grâce à ce journal unique. Années de départ disponibles de 1950 à 2060.",
+        "og_description": "Retracez votre parcours sur un siècle complet. Un journal unique pour consigner les moments clés, vos réflexions et raconter votre histoire."
+    },
+    "nav": {
+        "features": "Caractéristiques",
+        "usage": "Usages",
+        "tips": "Conseils"
+    },
+    "hero": {
+        "title": "L'Agenda de 100 Ans",
+        "subtitle": "Pour garder une trace durable de votre parcours de vie.",
+        "look_inside": "Feuilleter",
+        "starting_year": "Année de départ",
+        "order": "Commander",
+        "on": "sur",
+        "shipping": "Livraison dans le monde entier.",
+        "year_error": "L'année de départ doit être postérieure à 1950.",
+        "not_available": "Ce livre n'est pas encore disponible."
+    },
+    "modal": {
+        "title": "Feuilleter"
+    },
+    "features": {
+        "section_title": "Caractéristiques",
+        "why_title": "Pourquoi choisir cet agenda ?",
+        "why_text": "L'Agenda de 100 Ans est bien plus qu'un simple agenda : c'est un véritable témoin de votre parcours de vie. Il vous offre un espace dédié pour consigner les moments qui comptent vraiment — célébrations familiales, réussites professionnelles, événements marquants, souvenirs et réflexions personnelles.<br><br>Sur un siècle entier, il vous invite à prendre du recul face à l'instantanéité numérique et à vous recentrer sur l'essentiel.",
+        "history": "Histoire",
+        "journal": "Journal",
+        "growth": "Épanouissement personnel",
+        "starting_year_val": "Année de départ : ",
+        "starting_year_range": "au choix de 1950 à 2060",
+        "design_val": "International : ",
+        "design_text": "adapté à toutes les langues",
+        "binding_val": "Reliure spirale : ",
+        "binding_text": "solide et pratique pour écrire facilement sur les pages de gauche comme de droite",
+        "pages_val": "Une page par an : ",
+        "pages_text": "avec un calendrier clair et épuré, et un espace dédié aux notes.",
+        "size_val": "107 pages au format A4 ",
+        "size_text": "(impression en noir et blanc pour limiter les coûts)"
+    },
+    "gift": {
+        "title": "Le cadeau idéal",
+        "parents_title": "Pour des parents",
+        "parents_text": "Pour consigner le parcours d'un enfant, dès les mois qui précèdent sa naissance.",
+        "graduation_title": "Pour une remise de diplôme",
+        "graduation_text": "Un cadeau qui change la perspective.",
+        "wedding_title": "Pour un mariage",
+        "wedding_text": "Un journal à deux, à partager tout au long d'une vie.",
+        "you_title": "Pour vous",
+        "you_text": "Un espace pour prendre du recul et raconter votre histoire."
+    },
+    "order_bottom": {
+        "title": "Commencez à écrire votre histoire dès aujourd'hui",
+        "starting_year": "Année de départ",
+        "order": "Commander",
+        "on": "sur",
+        "tips_title": "Conseils",
+        "tip_1": "Programmez un rappel pour le compléter régulièrement (au moins une fois par an).",
+        "tip_2": "Conservez-le en lieu sûr — c'est un objet précieux.",
+        "tip_3": "Partagez-le avec vos proches — ils découvriront qui vous êtes.",
+        "share": "Partager :"
+    },
+    "footer": {
+        "rights": "© 2026 Pierre Carbonnelle. Tous droits réservés.",
+        "contact": "Contact"
+    }
+}

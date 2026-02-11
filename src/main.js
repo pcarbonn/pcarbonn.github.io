@@ -2,8 +2,8 @@ import "./input.css";
 import { PageFlip } from "page-flip";
 
 let flipBook = null;
-const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "page_3.png"
-    , "page_4.png", "page_5.png", "page_6.png", "page_7.png"
+const images = ["/front_cover.png", "/page_0.png", "/page_1.png", "/page_2.png", "/page_3.png"
+    , "/page_4.png", "/page_5.png", "/page_6.png", "/page_7.png"
 ];
 
 /**
@@ -15,7 +15,7 @@ const images = ["front_cover.png", "page_0.png", "page_1.png", "page_2.png", "pa
 let compact = [];
 async function loadInstances() {
     try {
-        const response = await fetch('compact.csv');
+        const response = await fetch('/compact.csv');
         const text = await response.text();
         compact = text.split('\n')
             .filter(line => line.trim() !== '')
@@ -38,6 +38,69 @@ const trackEvent = (eventName, properties = {}) => {
         }
     }
 };
+
+// --- Language Switcher Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    const langSelector = document.getElementById('lang-selector');
+    const langSelectorMobile = document.getElementById('lang-selector-mobile');
+
+    function handleLangChange(e) {
+        const newLang = e.target.value;
+        const currentPath = window.location.pathname;
+
+        // Handle root or subfolders
+        let targetUrl;
+        if (newLang === 'fr') {
+            if (!currentPath.includes('/fr/')) {
+                // Redirect to /fr/
+                targetUrl = '/fr' + (currentPath.endsWith('/') ? currentPath : currentPath + '/');
+                // Special case for root
+                if (currentPath === '/') targetUrl = '/fr/';
+            }
+        } else {
+            if (currentPath.includes('/fr/')) {
+                // Redirect to root
+                targetUrl = currentPath.replace('/fr/', '/');
+            }
+        }
+
+        if (targetUrl) {
+            window.location.href = targetUrl;
+        }
+    }
+
+    if (langSelector) langSelector.addEventListener('change', handleLangChange);
+    if (langSelectorMobile) langSelectorMobile.addEventListener('change', handleLangChange);
+
+    // --- Mobile Menu Toggle ---
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconPath = document.getElementById('menu-icon-path');
+
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                // Change icon to X (close)
+                menuIconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                mobileMenu.classList.add('hidden');
+                // Change icon back to hamburger
+                menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        });
+
+        // Close menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+    }
+});
 
 window.openBookModal = function () {
     const modal = document.getElementById('modalOverlay');
@@ -143,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.disabled = true;
             }
             else if (val < 1950) {
-                errorElement.textContent = "The starting year must be above 1950.";
+                errorElement.textContent = errorElement.getAttribute('data-error-above-1950') || "The starting year must be above 1950.";
                 errorElement.classList.remove('invisible');
                 btn.disabled = true;
             } else {
@@ -152,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     errorElement.classList.add('invisible');
                     btn.disabled = false;
                 } else {
-                    errorElement.textContent = "This book is not yet available";
+                    errorElement.textContent = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
                     errorElement.classList.remove('invisible');
                     btn.disabled = true;
                 }
@@ -179,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const url = `https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-2025/paperback/product-${id}.html`;
                 window.location.href = url;
             } else {
-                errorElement.textContent = "This book is not yet available";
+                errorElement.textContent = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
                 errorElement.classList.remove('invisible');
             }
         }
@@ -211,29 +274,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-
-    // --- Copy Link Logic ---
-    const copyBtn = document.getElementById('copy-link-btn');
-    const feedback = document.getElementById('copy-link-feedback');
-    if (copyBtn) {
-        copyBtn.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(window.location.href);
-                trackEvent("Share Click", { platform: 'Copy Link' });
-                if (feedback) {
-                    feedback.classList.remove('hidden');
-                    setTimeout(() => feedback.classList.add('hidden'), 1500);
-                }
-            } catch (e) {
-                if (feedback) {
-                    feedback.textContent = "Failed to copy";
-                    feedback.classList.remove('hidden');
-                    setTimeout(() => {
-                        feedback.textContent = "Link copied!";
-                        feedback.classList.add('hidden');
-                    }, 1500);
-                }
-            }
-        });
-    }
 });

@@ -1,0 +1,70 @@
+{
+    "meta": {
+        "title": "The 100-Year Agenda - A Life Journal",
+        "description": "The 100-Year Agenda is a lasting record of your life's journey. Track milestones, reflections, and memories with this unique journal. Starting years from 1950-2060 available.",
+        "og_description": "Document your life's journey across a full century. A unique journal for tracking milestones, reflections, and telling your story."
+    },
+    "nav": {
+        "features": "Features",
+        "usage": "Usage",
+        "tips": "Tips"
+    },
+    "hero": {
+        "title": "The 100-Year Agenda",
+        "subtitle": "For a lasting record of your life’s journey.",
+        "look_inside": "Look inside",
+        "starting_year": "Starting Year",
+        "order": "Order",
+        "on": "on",
+        "shipping": "Worldwide Shipping available.",
+        "year_error": "The starting year must be above 1950.",
+        "not_available": "This book is not yet available"
+    },
+    "modal": {
+        "title": "Look inside"
+    },
+    "features": {
+        "section_title": "Features",
+        "why_title": "Why Use This Agenda?",
+        "why_text": "The 100-Year Agenda is more than just a planner—it’s a lasting record of your life’s journey. It offers a dedicated space to document the milestones that truly matter, from family celebrations and professional successes to health history and personal reflections.<br><br>Spanning a full century, this agenda helps you step away from the frenzy of the digital present and reconnect with what is essential.",
+        "history": "History",
+        "journal": "Journal",
+        "growth": "Personal Growth",
+        "starting_year_val": "Starting year: ",
+        "starting_year_range": "selectable from 1950 to 2060",
+        "design_val": "Language-neutral design: ",
+        "design_text": "suitable for use in any language",
+        "binding_val": "Coil binding: ",
+        "binding_text": "for durability and easy writing on both left and right pages",
+        "pages_val": "One page per year: ",
+        "pages_text": "featuring a clear, minimal calendar and space for notes.",
+        "size_val": "107 A4 pages ",
+        "size_text": "(black-and-white to keep costs low)"
+    },
+    "gift": {
+        "title": "The perfect gift",
+        "parents_title": "For parents",
+        "parents_text": "To document a newborn’s journey, starting months before birth.",
+        "graduation_title": "For a graduation",
+        "graduation_text": "A gift that offers long-term perspective.",
+        "wedding_title": "For a wedding",
+        "wedding_text": "A diary for two, shared over a lifetime.",
+        "you_title": "For you",
+        "you_text": "A space to reflect on the past and tell your story."
+    },
+    "order_bottom": {
+        "title": "Write Your History Today",
+        "starting_year": "Starting Year",
+        "order": "Order",
+        "on": "on",
+        "tips_title": "Tips",
+        "tip_1": "Set a reminder to update it regularly (at least once a year).",
+        "tip_2": "Keep it in a safe place — it’s precious.",
+        "tip_3": "Share it with friends — they’ll discover <i>you</i>.",
+        "share": "Share:"
+    },
+    "footer": {
+        "rights": "© 2026 Pierre Carbonnelle. All rights reserved.",
+        "contact": "Contact"
+    }
+}
