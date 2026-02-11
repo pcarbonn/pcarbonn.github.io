@@ -60,8 +60,12 @@
         "tips_title": "Tips",
         "tip_1": "Set a reminder to update it regularly (at least once a year).",
         "tip_2": "Keep it in a safe place — it’s precious.",
-        "tip_3": "Share it with friends — they’ll discover <i>you</i>.",
-        "share": "Share:"
+        "tip_3": "Share it with friends — they’ll discover <i>you</i>."
+    },
+    "share": {
+        "label": "Share:",
+        "copy_success": "Link copied!",
+        "copy_fail": "Failed to copy"
     },
     "footer": {
         "rights": "© 2026 Pierre Carbonnelle. All rights reserved.",

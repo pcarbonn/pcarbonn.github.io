@@ -274,4 +274,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // --- Copy Link Logic ---
+    const copyLinkBtn = document.getElementById('copy-link-btn');
+    const copyFeedback = document.getElementById('copy-link-feedback');
+    if (copyLinkBtn) {
+        copyLinkBtn.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                trackEvent("Link Copied");
+
+                // Show feedback
+                if (copyFeedback) {
+                    copyFeedback.classList.remove('hidden');
+                    setTimeout(() => {
+                        copyFeedback.classList.add('hidden');
+                    }, 2000);
+                }
+            } catch (err) {
+                console.error('Failed to copy link:', err);
+            }
+        });
+    }
 });

@@ -60,8 +60,12 @@
         "tips_title": "Conseils",
         "tip_1": "Programmez un rappel pour le compléter régulièrement (au moins une fois par an).",
         "tip_2": "Conservez-le en lieu sûr — c'est un objet précieux.",
-        "tip_3": "Partagez-le avec vos proches — ils découvriront qui vous êtes.",
-        "share": "Partager :"
+        "tip_3": "Partagez-le avec vos proches — ils découvriront qui vous êtes."
+    },
+    "share": {
+        "label": "Partager :",
+        "copy_success": "Lien copié !",
+        "copy_fail": "Échec du copier"
     },
     "footer": {
         "rights": "© 2026 Pierre Carbonnelle. Tous droits réservés.",
