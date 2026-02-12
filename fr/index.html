@@ -18,6 +18,12 @@
     <link rel="canonical" href="https://100-year-agenda.com">
     <link rel="alternate" hreflang="en" href="https://100-year-agenda.com/">
     <link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/">
+    <link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/">
+    <link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/">
+    <link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/">
+    <link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/">
+    <link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/">
+    <link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/">
     <link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/">
 
     <!-- Open Graph / Facebook -->
@@ -85,8 +91,7 @@
         class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-3 md:py-4 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <a href="#hero"
-                class="text-lg md:text-xl font-black tracking-tighter uppercase whitespace-nowrap hover:text-[#22B5F0] transition">100-Year
-                Agenda
+                class="text-lg md:text-xl font-black tracking-tighter uppercase whitespace-nowrap hover:text-[#22B5F0] transition">__i18n:hero.title__
             </a>
 
             <!-- Mobile Menu Toggle -->
@@ -94,9 +99,15 @@
                 <!-- Language Switcher (kept visible on mobile for easy access) -->
                 <div class="relative inline-block">
                     <select id="lang-selector-mobile"
-                        class="bg-transparent border-none text-[10px] font-bold uppercase tracking-widest cursor-pointer outlook-none focus:outline-none focus:ring-0 hover:text-[#22B5F0] transition appearance-none pl-3 pr-8 py-2">
+                        class="bg-transparent border-none text-[10px] font-bold uppercase tracking-widest cursor-pointer outlook-none focus:outline-none focus:ring-0 hover:text-[#22B5F0] transition appearance-none pl-1 pr-4 py-2 text-right">
+                        <option value="de" class="text-black bg-white">Deutsch</option>
                         <option value="en" class="text-black bg-white">English</option>
+                        <option value="es" class="text-black bg-white">Español</option>
                         <option value="fr" class="text-black bg-white">Français</option>
+                        <option value="it" class="text-black bg-white">Italiano</option>
+                        <option value="nl" class="text-black bg-white">Nederlands</option>
+                        <option value="pt" class="text-black bg-white">Português</option>
+                        <option value="ja" class="text-black bg-white">日本語</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center pointer-events-none">
                         <svg class="h-3 w-3 fill-current opacity-50" viewBox="0 0 20 20">
@@ -123,9 +134,15 @@
                 <!-- Language Switcher (Desktop) -->
                 <div class="relative inline-block ml-4">
                     <select id="lang-selector"
-                        class="bg-transparent border-none text-sm font-bold uppercase tracking-widest cursor-pointer outlook-none focus:outline-none focus:ring-0 hover:text-[#22B5F0] transition appearance-none pl-4 pr-10 py-2.5">
+                        class="bg-transparent border-none text-sm font-bold uppercase tracking-widest cursor-pointer outlook-none focus:outline-none focus:ring-0 hover:text-[#22B5F0] transition appearance-none pl-2 pr-5 py-2.5 text-right">
+                        <option value="de" class="text-black bg-white">Deutsch</option>
                         <option value="en" class="text-black bg-white">English</option>
+                        <option value="es" class="text-black bg-white">Español</option>
                         <option value="fr" class="text-black bg-white">Français</option>
+                        <option value="it" class="text-black bg-white">Italiano</option>
+                        <option value="nl" class="text-black bg-white">Nederlands</option>
+                        <option value="pt" class="text-black bg-white">Português</option>
+                        <option value="ja" class="text-black bg-white">日本語</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center pointer-events-none">
                         <svg class="h-3 w-3 fill-current opacity-50" viewBox="0 0 20 20">
@@ -242,7 +259,7 @@
                     <div class="absolute bottom-0 right-0 translate-y-1/2 z-30">
                         <button onclick="window.openBookModal()"
                             class="bg-[#EF4444] hover:bg-[#DC2626] text-white text-sm font-bold py-2 px-6 rounded-full shadow-lg transition-colors whitespace-nowrap">
-                            Look inside
+                            __i18n:hero.look_inside__
                         </button>
                     </div>
                     <!-- Binding holes shadow -->
@@ -277,9 +294,9 @@
             <!-- Product Details -->
             <div class="w-full md:w-[55%] flex flex-col justify-center">
                 <nav class="text-xs font-medium text-gray-400 mb-6 uppercase tracking-widest flex items-center gap-2">
-                    <a href="#" class="hover:text-[#22B5F0]">Agenda</a>
+                    <a href="#" class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_agenda__</a>
                     <span>/</span>
-                    <a href="#" class="hover:text-[#22B5F0]">Life Planning</a>
+                    <a href="#" class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_life_planning__</a>
                 </nav>
 
                 <h1 class="text-4xl md:text-5xl font-black leading-tight mb-2 tracking-tight">__i18n:hero.title__</h1>

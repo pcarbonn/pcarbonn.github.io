@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "title": "A Agenda de 100 Anos – Um Diário para a Vida",
+        "description": "A Agenda de 100 Anos é um registo duradouro da sua jornada de vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1950 e 2060.",
+        "og_description": "Documente a sua jornada de vida ao longo de um século inteiro. Um diário único para registar marcos, reflexões e contar a sua história.",
+        "social_image": "https://100-year-agenda.com/social-pt.png"
+    },
+    "nav": {
+        "features": "Características",
+        "usage": "Como utilizar",
+        "tips": "Dicas",
+        "breadcrumb_agenda": "Agenda",
+        "breadcrumb_life_planning": "Planeamento de Vida"
+    },
+    "hero": {
+        "title": "A Agenda de 100 Anos",
+        "subtitle": "Para um registo duradouro da sua jornada de vida.",
+        "look_inside": "Ver interior",
+        "starting_year": "Ano de início",
+        "order": "Encomendar",
+        "on": "em",
+        "shipping": "Envio disponível para todo o mundo.",
+        "year_error": "O ano de início deve ser posterior a 1950.",
+        "not_available": "Este livro ainda não está disponível."
+    },
+    "modal": {
+        "title": "Ver interior"
+    },
+    "features": {
+        "section_title": "Características",
+        "why_title": "Por que utilizar esta agenda?",
+        "why_text": "A Agenda de 100 Anos é mais do que um simples organizador — é um registo duradouro da sua jornada de vida. Oferece um espaço dedicado para documentar os marcos que realmente importam, desde celebrações familiares e conquistas profissionais até ao histórico de saúde e reflexões pessoais.<br><br>Ao abranger um século inteiro, esta agenda convida-o a afastar-se do ritmo acelerado do presente digital e a reconectar-se com o que é verdadeiramente essencial.",
+        "history": "História",
+        "journal": "Diário",
+        "growth": "Crescimento pessoal",
+        "starting_year_val": "Ano de início: ",
+        "starting_year_range": "selecionável entre 1950 e 2060",
+        "design_val": "Design neutro: ",
+        "design_text": "adequado para utilização em qualquer idioma",
+        "binding_val": "Encadernação em espiral: ",
+        "binding_text": "para maior durabilidade e facilidade de escrita em ambas as páginas",
+        "pages_val": "Uma página por ano: ",
+        "pages_text": "com um calendário claro e minimalista e espaço para notas.",
+        "size_val": "107 páginas A4 ",
+        "size_text": "(a preto e branco para manter os custos reduzidos)"
+    },
+    "gift": {
+        "title": "O presente perfeito",
+        "parents_title": "Para pais",
+        "parents_text": "Para registar a jornada de um recém-nascido, começando meses antes do nascimento.",
+        "graduation_title": "Para uma graduação",
+        "graduation_text": "Um presente que oferece uma perspetiva de longo prazo.",
+        "wedding_title": "Para um casamento",
+        "wedding_text": "Um diário para dois, partilhado ao longo de toda a vida.",
+        "you_title": "Para si",
+        "you_text": "Um espaço para refletir sobre o passado e contar a sua história."
+    },
+    "order_bottom": {
+        "title": "Comece hoje a contar a sua história",
+        "starting_year": "Ano de início",
+        "order": "Encomendar",
+        "on": "em",
+        "tips_title": "Dicas",
+        "tip_1": "Defina um lembrete para a atualizar regularmente (pelo menos uma vez por ano).",
+        "tip_2": "Guarde-a num local seguro — é preciosa.",
+        "tip_3": "Partilhe-a com amigos — descobrirão quem <i>é</i>."
+    },
+    "share": {
+        "label": "Partilhar:",
+        "copy_success": "Ligação copiada!",
+        "copy_fail": "Falha ao copiar"
+    },
+    "footer": {
+        "rights": "© 2026 Pierre Carbonnelle. Todos os direitos reservados.",
+        "contact": "Contacto"
+    }
+}

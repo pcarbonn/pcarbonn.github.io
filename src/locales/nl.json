@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "title": "De 100-Jarenagenda - Een dagboek voor het leven",
+        "description": "De 100-Jarenagenda is een waardevolle weerspiegeling van uw levenspad. Leg mijlpalen, herinneringen en persoonlijke reflecties vast over een volledige eeuw. Startjaren beschikbaar van 1950 tot 2060.",
+        "og_description": "Leg uw levenspad vast over een volledige eeuw. Een uniek dagboek voor mijlpalen, herinneringen en persoonlijke reflecties.",
+        "social_image": "https://100-year-agenda.com/social-nl.png"
+    },
+    "nav": {
+        "features": "Kenmerken",
+        "usage": "Gebruik",
+        "tips": "Tips",
+        "breadcrumb_agenda": "Agenda",
+        "breadcrumb_life_planning": "Levensplanning"
+    },
+    "hero": {
+        "title": "De 100-Jarenagenda",
+        "subtitle": "Om uw levensverhaal blijvend vast te leggen.",
+        "look_inside": "Inkijkexemplaar",
+        "starting_year": "Startjaar",
+        "order": "Bestellen",
+        "on": "op",
+        "shipping": "Wereldwijde verzending beschikbaar.",
+        "year_error": "Het startjaar moet na 1950 liggen.",
+        "not_available": "Dit boek is momenteel nog niet beschikbaar."
+    },
+    "modal": {
+        "title": "Inkijkexemplaar"
+    },
+    "features": {
+        "section_title": "Kenmerken",
+        "why_title": "Waarom kiezen voor deze agenda?",
+        "why_text": "De 100-Jarenagenda is meer dan een gewone planner — het is een persoonlijk tijdsdocument. Ze biedt ruimte om vast te leggen wat er echt toe doet: familievieringen, professionele successen, belangrijke gebeurtenissen, gezondheidsmomenten en persoonlijke gedachten.<br><br>Over een periode van honderd jaar nodigt deze agenda u uit om afstand te nemen van de digitale drukte en opnieuw stil te staan bij wat werkelijk belangrijk is.",
+        "history": "Geschiedenis",
+        "journal": "Dagboek",
+        "growth": "Persoonlijke groei",
+        "starting_year_val": "Startjaar: ",
+        "starting_year_range": "kiesbaar van 1950 tot 2060",
+        "design_val": "Taalneutraal ontwerp: ",
+        "design_text": "geschikt voor gebruik in elke taal",
+        "binding_val": "Spiraalbinding: ",
+        "binding_text": "stevig en praktisch om zowel links als rechts comfortabel te schrijven",
+        "pages_val": "Eén pagina per jaar: ",
+        "pages_text": "met een heldere, minimalistische kalender en ruimte voor notities.",
+        "size_val": "107 pagina’s op A4-formaat ",
+        "size_text": "(zwart-wit gedrukt om de kosten te beperken)"
+    },
+    "gift": {
+        "title": "Het ideale cadeau",
+        "parents_title": "Voor ouders",
+        "parents_text": "Om het levensverhaal van een kind vast te leggen, al vanaf de maanden vóór de geboorte.",
+        "graduation_title": "Voor een diploma",
+        "graduation_text": "Een cadeau dat inspireert tot vooruitkijken en langetermijndenken.",
+        "wedding_title": "Voor een huwelijk",
+        "wedding_text": "Een dagboek voor twee — om samen een leven lang te delen.",
+        "you_title": "Voor uzelf",
+        "you_text": "Een plek om stil te staan bij het verleden en uw eigen verhaal te schrijven."
+    },
+    "order_bottom": {
+        "title": "Begin vandaag met het vastleggen van uw verhaal",
+        "starting_year": "Startjaar",
+        "order": "Bestellen",
+        "on": "op",
+        "tips_title": "Tips",
+        "tip_1": "Stel een jaarlijkse herinnering in om uw agenda bij te werken.",
+        "tip_2": "Bewaar haar op een veilige plaats — het is een waardevol document.",
+        "tip_3": "Deel haar met dierbaren — zij ontdekken wie <i>u</i> werkelijk bent."
+    },
+    "share": {
+        "label": "Delen:",
+        "copy_success": "Link gekopieerd!",
+        "copy_fail": "Kopiëren mislukt."
+    },
+    "footer": {
+        "rights": "© 2026 Pierre Carbonnelle. Alle rechten voorbehouden.",
+        "contact": "Contact"
+    }
+}

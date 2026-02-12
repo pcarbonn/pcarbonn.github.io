@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "title": "L'Agenda dei 100 Anni - Un diario per tutta la vita",
+        "description": "L'Agenda dei 100 Anni è una preziosa testimonianza del tuo percorso di vita. Annota traguardi, ricordi e riflessioni lungo un intero secolo con questo diario unico. Anni di inizio disponibili dal 1950 al 2060.",
+        "og_description": "Racconta il tuo percorso lungo un secolo intero. Un diario unico per custodire momenti importanti, ricordi e riflessioni personali.",
+        "social_image": "https://100-year-agenda.com/social-it.png"
+    },
+    "nav": {
+        "features": "Caratteristiche",
+        "usage": "Utilizzo",
+        "tips": "Consigli",
+        "breadcrumb_agenda": "Agenda",
+        "breadcrumb_life_planning": "Pianificazione della vita"
+    },
+    "hero": {
+        "title": "L'Agenda dei 100 Anni",
+        "subtitle": "Per custodire nel tempo il tuo percorso di vita.",
+        "look_inside": "Sfoglia",
+        "starting_year": "Anno di inizio",
+        "order": "Acquista",
+        "on": "su",
+        "shipping": "Spedizione disponibile in tutto il mondo.",
+        "year_error": "L'anno di inizio deve essere successivo al 1950.",
+        "not_available": "Questo libro non è ancora disponibile."
+    },
+    "modal": {
+        "title": "Sfoglia"
+    },
+    "features": {
+        "section_title": "Caratteristiche",
+        "why_title": "Perché scegliere questa agenda?",
+        "why_text": "L'Agenda dei 100 Anni è molto più di un semplice planner: è una testimonianza personale del tuo percorso. Offre uno spazio dedicato per annotare ciò che conta davvero — celebrazioni familiari, successi professionali, eventi significativi, tappe importanti e riflessioni personali.<br><br>Attraverso un intero secolo, ti invita a rallentare rispetto al ritmo frenetico del presente digitale e a riscoprire ciò che è essenziale.",
+        "history": "Storia",
+        "journal": "Diario",
+        "growth": "Crescita personale",
+        "starting_year_val": "Anno di inizio: ",
+        "starting_year_range": "selezionabile dal 1950 al 2060",
+        "design_val": "Design neutro: ",
+        "design_text": "adatto a qualsiasi lingua",
+        "binding_val": "Rilegatura a spirale: ",
+        "binding_text": "resistente e pratica per scrivere comodamente su entrambe le pagine",
+        "pages_val": "Una pagina per ogni anno: ",
+        "pages_text": "con un calendario chiaro ed essenziale e spazio dedicato alle note.",
+        "size_val": "107 pagine formato A4 ",
+        "size_text": "(stampa in bianco e nero per contenere i costi)"
+    },
+    "gift": {
+        "title": "Il regalo ideale",
+        "parents_title": "Per i genitori",
+        "parents_text": "Per raccontare la storia di un figlio, fin dai mesi che precedono la nascita.",
+        "graduation_title": "Per una laurea",
+        "graduation_text": "Un regalo che offre una prospettiva ampia e duratura.",
+        "wedding_title": "Per un matrimonio",
+        "wedding_text": "Un diario per due, da condividere lungo tutta la vita.",
+        "you_title": "Per te",
+        "you_text": "Uno spazio per fermarti, riflettere e raccontare la tua storia."
+    },
+    "order_bottom": {
+        "title": "Inizia oggi a scrivere la tua storia",
+        "starting_year": "Anno di inizio",
+        "order": "Acquista",
+        "on": "su",
+        "tips_title": "Consigli",
+        "tip_1": "Imposta un promemoria per aggiornarla regolarmente (almeno una volta all'anno).",
+        "tip_2": "Conservala in un luogo sicuro: è qualcosa di prezioso.",
+        "tip_3": "Condividila con le persone care: scopriranno chi sei <i>tu</i>."
+    },
+    "share": {
+        "label": "Condividi:",
+        "copy_success": "Link copiato!",
+        "copy_fail": "Copia non riuscita."
+    },
+    "footer": {
+        "rights": "© 2026 Pierre Carbonnelle. Tutti i diritti riservati.",
+        "contact": "Contatto"
+    }
+}

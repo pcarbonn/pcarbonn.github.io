@@ -47,20 +47,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleLangChange(e) {
         const newLang = e.target.value;
         const currentPath = window.location.pathname;
+        const languages = ["fr", "es", "nl", "de", "it", "pt", "ja"];
 
-        // Handle root or subfolders
+        // Determine current lang from path
+        const currentLang = languages.find(l => currentPath.startsWith(`/${l}/`)) || "en";
+
+        if (newLang === currentLang) return;
+
         let targetUrl;
-        if (newLang === 'fr') {
-            if (!currentPath.includes('/fr/')) {
-                // Redirect to /fr/
-                targetUrl = '/fr' + (currentPath.endsWith('/') ? currentPath : currentPath + '/');
-                // Special case for root
-                if (currentPath === '/') targetUrl = '/fr/';
-            }
+        if (newLang === 'en') {
+            // Redirect from /lang/ to /
+            targetUrl = currentPath.replace(`/${currentLang}/`, '/');
         } else {
-            if (currentPath.includes('/fr/')) {
-                // Redirect to root
-                targetUrl = currentPath.replace('/fr/', '/');
+            if (currentLang === 'en') {
+                // Redirect from / to /newLang/
+                targetUrl = `/${newLang}` + (currentPath.endsWith('/') ? currentPath : currentPath + '/');
+                if (currentPath === '/') targetUrl = `/${newLang}/`;
+            } else {
+                // Redirect from /oldLang/ to /newLang/
+                targetUrl = currentPath.replace(`/${currentLang}/`, `/${newLang}/`);
             }
         }
 

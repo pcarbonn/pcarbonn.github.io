@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "title": "Die 100-Jahre-Agenda – Ein Tagebuch für ein ganzes Leben",
+        "description": "Die 100-Jahre-Agenda ist ein wertvolles Zeugnis Ihres Lebenswegs. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1950 bis 2060 verfügbar.",
+        "og_description": "Halten Sie Ihren Lebensweg über ein ganzes Jahrhundert fest. Ein einzigartiges Tagebuch für Meilensteine, Erinnerungen und persönliche Gedanken.",
+        "social_image": "https://100-year-agenda.com/social-de.png"
+    },
+    "nav": {
+        "features": "Eigenschaften",
+        "usage": "Verwendung",
+        "tips": "Tipps",
+        "breadcrumb_agenda": "Agenda",
+        "breadcrumb_life_planning": "Lebensplanung"
+    },
+    "hero": {
+        "title": "Die 100-Jahre-Agenda",
+        "subtitle": "Um Ihren Lebensweg dauerhaft festzuhalten.",
+        "look_inside": "Blick ins Buch",
+        "starting_year": "Startjahr",
+        "order": "Bestellen",
+        "on": "auf",
+        "shipping": "Weltweiter Versand verfügbar.",
+        "year_error": "Das Startjahr muss nach 1950 liegen.",
+        "not_available": "Dieses Buch ist derzeit noch nicht verfügbar."
+    },
+    "modal": {
+        "title": "Blick ins Buch"
+    },
+    "features": {
+        "section_title": "Eigenschaften",
+        "why_title": "Warum diese Agenda?",
+        "why_text": "Die 100-Jahre-Agenda ist weit mehr als ein gewöhnlicher Planer – sie ist ein persönliches Zeitdokument. Sie bietet Raum für alles, was wirklich zählt: Familienfeste, berufliche Erfolge, prägende Ereignisse, gesundheitliche Entwicklungen und persönliche Gedanken.<br><br>Über ein ganzes Jahrhundert hinweg lädt sie dazu ein, Abstand vom schnellen digitalen Alltag zu gewinnen und sich auf das Wesentliche zu besinnen.",
+        "history": "Geschichte",
+        "journal": "Tagebuch",
+        "growth": "Persönliche Entwicklung",
+        "starting_year_val": "Startjahr: ",
+        "starting_year_range": "wählbar von 1950 bis 2060",
+        "design_val": "Sprachneutrales Design: ",
+        "design_text": "in jeder Sprache nutzbar",
+        "binding_val": "Spiralbindung: ",
+        "binding_text": "robust und ideal zum Schreiben auf linken wie rechten Seiten",
+        "pages_val": "Eine Seite pro Jahr: ",
+        "pages_text": "mit einem klar gestalteten, reduzierten Kalender und Platz für Notizen.",
+        "size_val": "107 Seiten im Format A4 ",
+        "size_text": "(Schwarz-Weiß-Druck zur Kostensenkung)"
+    },
+    "gift": {
+        "title": "Das ideale Geschenk",
+        "parents_title": "Für Eltern",
+        "parents_text": "Um den Weg eines Kindes festzuhalten – schon Monate vor der Geburt.",
+        "graduation_title": "Zum Abschluss",
+        "graduation_text": "Ein Geschenk mit Weitblick und langfristiger Perspektive.",
+        "wedding_title": "Zur Hochzeit",
+        "wedding_text": "Ein Tagebuch für zwei – gemeinsam über ein ganzes Leben.",
+        "you_title": "Für Sie",
+        "you_text": "Ein Raum, um innezuhalten und Ihre eigene Geschichte zu erzählen."
+    },
+    "order_bottom": {
+        "title": "Beginnen Sie noch heute, Ihre Geschichte festzuhalten",
+        "starting_year": "Startjahr",
+        "order": "Bestellen",
+        "on": "auf",
+        "tips_title": "Tipps",
+        "tip_1": "Setzen Sie sich eine jährliche Erinnerung, um Ihre Einträge zu ergänzen.",
+        "tip_2": "Bewahren Sie es an einem sicheren Ort auf – es ist etwas Besonderes.",
+        "tip_3": "Teilen Sie es mit Freunden – sie entdecken, wer <i>Sie</i> wirklich sind."
+    },
+    "share": {
+        "label": "Teilen:",
+        "copy_success": "Link kopiert!",
+        "copy_fail": "Kopieren fehlgeschlagen."
+    },
+    "footer": {
+        "rights": "© 2026 Pierre Carbonnelle. Alle Rechte vorbehalten.",
+        "contact": "Kontakt"
+    }
+}

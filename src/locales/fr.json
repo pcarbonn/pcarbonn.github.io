@@ -8,7 +8,9 @@
     "nav": {
         "features": "Caractéristiques",
         "usage": "Usages",
-        "tips": "Conseils"
+        "tips": "Conseils",
+        "breadcrumb_agenda": "Agenda",
+        "breadcrumb_life_planning": "Planification de vie"
     },
     "hero": {
         "title": "L'Agenda de 100 Ans",

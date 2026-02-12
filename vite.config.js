@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import fs from "fs";
 import path from "path";
 
-const locales = ["en", "fr"];
+const locales = ["en", "fr", "es", "nl", "de", "it", "pt", "ja"];
 const defaultLocale = "en";
 
 function getTranslations(locale) {
@@ -44,6 +44,12 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, "index.html"),
         fr: path.resolve(__dirname, "fr/index.html"),
+        es: path.resolve(__dirname, "es/index.html"),
+        nl: path.resolve(__dirname, "nl/index.html"),
+        de: path.resolve(__dirname, "de/index.html"),
+        it: path.resolve(__dirname, "it/index.html"),
+        pt: path.resolve(__dirname, "pt/index.html"),
+        ja: path.resolve(__dirname, "ja/index.html"),
       },
     },
   },
@@ -52,16 +58,15 @@ export default defineConfig({
       name: "i18n-ssg",
       // For dev server
       transformIndexHtml(html, { path: htmlPath }) {
-        const isFr = htmlPath.startsWith("/fr/");
-        const locale = isFr ? "fr" : "en";
+        const locale = locales.find(l => htmlPath.startsWith(`/${l}/`)) || "en";
         return translateHtml(html, locale);
       },
-      // For production build (if we wanted to generate files differently,
-      // but here we use multiple entry points)
+      // For production build
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
-          if (req.url === "/fr" || req.url === "/fr/") {
-            req.url = "/fr/index.html";
+          const locale = locales.find(l => req.url === `/${l}` || req.url === `/${l}/`);
+          if (locale) {
+            req.url = `/${locale}/index.html`;
           }
           next();
         });

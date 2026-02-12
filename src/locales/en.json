@@ -8,7 +8,9 @@
     "nav": {
         "features": "Features",
         "usage": "Usage",
-        "tips": "Tips"
+        "tips": "Tips",
+        "breadcrumb_agenda": "Agenda",
+        "breadcrumb_life_planning": "Life Planning"
     },
     "hero": {
         "title": "The 100-Year Agenda",
