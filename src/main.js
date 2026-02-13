@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const row = compact.find(r => r[0] === year.toString());
             if (row) {
                 const id = row[1];
-                const url = `https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-2025/paperback/product-${id}.html`;
+                const url = `https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-${year}/paperback/product-${id}.html`;
                 window.location.href = url;
             } else {
                 errorElement.textContent = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
