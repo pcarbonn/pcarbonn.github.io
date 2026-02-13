@@ -3,7 +3,8 @@
         "title": "The 100-Year Agenda - A Life Journal",
         "description": "The 100-Year Agenda is a lasting record of your life's journey. Track milestones, reflections, and memories with this unique journal. Starting years from 1950-2060 available.",
         "og_description": "Document your life's journey across a full century. A unique journal for tracking milestones, reflections, and telling your story.",
-        "social_image": "https://100-year-agenda.com/social.png"
+        "social_image": "https://100-year-agenda.com/social.png",
+        "url": "https://100-year-agenda.com/"
     },
     "nav": {
         "features": "Features",

@@ -3,7 +3,8 @@
         "title": "100年アジェンダ ― 一生を綴る日記",
         "description": "100年アジェンダは、あなたの人生を静かに見つめ、記録していくための一冊です。節目や思い出、心に残る出来事を、100年という時間軸で綴ることができます。開始年は1950年から2060年までお選びいただけます。",
         "og_description": "100年という時の流れの中で、あなたの歩みを記していく特別な日記。大切な節目や思い出を、未来へとつなぎます。",
-        "social_image": "https://100-year-agenda.com/social-ja.png"
+        "social_image": "https://100-year-agenda.com/social-ja.png",
+        "url": "https://100-year-agenda.com/ja/"
     },
     "nav": {
         "features": "特長",
