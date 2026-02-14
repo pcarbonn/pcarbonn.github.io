@@ -1,6 +1,6 @@
 # pcarbonn.github.io
 
-Website for [100-year-agenda.com](https://www.100-year-agenda.com).
+Website for [100-year-agenda.com](https://www.100-year-agenda.com).  Also hosts redirections, e.g., of pcarbonn.github.io/XMT-IDE.
 
 ## Development
 
