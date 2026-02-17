@@ -38,12 +38,12 @@
         "starting_year_range": "selezionabile dal 1950 al 2060",
         "design_val": "Design neutro: ",
         "design_text": "adatto a qualsiasi lingua",
-        "binding_val": "Rilegatura a spirale: ",
-        "binding_text": "resistente e pratica per scrivere comodamente su entrambe le pagine",
+        "binding_val": "Rilegatura rigida: ",
+        "binding_text": "resistente",
         "pages_val": "Una pagina per ogni anno: ",
         "pages_text": "con un calendario chiaro ed essenziale e spazio dedicato alle note.",
         "size_val": "107 pagine formato A4 ",
-        "size_text": "(stampa in bianco e nero per contenere i costi)"
+        "size_text": ""
     },
     "gift": {
         "title": "Il regalo ideale",

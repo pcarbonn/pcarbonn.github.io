@@ -38,12 +38,12 @@
         "starting_year_range": "seleccionable de 1950 a 2060",
         "design_val": "Diseño neutro: ",
         "design_text": "apto para cualquier idioma",
-        "binding_val": "Encuadernación en espiral: ",
-        "binding_text": "resistente y práctica para escribir cómodamente en ambas páginas",
+        "binding_val": "Tapa dura: ",
+        "binding_text": "resistente",
         "pages_val": "Una página por año: ",
         "pages_text": "con un calendario claro y minimalista y espacio para notas.",
         "size_val": "107 páginas en formato A4 ",
-        "size_text": "(impresión en blanco y negro para reducir costos)"
+        "size_text": ""
     },
     "gift": {
         "title": "El regalo ideal",

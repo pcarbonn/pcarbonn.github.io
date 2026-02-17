@@ -38,12 +38,12 @@
         "starting_year_range": "au choix de 1950 à 2060",
         "design_val": "International : ",
         "design_text": "adapté à toutes les langues",
-        "binding_val": "Reliure spirale : ",
-        "binding_text": "solide et pratique pour écrire facilement sur les pages de gauche comme de droite",
+        "binding_val": "Couverture rigide : ",
+        "binding_text": "pour la solidité",
         "pages_val": "Une page par an : ",
         "pages_text": "avec un calendrier clair et épuré, et un espace dédié aux notes.",
         "size_val": "107 pages au format A4 ",
-        "size_text": "(impression en noir et blanc pour limiter les coûts)"
+        "size_text": ""
     },
     "gift": {
         "title": "Le cadeau idéal",

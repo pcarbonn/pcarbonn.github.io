@@ -38,12 +38,12 @@
         "starting_year_range": "selectable from 1950 to 2060",
         "design_val": "Language-neutral design: ",
         "design_text": "suitable for use in any language",
-        "binding_val": "Coil binding: ",
-        "binding_text": "for durability and easy writing on both left and right pages",
+        "binding_val": "Hard cover: ",
+        "binding_text": "for durability",
         "pages_val": "One page per year: ",
         "pages_text": "featuring a clear, minimal calendar and space for notes.",
         "size_val": "107 A4 pages ",
-        "size_text": "(black-and-white to keep costs low)"
+        "size_text": ""
     },
     "gift": {
         "title": "The perfect gift",

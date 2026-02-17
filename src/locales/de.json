@@ -38,12 +38,12 @@
         "starting_year_range": "wählbar von 1950 bis 2060",
         "design_val": "Sprachneutrales Design: ",
         "design_text": "in jeder Sprache nutzbar",
-        "binding_val": "Spiralbindung: ",
-        "binding_text": "robust und ideal zum Schreiben auf linken wie rechten Seiten",
+        "binding_val": "Hardcover: ",
+        "binding_text": "robust",
         "pages_val": "Eine Seite pro Jahr: ",
         "pages_text": "mit einem klar gestalteten, reduzierten Kalender und Platz für Notizen.",
         "size_val": "107 Seiten im Format A4 ",
-        "size_text": "(Schwarz-Weiß-Druck zur Kostensenkung)"
+        "size_text": ""
     },
     "gift": {
         "title": "Das ideale Geschenk",

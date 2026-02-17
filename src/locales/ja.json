@@ -38,12 +38,12 @@
         "starting_year_range": "1950年から2060年まで選択可能",
         "design_val": "言語に依存しないデザイン：",
         "design_text": "どの言語でもお使いいただけます",
-        "binding_val": "コイル製本：",
-        "binding_text": "丈夫で、左右どちらのページにも書きやすい仕様",
+        "binding_val": "ハードカバー：",
+        "binding_text": "丈夫さ",
         "pages_val": "1年につき1ページ：",
         "pages_text": "見やすくシンプルなカレンダーと、十分なメモスペース付き。",
         "size_val": "A4サイズ・全107ページ ",
-        "size_text": "（コストを抑えるため白黒印刷）"
+        "size_text": ""
     },
     "gift": {
         "title": "大切な方への贈り物に",

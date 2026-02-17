@@ -38,12 +38,12 @@
         "starting_year_range": "selecionável entre 1950 e 2060",
         "design_val": "Design neutro: ",
         "design_text": "adequado para utilização em qualquer idioma",
-        "binding_val": "Encadernação em espiral: ",
-        "binding_text": "para maior durabilidade e facilidade de escrita em ambas as páginas",
+        "binding_val": "Capa dura: ",
+        "binding_text": "para maior durabilidade",
         "pages_val": "Uma página por ano: ",
         "pages_text": "com um calendário claro e minimalista e espaço para notas.",
         "size_val": "107 páginas A4 ",
-        "size_text": "(a preto e branco para manter os custos reduzidos)"
+        "size_text": ""
     },
     "gift": {
         "title": "O presente perfeito",
