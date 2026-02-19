@@ -50,6 +50,7 @@ export default defineConfig({
         it: path.resolve(__dirname, "it/index.html"),
         pt: path.resolve(__dirname, "pt/index.html"),
         ja: path.resolve(__dirname, "ja/index.html"),
+        "XMT-IDE": path.resolve(__dirname, "XMT-IDE/index.html"),
       },
     },
   },
@@ -58,12 +59,20 @@ export default defineConfig({
       name: "i18n-ssg",
       // For dev server
       transformIndexHtml(html, { path: htmlPath }) {
+        if (htmlPath.startsWith("/XMT-IDE/")) {
+          return html;
+        }
         const locale = locales.find(l => htmlPath.startsWith(`/${l}/`)) || "en";
         return translateHtml(html, locale);
       },
       // For production build
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
+          if (req.url === "/XMT-IDE" || req.url === "/XMT-IDE/") {
+            req.url = "/XMT-IDE/index.html";
+            next();
+            return;
+          }
           const locale = locales.find(l => req.url === `/${l}` || req.url === `/${l}/`);
           if (locale) {
             req.url = `/${locale}/index.html`;
