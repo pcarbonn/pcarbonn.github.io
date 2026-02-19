@@ -30,7 +30,10 @@ npm run build
 To watch for changes and rebuild automatically during development:
 
 ```bash
+cp index.html fr/index.html && cp index.html es/index.html && cp index.html de/index.html && cp index.html it/index.html && cp index.html ja/index.html && cp index.html nl/index.html && cp index.html pt/index.html
 npm run watch
 ```
 
 The output CSS is generated in `docs/output.css` and linked in `docs/index.html`.
+
+

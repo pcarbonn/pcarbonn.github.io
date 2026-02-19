@@ -265,17 +265,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Tracking Share Clicks ---
     const shareTracking = {
-        'share-facebook': 'Facebook',
-        'share-instagram': 'Instagram',
+        'share-email': 'Email',
+        'share-whatsapp': 'WhatsApp',
         'share-pinterest': 'Pinterest',
-        'share-linkedin': 'LinkedIn'
+        'share-copy': 'Copy Link'
     };
 
     Object.entries(shareTracking).forEach(([id, platform]) => {
         const el = document.getElementById(id);
         if (el) {
-            el.addEventListener('click', () => {
+            el.addEventListener('click', async () => {
                 trackEvent("Share Click", { platform: platform });
+
+                // Special handling for Copy Link
+                if (id === 'share-copy') {
+                    const url = el.getAttribute('data-url') || window.location.href;
+                    const feedback = document.getElementById('copy-feedback');
+                    try {
+                        await navigator.clipboard.writeText(url);
+                        if (feedback) {
+                            feedback.textContent = el.getAttribute('data-success') || "Copied!";
+                            feedback.classList.remove('opacity-0');
+                            setTimeout(() => feedback.classList.add('opacity-0'), 2000);
+                        }
+                    } catch (err) {
+                        console.error('Failed to copy: ', err);
+                        if (feedback) {
+                            feedback.textContent = el.getAttribute('data-fail') || "Error";
+                            feedback.classList.remove('opacity-0');
+                            setTimeout(() => feedback.classList.add('opacity-0'), 2000);
+                        }
+                    }
+                }
             });
         }
     });
