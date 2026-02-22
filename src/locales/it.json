@@ -67,6 +67,7 @@
         "tip_3": "Condividila con le persone care: scopriranno chi sei <i>tu</i>."
     },
     "share": {
+        "think_of_someone": "Ti fa pensare a qualcuno?",
         "label": "Condividi:",
         "copy_success": "Link copiato!",
         "copy_fail": "Copia non riuscita."

@@ -67,6 +67,7 @@
         "tip_3": "Teilen Sie es mit Freunden – sie entdecken, wer <i>Sie</i> wirklich sind."
     },
     "share": {
+        "think_of_someone": "Lässt dich das an jemanden denken?",
         "label": "Teilen:",
         "copy_success": "Link kopiert!",
         "copy_fail": "Kopieren fehlgeschlagen."

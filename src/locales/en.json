@@ -67,6 +67,7 @@
         "tip_3": "Share it with friends — they’ll discover <i>you</i>."
     },
     "share": {
+        "think_of_someone": "Does this make you think of someone?",
         "label": "Share:",
         "copy_success": "Link copied!",
         "copy_fail": "Failed to copy"

@@ -67,6 +67,7 @@
         "tip_3": "Partagez-le avec vos proches — ils découvriront qui vous êtes."
     },
     "share": {
+        "think_of_someone": "Cela vous fait-il penser à quelqu'un ?",
         "label": "Partager :",
         "copy_success": "Lien copié !",
         "copy_fail": "Échec du copier"
