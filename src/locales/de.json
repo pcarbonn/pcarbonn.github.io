@@ -61,10 +61,11 @@
         "starting_year": "Startjahr",
         "order": "Bestellen",
         "on": "auf",
-        "tips_title": "Tipps",
-        "tip_1": "Setzen Sie sich eine jährliche Erinnerung, um Ihre Einträge zu ergänzen.",
-        "tip_2": "Bewahren Sie es an einem sicheren Ort auf – es ist etwas Besonderes.",
-        "tip_3": "Teilen Sie es mit Freunden – sie entdecken, wer <i>Sie</i> wirklich sind."
+        "tips_title": "Einige Tipps",
+        "tip_1": "Richten Sie sich eine Erinnerung ein, um sie regelmäßig (mindestens einmal im Jahr) zu aktualisieren.",
+        "tip_2": "Haben Sie viel zu schreiben? Verwenden Sie ein Begleitnotizbuch – und notieren Sie einfach die Seitenzahl in Ihrer Agenda.",
+        "tip_3": "Bewahren Sie sie an einem sicheren Ort auf – sie ist wertvoll.",
+        "tip_4": "Teilen Sie sie mit Freunden – sie werden Sie besser kennenlernen."
     },
     "share": {
         "think_of_someone": "Lässt dich das an jemanden denken?",

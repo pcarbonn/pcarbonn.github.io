@@ -61,10 +61,11 @@
         "starting_year": "Año de inicio",
         "order": "Comprar",
         "on": "en",
-        "tips_title": "Consejos",
+        "tips_title": "Algunos consejos",
         "tip_1": "Programa un recordatorio para actualizarla regularmente (al menos una vez al año).",
-        "tip_2": "Guárdala en un lugar seguro: es un objeto valioso.",
-        "tip_3": "Compártela con tus seres queridos: descubrirán quién eres <i>tú</i>."
+        "tip_2": "¿Tienes mucho que escribir? Utiliza un cuaderno complementario e indica simplemente el número de página en tu agenda.",
+        "tip_3": "Guárdala en un lugar seguro: es un objeto valioso.",
+        "tip_4": "Compártela con tus amigos: te conocerán mejor."
     },
     "share": {
         "think_of_someone": "¿Esto te hace pensar en alguien?",

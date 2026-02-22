@@ -61,10 +61,11 @@
         "starting_year": "Startjaar",
         "order": "Bestellen",
         "on": "op",
-        "tips_title": "Tips",
-        "tip_1": "Stel een jaarlijkse herinnering in om uw agenda bij te werken.",
-        "tip_2": "Bewaar haar op een veilige plaats — het is een waardevol document.",
-        "tip_3": "Deel haar met dierbaren — zij ontdekken wie <i>u</i> werkelijk bent."
+        "tips_title": "Enkele tips",
+        "tip_1": "Stel een herinnering in om haar regelmatig (minstens één keer per jaar) bij te werken.",
+        "tip_2": "Heb je veel te schrijven? Gebruik een bijbehorend notitieboekje — en noteer gewoon het paginanummer in je agenda.",
+        "tip_3": "Bewaar haar op een veilige plek — ze is waardevol.",
+        "tip_4": "Deel haar met vrienden — ze zullen je beter leren kennen."
     },
     "share": {
         "think_of_someone": "Doet dit je aan iemand denken?",

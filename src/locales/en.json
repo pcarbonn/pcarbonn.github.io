@@ -61,10 +61,11 @@
         "starting_year": "Starting Year",
         "order": "Order",
         "on": "on",
-        "tips_title": "Tips",
+        "tips_title": "Some tips",
         "tip_1": "Set a reminder to update it regularly (at least once a year).",
-        "tip_2": "Keep it in a safe place — it’s precious.",
-        "tip_3": "Share it with friends — they’ll discover <i>you</i>."
+        "tip_2": "Have a lot to write? Use a companion notebook — and simply note the page number in your agenda.",
+        "tip_3": "Keep it in a safe place — it’s precious.",
+        "tip_4": "Share it with friends — they’ll get to know you better."
     },
     "share": {
         "think_of_someone": "Does this make you think of someone?",

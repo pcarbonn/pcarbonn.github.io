@@ -61,10 +61,11 @@
         "starting_year": "Ano de início",
         "order": "Encomendar",
         "on": "em",
-        "tips_title": "Dicas",
+        "tips_title": "Algumas dicas",
         "tip_1": "Defina um lembrete para a atualizar regularmente (pelo menos uma vez por ano).",
-        "tip_2": "Guarde-a num local seguro — é preciosa.",
-        "tip_3": "Partilhe-a com amigos — descobrirão quem <i>é</i>."
+        "tip_2": "Tem muito o que escrever? Utilize um caderno auxiliar — e basta anotar o número da página na sua agenda.",
+        "tip_3": "Guarde-a num local seguro — é preciosa.",
+        "tip_4": "Partilhe-a com amigos — eles vão passar a conhecê-lo(a) melhor."
     },
     "share": {
         "think_of_someone": "Isto faz-te lembrar alguém?",
