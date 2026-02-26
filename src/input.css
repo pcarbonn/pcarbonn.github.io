@@ -3,3 +3,11 @@
 html {
     scroll-behavior: smooth;
 }
+
+#bookSlider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#bookSlider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}

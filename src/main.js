@@ -2,9 +2,13 @@ import "./input.css";
 import { PageFlip } from "page-flip";
 
 let flipBook = null;
-const images = ["/front_cover.png", "/page_0.png", "/page_1.png", "/page_2.png", "/page_3.png"
-    , "/page_4.png", "/page_5.png", "/page_6.png", "/page_7.png"
-];
+const getImages = () => {
+    const isMobile = window.innerWidth <= 768;
+    return [(isMobile ? "/front_cover_mobile.png" : "/front_cover.png"), "/page_0.png", "/page_1.png", "/page_2.png", "/page_3.png"
+        , "/page_4.png", "/page_5.png", "/page_6.png", "/page_7.png"
+    ];
+};
+let images = getImages();
 
 /**
  * Load list of compact (1-page per year) published instances from CSV
@@ -111,71 +115,121 @@ window.openBookModal = function () {
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('hidden');
 
+    // Refresh images and cover for current screen size
+    images = getImages();
+
     // Track Preview
     trackEvent("Book Preview Opened");
 
-    // On attend un court instant que Tailwind affiche le modal
-    // pour obtenir les dimensions réelles du parent
-    setTimeout(() => {
-        if (!flipBook) {
-            flipBook = new PageFlip(document.getElementById("bookContainer"), {
-                width: 500, // Base page width
-                height: 700, // Base page height
-                size: "stretch",
-                minWidth: 100,
-                maxWidth: 2000,
-                minHeight: 100,
-                maxHeight: 2000,
+    const isMobile = window.innerWidth <= 768;
+    const container = document.getElementById("bookContainer");
+    const slider = document.getElementById("bookSlider");
 
-                showCover: true,
-                usePortrait: true,
-                flippingTime: 500,
-                clickEventForward: false,
-                useMouseEvents: true
+    if (isMobile) {
+        container.classList.add('hidden');
+        slider.classList.remove('hidden');
+
+        // Populate slider if empty
+        if (slider.children.length === 0) {
+            images.forEach(src => {
+                const pageDiv = document.createElement('div');
+                pageDiv.className = "min-w-full h-full flex items-center justify-center snap-center p-2";
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = "max-h-full max-w-full object-contain shadow-lg rounded-sm";
+                img.loading = "lazy";
+                pageDiv.appendChild(img);
+                slider.appendChild(pageDiv);
             });
 
-            // IMPORTANT: Charger les images après l'initialisation
-            flipBook.loadFromImages(images);
-
-            // Listen for page changes to hide/show navigation buttons
-            flipBook.on('flip', (e) => {
-                const pageIndex = e.data;
-                const totalPages = flipBook.getPageCount();
-                document.getElementById('prevPageBtn').style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
-                document.getElementById('nextPageBtn').style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
+            slider.addEventListener('scroll', () => {
+                const index = Math.round(slider.scrollLeft / slider.offsetWidth);
+                updateNavButtons(index, images.length);
             });
-
-            // Initial button state
-            setTimeout(() => {
-                if (flipBook) {
-                    const pageIndex = flipBook.getCurrentPageIndex();
-                    const totalPages = flipBook.getPageCount();
-                    document.getElementById('prevPageBtn').style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
-                    document.getElementById('nextPageBtn').style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
-                }
-            }, 200);
-
-            // Force an update to ensure it fits the container
-            setTimeout(() => flipBook.update(), 100);
-        } else {
-            // Si déjà initialisé, on s'assure qu'il se recalibre
-            flipBook.update();
-
-            // Update button visibility based on current page
-            const pageIndex = flipBook.getCurrentPageIndex();
-            const totalPages = flipBook.getPageCount();
-            document.getElementById('prevPageBtn').style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
-            document.getElementById('nextPageBtn').style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
         }
-    }, 150); // Legerement augmenté pour etre sur que le layout est stable
+
+        // Initial button state
+        setTimeout(() => {
+            const index = Math.round(slider.scrollLeft / slider.offsetWidth);
+            updateNavButtons(index, images.length);
+        }, 100);
+
+    } else {
+        slider.classList.add('hidden');
+        container.classList.remove('hidden');
+
+        setTimeout(() => {
+            if (!flipBook) {
+                flipBook = new PageFlip(container, {
+                    width: 500, // Base page width
+                    height: 700, // Base page height
+                    size: "stretch",
+                    minWidth: 100,
+                    maxWidth: 2000,
+                    minHeight: 100,
+                    maxHeight: 2000,
+
+                    showCover: true,
+                    usePortrait: true,
+                    flippingTime: 500,
+                    clickEventForward: false,
+                    useMouseEvents: true
+                });
+
+                flipBook.loadFromImages(images);
+
+                flipBook.on('flip', (e) => {
+                    updateNavButtons(e.data, flipBook.getPageCount());
+                });
+
+                setTimeout(() => {
+                    if (flipBook) {
+                        updateNavButtons(flipBook.getCurrentPageIndex(), flipBook.getPageCount());
+                    }
+                }, 200);
+
+                setTimeout(() => flipBook.update(), 100);
+            } else {
+                flipBook.update();
+                updateNavButtons(flipBook.getCurrentPageIndex(), flipBook.getPageCount());
+            }
+        }, 150);
+    }
+}
+
+function updateNavButtons(pageIndex, totalPages) {
+    const isMobile = window.innerWidth <= 768;
+    const prevBtn = document.getElementById('prevPageBtn');
+    const nextBtn = document.getElementById('nextPageBtn');
+
+    if (isMobile) {
+        prevBtn.style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
+        nextBtn.style.visibility = (pageIndex === totalPages - 1) ? 'hidden' : 'visible';
+    } else {
+        // PageFlip logic
+        prevBtn.style.visibility = (pageIndex === 0) ? 'hidden' : 'visible';
+        nextBtn.style.visibility = (pageIndex === totalPages - 2) ? 'hidden' : 'visible';
+    }
 }
 
 window.flipNext = function () {
-    if (flipBook) flipBook.flipNext();
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        const slider = document.getElementById('bookSlider');
+        slider.scrollBy({ left: slider.offsetWidth, behavior: 'smooth' });
+    } else if (flipBook) {
+        flipBook.flipNext();
+    }
 }
 
 window.flipPrev = function () {
-    if (flipBook) flipBook.flipPrev();
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        const slider = document.getElementById('bookSlider');
+        slider.scrollBy({ left: -slider.offsetWidth, behavior: 'smooth' });
+    } else if (flipBook) {
+        flipBook.flipPrev();
+    }
 }
 
 window.closeBookModal = () => {

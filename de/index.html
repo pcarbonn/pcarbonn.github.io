@@ -194,8 +194,11 @@
                     onclick="window.openBookModal()">
 
                     <!-- Cover Image -->
-                    <img src="/front_cover.png" alt="100-Year Agenda Cover"
-                        class="h-auto max-h-[60vh] md:max-h-[70vh] w-auto max-w-sm block relative z-10 rounded-r-sm shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                    <picture>
+                        <source srcset="/front_cover_mobile.png" media="(max-width: 768px)">
+                        <img src="/front_cover.png" alt="100-Year Agenda Cover"
+                            class="h-auto max-h-[60vh] md:max-h-[70vh] w-auto max-w-sm block relative z-10 rounded-r-sm shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                    </picture>
 
                     <div
                         class="absolute -bottom-6 left-0 right-0 text-center text-[10px] text-gray-400 uppercase font-black tracking-widest">
@@ -293,7 +296,10 @@
 
                 <!-- Zone du Livre -->
                 <div id="bookWrapper" class="flex-1 bg-gray-50 p-4 md:p-8 min-h-0 overflow-hidden relative">
-                    <div id="bookContainer" class="w-full h-full mx-auto"></div>
+                    <div id="bookContainer" class="w-full h-full mx-auto md:block hidden"></div>
+                    <div id="bookSlider"
+                        class="w-full h-full mx-auto flex overflow-x-auto snap-x snap-mandatory md:hidden"></div>
+
 
                     <!-- Navigation Buttons -->
                     <button id="prevPageBtn" onclick="window.flipPrev()"
