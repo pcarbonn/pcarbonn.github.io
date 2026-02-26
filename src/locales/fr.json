@@ -21,8 +21,9 @@
         "order": "Commander",
         "on": "sur",
         "shipping": "Livraison dans le monde entier.",
-        "year_error": "L'année de départ doit être postérieure à 1950.",
-        "not_available": "Ce livre n'est pas encore disponible."
+        "year_error": "L'année de départ doit être supérieure à 1950.",
+        "not_available": "Ce livre n'est pas encore disponible",
+        "lulu_tooltip": "Lulu.com est un service d'impression à la demande"
     },
     "modal": {
         "title": "Feuilleter"

@@ -22,7 +22,8 @@
         "on": "op",
         "shipping": "Wereldwijde verzending beschikbaar.",
         "year_error": "Het startjaar moet na 1950 liggen.",
-        "not_available": "Dit boek is momenteel nog niet beschikbaar."
+        "not_available": "Dit boek is nog niet beschikbaar",
+        "lulu_tooltip": "Lulu.com is een print-on-demand uitgeverij"
     },
     "modal": {
         "title": "Inkijkexemplaar"

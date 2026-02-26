@@ -22,7 +22,8 @@
         "on": "on",
         "shipping": "Worldwide Shipping available.",
         "year_error": "The starting year must be above 1950.",
-        "not_available": "This book is not yet available"
+        "not_available": "This book is not yet available",
+        "lulu_tooltip": "Lulu.com is a print-on-demand publishing service"
     },
     "modal": {
         "title": "Look inside"

@@ -22,7 +22,8 @@
         "on": "で",
         "shipping": "世界中へ配送いたします。",
         "year_error": "開始年は1950年以降である必要があります。",
-        "not_available": "この本は現在ご利用いただけません。"
+        "not_available": "この本はまだ利用できません",
+        "lulu_tooltip": "Lulu.com はプリントオンデマンドの出版サービスです"
     },
     "modal": {
         "title": "中を見る"

@@ -22,7 +22,8 @@
         "on": "em",
         "shipping": "Envio disponível para todo o mundo.",
         "year_error": "O ano de início deve ser posterior a 1950.",
-        "not_available": "Este livro ainda não está disponível."
+        "not_available": "Este livro ainda não está disponível",
+        "lulu_tooltip": "Lulu.com é um serviço de impressão sob demanda"
     },
     "modal": {
         "title": "Ver interior"
@@ -75,6 +76,6 @@
     },
     "footer": {
         "rights": "© 2026 Pierre Carbonnelle. Todos os direitos reservados.",
-        "contact": "Contacto"
+        "contact": "Contato"
     }
 }

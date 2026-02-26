@@ -21,8 +21,9 @@
         "order": "Acquista",
         "on": "su",
         "shipping": "Spedizione disponibile in tutto il mondo.",
-        "year_error": "L'anno di inizio deve essere successivo al 1950.",
-        "not_available": "Questo libro non è ancora disponibile."
+        "year_error": "L'anno di inizio deve essere superiore al 1950.",
+        "not_available": "Questo libro non è ancora disponibile",
+        "lulu_tooltip": "Lulu.com è un servizio di stampa su richiesta"
     },
     "modal": {
         "title": "Sfoglia"
@@ -75,6 +76,6 @@
     },
     "footer": {
         "rights": "© 2026 Pierre Carbonnelle. Tutti i diritti riservati.",
-        "contact": "Contatto"
+        "contact": "Contatti"
     }
 }

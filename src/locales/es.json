@@ -22,7 +22,8 @@
         "on": "en",
         "shipping": "Envío disponible a todo el mundo.",
         "year_error": "El año de inicio debe ser posterior a 1950.",
-        "not_available": "Este libro aún no está disponible."
+        "not_available": "Este libro aún no está disponible.",
+        "lulu_tooltip": "Lulu.com es un servicio de impresión bajo demanda"
     },
     "modal": {
         "title": "Ver interior"

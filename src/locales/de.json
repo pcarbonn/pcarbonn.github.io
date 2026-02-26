@@ -22,7 +22,8 @@
         "on": "auf",
         "shipping": "Weltweiter Versand verfügbar.",
         "year_error": "Das Startjahr muss nach 1950 liegen.",
-        "not_available": "Dieses Buch ist derzeit noch nicht verfügbar."
+        "not_available": "Dieses Buch ist noch nicht verfügbar",
+        "lulu_tooltip": "Lulu.com ist ein Print-on-Demand-Dienst"
     },
     "modal": {
         "title": "Blick ins Buch"
