@@ -16,7 +16,7 @@
     },
     "hero": {
         "title": "De 100-Jarenagenda",
-        "subtitle": "Om uw levensverhaal blijvend vast te leggen.",
+        "subtitle": "Om het verhaal van een leven te bewaren.",
         "look_inside": "Inkijkexemplaar",
         "starting_year": "Startjaar",
         "order": "Bestellen",
@@ -27,12 +27,13 @@
         "lulu_tooltip": "Lulu.com is een print-on-demand uitgeverij"
     },
     "modal": {
-        "title": "Inkijkexemplaar"
+        "title": "Inkijkexemplaar",
+        "close": "Sluiten"
     },
     "features": {
         "section_title": "Kenmerken",
         "why_title": "Waarom kiezen voor deze agenda?",
-        "why_text": "De 100-Jarenagenda is meer dan een gewone planner — het is een persoonlijk tijdsdocument. Ze biedt ruimte om vast te leggen wat er echt toe doet: familievieringen, professionele successen, belangrijke gebeurtenissen, gezondheidsmomenten en persoonlijke gedachten.<br><br>Over een periode van honderd jaar nodigt deze agenda u uit om afstand te nemen van de digitale drukte en opnieuw stil te staan bij wat werkelijk belangrijk is.",
+        "why_text": "De 100-Jarenagenda is geen gewone planner: het is een blijvend document van een levensverhaal. Ze biedt een eigen plek om de mijlpalen vast te leggen die er echt toe doen — familievieringen, professionele successen, het gezondheidsverloop en persoonlijke gedachten.<br><br>Over een periode van honderd jaar nodigt deze agenda uit om afstand te nemen van de digitale drukte en opnieuw stil te staan bij wat werkelijk belangrijk is.",
         "history": "Geschiedenis",
         "journal": "Dagboek",
         "growth": "Persoonlijke groei",

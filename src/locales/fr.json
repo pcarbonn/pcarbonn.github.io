@@ -16,7 +16,7 @@
     },
     "hero": {
         "title": "L'Agenda de 100 Ans",
-        "subtitle": "Pour garder une trace durable de votre parcours de vie.",
+        "subtitle": "Pour préserver le récit d'une vie.",
         "look_inside": "Feuilleter",
         "starting_year": "Année de départ",
         "order": "Commander",
@@ -27,12 +27,13 @@
         "lulu_tooltip": "Lulu.com est un service d'impression à la demande"
     },
     "modal": {
-        "title": "Feuilleter"
+        "title": "Un coup d'oeil à l'intérieur",
+        "close": "Fermer"
     },
     "features": {
         "section_title": "Caractéristiques",
         "why_title": "Pourquoi choisir cet agenda ?",
-        "why_text": "L'Agenda de 100 Ans est bien plus qu'un simple agenda : c'est un véritable témoin de votre parcours de vie. Il vous offre un espace dédié pour consigner les moments qui comptent vraiment — célébrations familiales, réussites professionnelles, événements marquants, souvenirs et réflexions personnelles.<br><br>Sur un siècle entier, il vous invite à prendre du recul face à l'instantanéité numérique et à vous recentrer sur l'essentiel.",
+        "why_text": "L'Agenda de 100 Ans n'est pas un agenda classique : c’est un témoin précieux du récit d'une vie. Il offre un espace dédié pour consigner les moments qui comptent vraiment — célébrations familiales, réussites professionnelles, suivi de santé et réflexions personnelles.<br><br>Sur un siècle entier, il invite à prendre du recul face à l’instantanéité numérique et à se reconnecter à l'essentiel.",
         "history": "Histoire",
         "journal": "Journal",
         "growth": "Épanouissement personnel",

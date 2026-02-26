@@ -1,8 +1,8 @@
 {
     "meta": {
         "title": "The 100-Year Agenda - A Life Journal",
-        "description": "The 100-Year Agenda is a lasting record of your life's journey. Track milestones, reflections, and memories with this unique journal. Starting years from 1950-2060 available.",
-        "og_description": "Document your life's journey across a full century. A unique journal for tracking milestones, reflections, and telling your story.",
+        "description": "The 100-Year Agenda is designed to preserve the story of a lifetime. Track milestones, reflections, and memories with this unique journal. Starting years from 1950-2060 available.",
+        "og_description": "To preserve the story of a lifetime. A unique journal for tracking milestones, reflections, and documenting a century-long journey.",
         "social_image": "https://100-year-agenda.com/social.png",
         "url": "https://100-year-agenda.com/",
         "lang": "en"
@@ -16,7 +16,7 @@
     },
     "hero": {
         "title": "The 100-Year Agenda",
-        "subtitle": "For a lasting record of your life’s journey.",
+        "subtitle": "To preserve the story of a lifetime.",
         "look_inside": "Look inside",
         "starting_year": "Starting Year",
         "order": "Order",
@@ -27,12 +27,13 @@
         "lulu_tooltip": "Lulu.com is a print-on-demand publishing service"
     },
     "modal": {
-        "title": "Look inside"
+        "title": "Look inside",
+        "close": "Close"
     },
     "features": {
         "section_title": "Features",
         "why_title": "Why Use This Agenda?",
-        "why_text": "The 100-Year Agenda is more than just a planner—it’s a lasting record of your life’s journey. It offers a dedicated space to document the milestones that truly matter, from family celebrations and professional successes to health history and personal reflections.<br><br>Spanning a full century, this agenda helps you step away from the frenzy of the digital present and reconnect with what is essential.",
+        "why_text": "The 100-Year Agenda is not a planner: it’s a lasting record of a life’s journey. It offers a dedicated space to document the milestones that truly matter — family celebrations, professional successes, health tracking, and personal reflections.<br><br>Spanning a full century, this agenda helps you step away from the frenzy of the digital present and reconnect with what is essential.",
         "history": "History",
         "journal": "Journal",
         "growth": "Personal Growth",

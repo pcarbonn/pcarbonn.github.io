@@ -1,8 +1,8 @@
 {
     "meta": {
         "title": "Die 100-Jahre-Agenda – Ein Tagebuch für ein ganzes Leben",
-        "description": "Die 100-Jahre-Agenda ist ein wertvolles Zeugnis Ihres Lebenswegs. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1950 bis 2060 verfügbar.",
-        "og_description": "Halten Sie Ihren Lebensweg über ein ganzes Jahrhundert fest. Ein einzigartiges Tagebuch für Meilensteine, Erinnerungen und persönliche Gedanken.",
+        "description": "Die 100-Jahre-Agenda ist dafür konzipiert, die Geschichte eines Lebens zu bewahren. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1950 bis 2060 verfügbar.",
+        "og_description": "Um die Geschichte eines Lebens zu bewahren. Ein einzigartiges Tagebuch für Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert.",
         "social_image": "https://100-year-agenda.com/social-de.png",
         "url": "https://100-year-agenda.com/de/",
         "lang": "de"
@@ -16,7 +16,7 @@
     },
     "hero": {
         "title": "Die 100-Jahre-Agenda",
-        "subtitle": "Um Ihren Lebensweg dauerhaft festzuhalten.",
+        "subtitle": "Um ganzes Leben festzuhalten.",
         "look_inside": "Blick ins Buch",
         "starting_year": "Startjahr",
         "order": "Bestellen",
@@ -27,12 +27,13 @@
         "lulu_tooltip": "Lulu.com ist ein Print-on-Demand-Dienst"
     },
     "modal": {
-        "title": "Blick ins Buch"
+        "title": "Blick ins Buch",
+        "close": "Schließen"
     },
     "features": {
         "section_title": "Eigenschaften",
         "why_title": "Warum diese Agenda?",
-        "why_text": "Die 100-Jahre-Agenda ist weit mehr als ein gewöhnlicher Planer – sie ist ein persönliches Zeitdokument. Sie bietet Raum für alles, was wirklich zählt: Familienfeste, berufliche Erfolge, prägende Ereignisse, gesundheitliche Entwicklungen und persönliche Gedanken.<br><br>Über ein ganzes Jahrhundert hinweg lädt sie dazu ein, Abstand vom schnellen digitalen Alltag zu gewinnen und sich auf das Wesentliche zu besinnen.",
+        "why_text": "Die 100-Jahre-Agenda ist kein gewöhnlicher Planer: sie ist ein bleibendes Zeugnis einer Lebensreise. Sie bietet Raum für alles, was wirklich zählt — Familienfeste, berufliche Erfolge, den Gesundheitsverlauf und persönliche Gedanken.<br><br>Über ein ganzes Jahrhundert hinweg lädt sie dazu ein, Abstand vom schnellen digitalen Alltag zu gewinnen und sich auf das Wesentliche zu besinnen.",
         "history": "Geschichte",
         "journal": "Tagebuch",
         "growth": "Persönliche Entwicklung",

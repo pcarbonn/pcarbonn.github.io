@@ -16,7 +16,7 @@
     },
     "hero": {
         "title": "La Agenda de 100 Años",
-        "subtitle": "Para conservar una huella duradera de tu vida.",
+        "subtitle": "Para preservar el relato de una vida.",
         "look_inside": "Ver interior",
         "starting_year": "Año de inicio",
         "order": "Comprar",
@@ -27,12 +27,13 @@
         "lulu_tooltip": "Lulu.com es un servicio de impresión bajo demanda"
     },
     "modal": {
-        "title": "Ver interior"
+        "title": "Ver interior",
+        "close": "Cerrar"
     },
     "features": {
         "section_title": "Características",
         "why_title": "¿Por qué elegir esta agenda?",
-        "why_text": "La Agenda de 100 Años es mucho más que un simple planificador: es un testimonio personal de tu vida. Ofrece un espacio dedicado para registrar los momentos que realmente importan, desde celebraciones familiares y logros profesionales hasta experiencias significativas, recuerdos y reflexiones personales.<br><br>A lo largo de un siglo completo, te invita a tomar distancia del ritmo acelerado del mundo digital y a reconectar con lo esencial.",
+        "why_text": "La Agenda de 100 Años no es un planificador común: es un registro duradero del relato de una vida. Ofrece un espacio dedicado para documentar los hitos que realmente importan — celebraciones familiares, logros profesionales, seguimiento de salud y reflexiones personales.<br><br>A lo largo de un siglo completo, esta agenda invita a distanciarse del frenesí digital y a reconectar con lo esencial.",
         "history": "Historia",
         "journal": "Diario",
         "growth": "Crecimiento personal",
