@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "The 100-Year Agenda - A Life Journal",
-        "description": "The 100-Year Agenda is designed to preserve the story of a lifetime. Track milestones, reflections, and memories with this unique journal. Starting years from 1950-2060 available.",
+        "description": "The 100-Year Agenda is designed to preserve the story of a lifetime. Track milestones, reflections, and memories with this unique journal. Starting years from 1950 to present available.",
         "og_description": "To preserve the story of a lifetime. A unique journal for tracking milestones, reflections, and documenting a century-long journey.",
         "social_image": "https://100-year-agenda.com/social.png",
         "url": "https://100-year-agenda.com/",
@@ -17,6 +17,7 @@
     "hero": {
         "title": "The 100-Year Agenda",
         "subtitle": "To preserve the story of a lifetime.",
+        "specs": "107 A4 pages • Hardcover",
         "look_inside": "Look inside",
         "starting_year": "Starting Year",
         "order": "Order",
@@ -37,7 +38,7 @@
         "history": "History",
         "journal": "Journal",
         "growth": "Personal Growth",
-        "starting_year_val": "Birth (or starting) year: ",
+        "starting_year_val": "Starting year: ",
         "starting_year_range": "selectable from 1950 to present",
         "design_val": "Language-neutral design: ",
         "design_text": "suitable for use in any language",

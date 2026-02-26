@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "L'Agenda de 100 Ans - Un journal pour toute une vie",
-        "description": "L'Agenda de 100 Ans est un précieux témoin de votre parcours de vie. Notez les étapes marquantes, vos réflexions et vos souvenirs grâce à ce journal unique. Années de départ disponibles de 1950 à 2060.",
+        "description": "L'Agenda de 100 Ans est un précieux témoin de votre parcours de vie. Notez les étapes marquantes, vos réflexions et vos souvenirs grâce à ce journal unique. Années de départ disponibles de 1950 à aujourd'hui.",
         "og_description": "Retracez votre parcours sur un siècle complet. Un journal unique pour consigner les moments clés, vos réflexions et raconter votre histoire.",
         "social_image": "https://100-year-agenda.com/social-fr.png",
         "url": "https://100-year-agenda.com/fr/",
@@ -17,6 +17,7 @@
     "hero": {
         "title": "L'Agenda de 100 Ans",
         "subtitle": "Pour préserver le récit d'une vie.",
+        "specs": "107 pages A4 • Couverture rigide",
         "look_inside": "Feuilleter",
         "starting_year": "Année de départ",
         "order": "Commander",
@@ -37,7 +38,7 @@
         "history": "Histoire",
         "journal": "Journal",
         "growth": "Épanouissement personnel",
-        "starting_year_val": "Année de naissance (ou de départ) : ",
+        "starting_year_val": "Année de départ : ",
         "starting_year_range": "au choix de 1950 à aujourd'hui",
         "design_val": "International : ",
         "design_text": "adapté à toutes les langues",

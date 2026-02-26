@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "L'Agenda dei 100 Anni - Un diario per tutta la vita",
-        "description": "L'Agenda dei 100 Anni è una preziosa testimonianza del tuo percorso di vita. Annota traguardi, ricordi e riflessioni lungo un intero secolo con questo diario unico. Anni di inizio disponibili dal 1950 al 2060.",
+        "description": "L'Agenda dei 100 Anni è una preziosa testimonianza del tuo percorso di vita. Annota traguardi, ricordi e riflessioni lungo un intero secolo con questo diario unico. Anni di inizio disponibili dal 1950 ad oggi.",
         "og_description": "Racconta il tuo percorso lungo un secolo intero. Un diario unico per custodire momenti importanti, ricordi e riflessioni personali.",
         "social_image": "https://100-year-agenda.com/social-it.png",
         "url": "https://100-year-agenda.com/it/",
@@ -17,6 +17,7 @@
     "hero": {
         "title": "L'Agenda dei 100 Anni",
         "subtitle": "Per preservare il racconto di una vita.",
+        "specs": "107 pagine A4 • Copertina rigida",
         "look_inside": "Sfoglia",
         "starting_year": "Anno di inizio",
         "order": "Acquista",
@@ -37,7 +38,7 @@
         "history": "Storia",
         "journal": "Diario",
         "growth": "Crescita personale",
-        "starting_year_val": "Anno di nascita (o di inizio): ",
+        "starting_year_val": "Anno di inizio: ",
         "starting_year_range": "selezionabile dal 1950 ad oggi",
         "design_val": "Design neutro: ",
         "design_text": "adatto a qualsiasi lingua",

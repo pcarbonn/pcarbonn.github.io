@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "A Agenda de 100 Anos – Um Diário para a Vida",
-        "description": "A Agenda de 100 Anos foi concebida para preservar o relato de uma vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1950 e 2060.",
+        "description": "A Agenda de 100 Anos foi concebida para preservar o relato de uma vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1950 e o presente.",
         "og_description": "Para preservar o relato de uma vida. Um diário único para registar marcos, reflexões e documentar uma jornada de um século.",
         "social_image": "https://100-year-agenda.com/social-pt.png",
         "url": "https://100-year-agenda.com/pt/",
@@ -17,6 +17,7 @@
     "hero": {
         "title": "A Agenda de 100 Anos",
         "subtitle": "Para preservar o relato de uma vida.",
+        "specs": "107 páginas A4 • Capa dura",
         "look_inside": "Ver interior",
         "starting_year": "Ano de início",
         "order": "Encomendar",
@@ -37,7 +38,7 @@
         "history": "História",
         "journal": "Diário",
         "growth": "Crescimento pessoal",
-        "starting_year_val": "Ano de nascimento (ou de início): ",
+        "starting_year_val": "Ano de início: ",
         "starting_year_range": "selecionável entre 1950 e o presente",
         "design_val": "Design neutro: ",
         "design_text": "adequado para utilização em qualquer idioma",

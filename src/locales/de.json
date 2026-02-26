@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Die 100-Jahre-Agenda – Ein Tagebuch für ein ganzes Leben",
-        "description": "Die 100-Jahre-Agenda ist dafür konzipiert, die Geschichte eines Lebens zu bewahren. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1950 bis 2060 verfügbar.",
+        "description": "Die 100-Jahre-Agenda ist dafür konzipiert, die Geschichte eines Lebens zu bewahren. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1950 bis heute verfügbar.",
         "og_description": "Um die Geschichte eines Lebens zu bewahren. Ein einzigartiges Tagebuch für Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert.",
         "social_image": "https://100-year-agenda.com/social-de.png",
         "url": "https://100-year-agenda.com/de/",
@@ -17,6 +17,7 @@
     "hero": {
         "title": "Die 100-Jahre-Agenda",
         "subtitle": "Um ganzes Leben festzuhalten.",
+        "specs": "107 Seiten A4 • Hardcover",
         "look_inside": "Blick ins Buch",
         "starting_year": "Startjahr",
         "order": "Bestellen",
@@ -37,7 +38,7 @@
         "history": "Geschichte",
         "journal": "Tagebuch",
         "growth": "Persönliche Entwicklung",
-        "starting_year_val": "Geburtsjahr (oder Startjahr): ",
+        "starting_year_val": "Startjahr: ",
         "starting_year_range": "wählbar von 1950 bis heute",
         "design_val": "Sprachneutrales Design: ",
         "design_text": "in jeder Sprache nutzbar",
