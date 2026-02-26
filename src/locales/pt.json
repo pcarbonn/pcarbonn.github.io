@@ -4,7 +4,8 @@
         "description": "A Agenda de 100 Anos é um registo duradouro da sua jornada de vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1950 e 2060.",
         "og_description": "Documente a sua jornada de vida ao longo de um século inteiro. Um diário único para registar marcos, reflexões e contar a sua história.",
         "social_image": "https://100-year-agenda.com/social-pt.png",
-        "url": "https://100-year-agenda.com/pt/"
+        "url": "https://100-year-agenda.com/pt/",
+        "lang": "pt"
     },
     "nav": {
         "features": "Características",

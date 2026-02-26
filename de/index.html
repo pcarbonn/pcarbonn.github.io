@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="__i18n:meta.lang__">
 
 <head>
     <meta charset="UTF-8">
@@ -48,8 +48,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "The 100-Year Agenda",
-      "description": "A lasting record of your life's journey spanning a full century. Features yearly calendars and dedicated note pages for reflections and milestones.",
+      "name": "__i18n:hero.title__",
+      "description": "__i18n:meta.og_description__",
       "image": "https://100-year-agenda.com/front_cover.png",
       "brand": {
         "@type": "Brand",
@@ -71,6 +71,23 @@
         "ratingValue": "5",
         "reviewCount": "1"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "__i18n:nav.breadcrumb_life_planning__",
+        "item": "__i18n:meta.url__"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "__i18n:hero.title__",
+        "item": "__i18n:meta.url__"
+      }]
     }
     </script>
 

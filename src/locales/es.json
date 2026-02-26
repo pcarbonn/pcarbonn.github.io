@@ -4,7 +4,8 @@
         "description": "La Agenda de 100 Años es un valioso testimonio de tu trayectoria vital. Registra hitos, recuerdos y reflexiones a lo largo de un siglo completo con este diario único. Años de inicio disponibles de 1950 a 2060.",
         "og_description": "Recorre tu trayectoria a lo largo de un siglo. Un diario único para registrar momentos clave, recuerdos y reflexiones personales.",
         "social_image": "https://100-year-agenda.com/social-es.png",
-        "url": "https://100-year-agenda.com/es/"
+        "url": "https://100-year-agenda.com/es/",
+        "lang": "es"
     },
     "nav": {
         "features": "Características",

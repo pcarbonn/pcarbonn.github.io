@@ -4,7 +4,8 @@
         "description": "L'Agenda de 100 Ans est un précieux témoin de votre parcours de vie. Notez les étapes marquantes, vos réflexions et vos souvenirs grâce à ce journal unique. Années de départ disponibles de 1950 à 2060.",
         "og_description": "Retracez votre parcours sur un siècle complet. Un journal unique pour consigner les moments clés, vos réflexions et raconter votre histoire.",
         "social_image": "https://100-year-agenda.com/social-fr.png",
-        "url": "https://100-year-agenda.com/fr/"
+        "url": "https://100-year-agenda.com/fr/",
+        "lang": "fr"
     },
     "nav": {
         "features": "Caractéristiques",

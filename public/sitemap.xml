@@ -1,9 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English (Default) -->
   <url>
-    <loc>https://100-year-agenda.com</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://100-year-agenda.com/</loc>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
   </url>
+
+  <!-- French -->
+  <url>
+    <loc>https://100-year-agenda.com/fr/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
+  <!-- Spanish -->
+  <url>
+    <loc>https://100-year-agenda.com/es/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
+  <!-- Dutch -->
+  <url>
+    <loc>https://100-year-agenda.com/nl/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
+  <!-- German -->
+  <url>
+    <loc>https://100-year-agenda.com/de/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
+  <!-- Italian -->
+  <url>
+    <loc>https://100-year-agenda.com/it/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
+  <!-- Portuguese -->
+  <url>
+    <loc>https://100-year-agenda.com/pt/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
+  <!-- Japanese -->
+  <url>
+    <loc>https://100-year-agenda.com/ja/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://100-year-agenda.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://100-year-agenda.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://100-year-agenda.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://100-year-agenda.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://100-year-agenda.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://100-year-agenda.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://100-year-agenda.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://100-year-agenda.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://100-year-agenda.com/"/>
+  </url>
+
 </urlset>
