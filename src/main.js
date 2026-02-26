@@ -4,7 +4,7 @@ import { PageFlip } from "page-flip";
 let flipBook = null;
 const getImages = () => {
     const isMobile = window.innerWidth <= 768;
-    return [(isMobile ? "/front_cover_mobile.png" : "/front_cover.png"), "/page_0.png", "/page_1.png", "/page_2.png", "/page_3.png"
+    return [(isMobile ? "/front_cover_mobile_look.png" : "/front_cover_look.png"), "/page_0.png", "/page_1.png", "/page_2.png", "/page_3.png"
         , "/page_4.png", "/page_5.png", "/page_6.png", "/page_7.png"
     ];
 };
