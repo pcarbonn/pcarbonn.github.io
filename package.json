@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "watch": "vite"
+    "watch": "vite",
+    "sync-index": "cp index.html de/index.html && cp index.html es/index.html && cp index.html fr/index.html && cp index.html it/index.html && cp index.html ja/index.html && cp index.html nl/index.html && cp index.html pt/index.html"
   },
   "repository": {
     "type": "git",
