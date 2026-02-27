@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-html {
+html,
+body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 
 #bookSlider {
