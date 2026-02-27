@@ -81,7 +81,10 @@ function updateLookInsideVisibility() {
 
 document.addEventListener('DOMContentLoaded', () => {
     updateLookInsideVisibility();
-    window.addEventListener('resize', updateLookInsideVisibility);
+    window.addEventListener('resize', () => {
+        updateLookInsideVisibility();
+        resizeModal();
+    });
 
     const langSelector = document.getElementById('lang-selector');
     const langSelectorMobile = document.getElementById('lang-selector-mobile');
@@ -155,6 +158,8 @@ window.openBookModal = function () {
 
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('hidden');
+
+    resizeModal();
 
     // Refresh images and cover for current screen size
     images = getImages();
@@ -236,6 +241,32 @@ window.openBookModal = function () {
             }
         }, 150);
     }
+}
+
+/**
+ * Resizes the modal to fit the book aspect ratio while maximizing viewport usage.
+ */
+function resizeModal() {
+    const modal = document.getElementById('modalOverlay');
+    const content = modal?.querySelector('.bg-white');
+    if (!content || modal.classList.contains('hidden')) return;
+
+    const mobile = window.innerWidth <= 768;
+    const headerH = content.querySelector('.border-b')?.offsetHeight || 0;
+    const pad = mobile ? 32 : 64; // Inner bookWrapper padding
+    const ext = 32; // Outer modalOverlay padding
+
+    const maxW = window.innerWidth - ext - pad;
+    const maxH = Math.min(window.innerHeight - ext, window.innerHeight * 0.95) - headerH - pad;
+
+    // Favor single page (5/7) on mobile or very tall displays (portrait tablets/laptops)
+    const ratio = (mobile || maxH / maxW > 1.1) ? 5 / 7 : 10 / 7;
+    const w = Math.min(maxW, maxH * ratio);
+
+    content.style.width = Math.floor(w + pad) + 'px';
+    content.style.height = Math.floor(w / ratio + pad + headerH) + 'px';
+
+    if (flipBook) setTimeout(() => flipBook.update(), 50);
 }
 
 function updateNavButtons(pageIndex, totalPages) {
