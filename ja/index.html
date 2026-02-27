@@ -190,7 +190,8 @@
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex flex-col md:flex-row gap-12 scroll-mt-20 items-center justify-center">
             <!-- Product Image -->
             <div class="w-full md:w-[45%] flex justify-center items-start">
-                <div class="relative group w-fit h-fit max-h-[60vh] md:max-h-[70vh] cursor-pointer"
+                <div id="look-inside-wrapper"
+                    class="relative group w-fit h-fit max-h-[60vh] md:max-h-[70vh] cursor-pointer"
                     onclick="window.openBookModal()">
 
                     <!-- Cover Image -->
@@ -206,7 +207,7 @@
                     </div>
 
                     <!-- Bouton d'ouverture -->
-                    <div class="absolute bottom-0 right-0 translate-y-1/2 z-30">
+                    <div id="look-inside-btn-container" class="absolute bottom-0 right-0 translate-y-1/2 z-30">
                         <button onclick="window.openBookModal()"
                             class="bg-[#EF4444] hover:bg-[#DC2626] text-white text-sm font-bold py-2 px-6 rounded-full shadow-lg transition-colors whitespace-nowrap">
                             __i18n:hero.look_inside__

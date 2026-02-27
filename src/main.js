@@ -43,8 +43,46 @@ const trackEvent = (eventName, properties = {}) => {
     }
 };
 
-// --- Language Switcher Logic ---
+// --- Look Inside Visibility Logic ---
+const getMinViewportSize = () => {
+    const isMobile = window.innerWidth <= 768;
+    // Header (approx 60px) + bookWrapper padding (p-4 = 32px or md:p-8 = 64px) + modalOverlay padding (p-4 = 32px)
+    const verticalOverhead = 60 + (isMobile ? 32 : 64) + 32;
+    const horizontalOverhead = (isMobile ? 32 : 64) + 32;
+
+    // Minimum readable page height (300px)
+    const minPageHeight = 300;
+    // On mobile, one page at a time (5/7 ratio).
+    // On desktop, PageFlip might show two pages (10/7 ratio) depending on aspect ratio.
+    const minPageWidth = isMobile ? (minPageHeight * 5 / 7) : (minPageHeight * 10 / 7);
+
+    return {
+        width: Math.ceil(minPageWidth + horizontalOverhead),
+        height: Math.ceil((minPageHeight + verticalOverhead) / 0.95)
+    };
+};
+
+function updateLookInsideVisibility() {
+    const wrapper = document.getElementById('look-inside-wrapper');
+    const btnContainer = document.getElementById('look-inside-btn-container');
+    if (!wrapper || !btnContainer) return;
+
+    const minSize = getMinViewportSize();
+    const isLargeEnough = window.innerWidth >= minSize.width && window.innerHeight >= minSize.height;
+
+    if (isLargeEnough) {
+        btnContainer.classList.remove('hidden');
+        wrapper.style.cursor = 'pointer';
+    } else {
+        btnContainer.classList.add('hidden');
+        wrapper.style.cursor = 'default';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    updateLookInsideVisibility();
+    window.addEventListener('resize', updateLookInsideVisibility);
+
     const langSelector = document.getElementById('lang-selector');
     const langSelectorMobile = document.getElementById('lang-selector-mobile');
 
@@ -112,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.openBookModal = function () {
+    const minSize = getMinViewportSize();
+    if (window.innerWidth < minSize.width || window.innerHeight < minSize.height) return;
+
     const modal = document.getElementById('modalOverlay');
     modal.classList.remove('hidden');
 
