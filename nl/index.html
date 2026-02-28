@@ -51,16 +51,55 @@
       "name": "__i18n:hero.title__",
       "description": "__i18n:meta.og_description__",
       "image": "https://100-year-agenda.com/front_cover_mobile.png",
+      "sku": "100-YEAR-AGENDA",
+      "mpn": "100-YEAR-AGENDA",
       "brand": {
         "@type": "Brand",
-        "name": "The 100-Year Agenda"
+        "name": "The 100-Year Agenda",
+        "url": "https://100-year-agenda.com/"
       },
       "offers": {
         "@type": "Offer",
         "price": "17.49",
         "priceCurrency": "EUR",
-        "availability": "https://schema.org/MadeToOrder",
-        "url": "https://www.lulu.com/shop",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": "__i18n:meta.url__",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "CH",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "6.00",
+            "currency": "EUR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "CH"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 3,
+              "unitCode": "d"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 10,
+              "unitCode": "d"
+            }
+          }
+        },
         "seller": {
           "@type": "Organization",
           "name": "Lulu.com"
@@ -80,8 +119,8 @@
       "itemListElement": [{
         "@type": "ListItem",
         "position": 1,
-        "name": "__i18n:nav.breadcrumb_life_planning__",
-        "item": "__i18n:meta.url__"
+        "name": "__i18n:nav.breadcrumb_agenda__",
+        "item": "https://100-year-agenda.com/"
       },{
         "@type": "ListItem",
         "position": 2,
@@ -220,9 +259,10 @@
             <div class="w-full md:w-[55%] flex flex-col justify-center">
                 <nav
                     class="text-xs font-medium text-gray-400 mb-6 uppercase tracking-widest flex flex-wrap items-center gap-2">
-                    <a href="#" class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_agenda__</a>
+                    <a href="https://100-year-agenda.com/"
+                        class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_agenda__</a>
                     <span>/</span>
-                    <a href="#" class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_life_planning__</a>
+                    <a href="__i18n:meta.url__" class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_life_planning__</a>
                 </nav>
 
                 <h1 class="text-4xl md:text-5xl font-black leading-tight mb-2 tracking-tight">__i18n:hero.title__</h1>
