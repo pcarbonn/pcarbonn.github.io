@@ -34,11 +34,42 @@ loadInstances();
  * Helper to track events with Cloudflare Zaraz
  */
 const trackEvent = (eventName, properties = {}) => {
+    // Cloudflare Zaraz
     if (typeof zaraz !== 'undefined') {
         try {
             zaraz.track(eventName, properties);
         } catch (e) {
             console.error('Zaraz track error:', e);
+        }
+    }
+
+    // GoatCounter
+    if (window.goatcounter && window.goatcounter.count) {
+        try {
+            // Path starts with /click/ and replaces spaces with hyphens
+            // Language is included ONLY for Order clicks
+            let pathPrefix = '/click/';
+            if (eventName === 'Order') {
+                const languages = ["fr", "es", "nl", "de", "it", "pt", "ja"];
+                const lang = languages.find(l => window.location.pathname.startsWith(`/${l}/`)) || "en";
+                pathPrefix += `${lang}/`;
+            }
+
+            let eventDetail = eventName;
+            if (properties.location) {
+                eventDetail += `-${properties.location}`;
+            } else if (properties.platform) {
+                eventDetail += `-${properties.platform}`;
+            }
+
+            const eventPath = (pathPrefix + eventDetail).replace(/\s+/g, '-');
+
+            window.goatcounter.count({
+                path: eventPath,
+                event: true,
+            });
+        } catch (e) {
+            console.error('GoatCounter track error:', e);
         }
     }
 };
@@ -165,7 +196,7 @@ window.openBookModal = function () {
     images = getImages();
 
     // Track Preview
-    trackEvent("Book Preview Opened");
+    trackEvent("LookInside");
 
     const isMobile = window.innerWidth <= 768;
     const container = document.getElementById("bookContainer");
@@ -380,11 +411,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- Tracking Order Clicks ---
         addToCartBtn.addEventListener('click', () => {
-            trackEvent("Order Click", { location: "hero", year: yearInput.value });
+            trackEvent("Order", { location: "hero", year: yearInput.value });
             handleOrder(yearInput.value, yearError);
         });
         addToCartBtnBottom.addEventListener('click', () => {
-            trackEvent("Order Click", { location: "bottom", year: yearInputBottom.value });
+            trackEvent("Order", { location: "bottom", year: yearInputBottom.value });
             handleOrder(yearInputBottom.value, yearErrorBottom);
         });
     }
@@ -401,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const el = document.getElementById(id);
         if (el) {
             el.addEventListener('click', async () => {
-                trackEvent("Share Click", { platform: platform });
+                trackEvent("Share", { platform: platform });
 
                 // Special handling for Copy Link
                 if (id === 'share-copy') {
