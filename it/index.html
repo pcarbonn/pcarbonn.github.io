@@ -67,11 +67,12 @@
         "url": "__i18n:meta.url__",
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
-          "applicableCountry": "CH",
+          "applicableCountry": ["FR", "DE", "ES", "IT", "BE", "CH", "US", "GB"],
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
           "merchantReturnDays": 30,
           "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
+          "returnFees": "https://schema.org/FreeReturn",
+          "description": "Returns are only accepted for damaged or defective items within 30 days. As a print-on-demand product, reflections or 'change of mind' returns are generally not accepted, except as required by local law (e.g. 14-day cooling-off period in the EU)."
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
@@ -82,7 +83,7 @@
           },
           "shippingDestination": {
             "@type": "DefinedRegion",
-            "addressCountry": "CH"
+            "addressCountry": ["FR", "DE", "ES", "IT", "BE", "CH", "US", "GB"]
           },
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
