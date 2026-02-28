@@ -457,4 +457,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // --- Tracking Companion Order ---
+    const orderCompanion = document.getElementById('order-companion');
+    if (orderCompanion) {
+        orderCompanion.addEventListener('click', () => {
+            trackEvent("Order", { location: "companion" });
+        });
+    }
 });

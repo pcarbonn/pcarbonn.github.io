@@ -67,7 +67,8 @@
         "tip_1": "Programa un recordatorio para actualizarla regularmente (al menos una vez al año).",
         "tip_2": "¿Tienes mucho que escribir? Utiliza un cuaderno complementario e indica simplemente el número de página en tu agenda.",
         "tip_3": "Guárdala en un lugar seguro: es un objeto valioso.",
-        "tip_4": "Compártela con tus amigos: te conocerán mejor."
+        "tip_4": "Compártela con tus amigos: te conocerán mejor.",
+        "order_companion": "Pedir el cuaderno de acompañamiento"
     },
     "share": {
         "think_of_someone": "¿Esto te hace pensar en alguien?",
