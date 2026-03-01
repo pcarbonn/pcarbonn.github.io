@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "100年アジェンダ ― 一生を綴る日記",
-        "description": "100年アジェンダは、人生の物語を大切に保存するために設計されています。100年という時間軸で、大切な節目や思い出、歩みを綴ることができます。開始年は1950年から現在までお選びいただけます。",
+        "description": "100年アジェンダは、人生の物語を大切に保存するために設計されています。100年という時間軸で、大切な節目や思い出、歩みを綴ることができます。開始年は1583年から現在までお選びいただけます。",
         "og_description": "人生の物語を大切に保存するために。100年という時の流れの中で、大切な節目や思い出を記し、未来へとつないでいく特別な日記。",
         "social_image": "https://100-year-agenda.com/social-ja.png",
         "url": "https://100-year-agenda.com/ja/",
@@ -23,8 +23,8 @@
         "order": "購入する",
         "on": "で",
         "shipping": "世界中へ配送いたします。",
-        "year_error": "開始年は1950年以降である必要があります。",
-        "not_available": "この本はまだ利用できません",
+        "year_error": "開始年は1583年以降である必要があります。",
+        "not_available": "この本は<a href='mailto:pierre.carbonnelle@gmail.com' title='開始年のリクエスト'>リクエスト</a>に応じて提供可能です。",
         "lulu_tooltip": "Lulu.com はプリントオンデマンドの出版サービスです"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "日記",
         "growth": "自己成長",
         "starting_year_val": "開始年：",
-        "starting_year_range": "1950年から現在まで選択可能",
+        "starting_year_range": "1583年から現在まで選択可能",
         "design_val": "言語に依存しないデザイン：",
         "design_text": "どの言語でもお使いいただけます",
         "binding_val": "ハードカバー：",

@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "La Agenda de 100 Años - Un diario para toda la vida",
-        "description": "La Agenda de 100 Años es un valioso testimonio de tu trayectoria vital. Registra hitos, recuerdos y reflexiones a lo largo de un siglo completo con este diario único. Años de inicio disponibles de 1950 al presente.",
+        "description": "La Agenda de 100 Años es un valioso testimonio de tu trayectoria vital. Registra hitos, recuerdos y reflexiones a lo largo de un siglo completo con este diario único. Años de inicio disponibles de 1583 al presente.",
         "og_description": "Recorre tu trayectoria a lo largo de un siglo. Un diario único para registrar momentos clave, recuerdos y reflexiones personales.",
         "social_image": "https://100-year-agenda.com/social-es.png",
         "url": "https://100-year-agenda.com/es/",
@@ -23,8 +23,8 @@
         "order": "Comprar",
         "on": "en",
         "shipping": "Envío disponible a todo el mundo.",
-        "year_error": "El año de inicio debe ser posterior a 1950.",
-        "not_available": "Este libro aún no está disponible.",
+        "year_error": "El año de inicio debe ser posterior a 1583.",
+        "not_available": "Este libro puede estar disponible <a href='mailto:pierre.carbonnelle@gmail.com' title='Solicitud de nuevo año de inicio'>bajo petición</a>.",
         "lulu_tooltip": "Lulu.com es un servicio de impresión bajo demanda"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "Diario",
         "growth": "Crecimiento personal",
         "starting_year_val": "Año de inicio: ",
-        "starting_year_range": "seleccionable de 1950 al presente",
+        "starting_year_range": "seleccionable de 1583 al presente",
         "design_val": "Diseño neutro: ",
         "design_text": "apto para cualquier idioma",
         "binding_val": "Tapa dura: ",

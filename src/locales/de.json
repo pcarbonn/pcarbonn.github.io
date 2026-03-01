@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Die 100-Jahre-Agenda – Ein Tagebuch für ein ganzes Leben",
-        "description": "Die 100-Jahre-Agenda ist dafür konzipiert, die Geschichte eines Lebens zu bewahren. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1950 bis heute verfügbar.",
+        "description": "Die 100-Jahre-Agenda ist dafür konzipiert, die Geschichte eines Lebens zu bewahren. Halten Sie Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert fest. Startjahre von 1583 bis heute verfügbar.",
         "og_description": "Um die Geschichte eines Lebens zu bewahren. Ein einzigartiges Tagebuch für Meilensteine, Erinnerungen und persönliche Gedanken über ein ganzes Jahrhundert.",
         "social_image": "https://100-year-agenda.com/social-de.png",
         "url": "https://100-year-agenda.com/de/",
@@ -23,8 +23,8 @@
         "order": "Bestellen",
         "on": "auf",
         "shipping": "Weltweiter Versand verfügbar.",
-        "year_error": "Das Startjahr muss nach 1950 liegen.",
-        "not_available": "Dieses Buch ist noch nicht verfügbar",
+        "year_error": "Das Startjahr muss nach 1583 liegen.",
+        "not_available": "Dieses Buch kann <a href='mailto:pierre.carbonnelle@gmail.com' title='Anfrage für ein neues Startjahr'>auf Anfrage</a> zur Verfügung gestellt werden.",
         "lulu_tooltip": "Lulu.com ist ein Print-on-Demand-Dienst"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "Tagebuch",
         "growth": "Persönliche Entwicklung",
         "starting_year_val": "Startjahr: ",
-        "starting_year_range": "wählbar von 1950 bis heute",
+        "starting_year_range": "wählbar von 1583 bis heute",
         "design_val": "Sprachneutrales Design: ",
         "design_text": "in jeder Sprache nutzbar",
         "binding_val": "Hardcover: ",

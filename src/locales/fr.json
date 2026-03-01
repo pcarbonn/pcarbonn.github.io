@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "L'Agenda de 100 Ans - Un journal pour toute une vie",
-        "description": "L'Agenda de 100 Ans est un précieux témoin de votre parcours de vie. Notez les étapes marquantes, vos réflexions et vos souvenirs grâce à ce journal unique. Années de départ disponibles de 1950 à aujourd'hui.",
+        "description": "L'Agenda de 100 Ans est un précieux témoin de votre parcours de vie. Notez les étapes marquantes, vos réflexions et vos souvenirs grâce à ce journal unique. Années de départ disponibles de 1583 à aujourd'hui.",
         "og_description": "Retracez votre parcours sur un siècle complet. Un journal unique pour consigner les moments clés, vos réflexions et raconter votre histoire.",
         "social_image": "https://100-year-agenda.com/social-fr.png",
         "url": "https://100-year-agenda.com/fr/",
@@ -23,8 +23,8 @@
         "order": "Commander",
         "on": "sur",
         "shipping": "Livraison dans le monde entier.",
-        "year_error": "L'année de départ doit être supérieure à 1950.",
-        "not_available": "Ce livre n'est pas encore disponible",
+        "year_error": "L'année de départ doit être supérieure à 1583.",
+        "not_available": "Ce livre peut être rendu disponible <a href='mailto:pierre.carbonnelle@gmail.com' title='Demande pour une nouvelle année de départ'>sur demande</a>.",
         "lulu_tooltip": "Lulu.com est un service d'impression à la demande"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "Journal",
         "growth": "Épanouissement personnel",
         "starting_year_val": "Année de départ : ",
-        "starting_year_range": "au choix de 1950 à aujourd'hui",
+        "starting_year_range": "au choix de 1583 à aujourd'hui",
         "design_val": "International : ",
         "design_text": "adapté à toutes les langues",
         "binding_val": "Couverture rigide : ",

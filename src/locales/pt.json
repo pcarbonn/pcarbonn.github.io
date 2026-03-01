@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "A Agenda de 100 Anos – Um Diário para a Vida",
-        "description": "A Agenda de 100 Anos foi concebida para preservar o relato de uma vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1950 e o presente.",
+        "description": "A Agenda de 100 Anos foi concebida para preservar o relato de uma vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1583 e o presente.",
         "og_description": "Para preservar o relato de uma vida. Um diário único para registar marcos, reflexões e documentar uma jornada de um século.",
         "social_image": "https://100-year-agenda.com/social-pt.png",
         "url": "https://100-year-agenda.com/pt/",
@@ -23,8 +23,8 @@
         "order": "Encomendar",
         "on": "em",
         "shipping": "Envio disponível para todo o mundo.",
-        "year_error": "O ano de início deve ser posterior a 1950.",
-        "not_available": "Este livro ainda não está disponível",
+        "year_error": "O ano de início deve ser posterior a 1583.",
+        "not_available": "Este livro pode ser disponibilizado <a href='mailto:pierre.carbonnelle@gmail.com' title='Pedido de novo ano de início'>sob consulta</a>.",
         "lulu_tooltip": "Lulu.com é um serviço de impressão sob demanda"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "Diário",
         "growth": "Crescimento pessoal",
         "starting_year_val": "Ano de início: ",
-        "starting_year_range": "selecionável entre 1950 e o presente",
+        "starting_year_range": "selecionável entre 1583 e o presente",
         "design_val": "Design neutro: ",
         "design_text": "adequado para utilização em qualquer idioma",
         "binding_val": "Capa dura: ",

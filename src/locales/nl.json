@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "De 100-Jarenagenda - Een dagboek voor het leven",
-        "description": "De 100-Jarenagenda is een waardevolle weerspiegeling van uw levenspad. Leg mijlpalen, herinneringen en persoonlijke reflecties vast over een volledige eeuw. Startjaren beschikbaar van 1950 tot heden.",
+        "description": "De 100-Jarenagenda is een waardevolle weerspiegeling van uw levenspad. Leg mijlpalen, herinneringen en persoonlijke reflecties vast over een volledige eeuw. Startjaren beschikbaar van 1583 tot heden.",
         "og_description": "Leg uw levenspad vast over een volledige eeuw. Een uniek dagboek voor mijlpalen, herinneringen en persoonlijke reflecties.",
         "social_image": "https://100-year-agenda.com/social-nl.png",
         "url": "https://100-year-agenda.com/nl/",
@@ -23,8 +23,8 @@
         "order": "Bestellen",
         "on": "op",
         "shipping": "Wereldwijde verzending beschikbaar.",
-        "year_error": "Het startjaar moet na 1950 liggen.",
-        "not_available": "Dit boek is nog niet beschikbaar",
+        "year_error": "Het startjaar moet na 1583 liggen.",
+        "not_available": "Dit boek kan <a href='mailto:pierre.carbonnelle@gmail.com' title='Aanvraag voor een nieuw startjaar'>op aanvraag</a> beschikbaar worden gesteld.",
         "lulu_tooltip": "Lulu.com is een print-on-demand uitgeverij"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "Dagboek",
         "growth": "Persoonlijke groei",
         "starting_year_val": "Startjaar: ",
-        "starting_year_range": "kiesbaar van 1950 tot heden",
+        "starting_year_range": "kiesbaar van 1583 tot heden",
         "design_val": "Taalneutraal ontwerp: ",
         "design_text": "geschikt voor gebruik in elke taal",
         "binding_val": "Hardcover: ",

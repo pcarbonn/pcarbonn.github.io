@@ -367,8 +367,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorElement.classList.add('invisible');
                 btn.disabled = true;
             }
-            else if (val < 1950) {
-                errorElement.textContent = errorElement.getAttribute('data-error-above-1950') || "The starting year must be above 1950.";
+            else if (val < 1583) {
+                errorElement.innerHTML = errorElement.getAttribute('data-error-above-1583') || "The starting year must be above 1583.";
                 errorElement.classList.remove('invisible');
                 btn.disabled = true;
             } else {
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     errorElement.classList.add('invisible');
                     btn.disabled = false;
                 } else {
-                    errorElement.textContent = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
+                    errorElement.innerHTML = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
                     errorElement.classList.remove('invisible');
                     btn.disabled = true;
                 }
@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const otherError = input === yearInput ? yearErrorBottom : yearError;
                 const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
                 otherError.classList = errorElement.classList;
-                otherError.textContent = errorElement.textContent;
+                otherError.innerHTML = errorElement.innerHTML;
                 otherBtn.disabled = btn.disabled;
             }
         }
@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const url = `https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-${year}/paperback/product-${id}.html`;
                 window.location.href = url;
             } else {
-                errorElement.textContent = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
+                errorElement.innerHTML = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
                 errorElement.classList.remove('invisible');
             }
         }

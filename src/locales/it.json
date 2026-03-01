@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "L'Agenda dei 100 Anni - Un diario per tutta la vita",
-        "description": "L'Agenda dei 100 Anni è una preziosa testimonianza del tuo percorso di vita. Annota traguardi, ricordi e riflessioni lungo un intero secolo con questo diario unico. Anni di inizio disponibili dal 1950 ad oggi.",
+        "description": "L'Agenda dei 100 Anni è una preziosa testimonianza del tuo percorso di vita. Annota traguardi, ricordi e riflessioni lungo un intero secolo con questo diario unico. Anni di inizio disponibili dal 1583 ad oggi.",
         "og_description": "Racconta il tuo percorso lungo un secolo intero. Un diario unico per custodire momenti importanti, ricordi e riflessioni personali.",
         "social_image": "https://100-year-agenda.com/social-it.png",
         "url": "https://100-year-agenda.com/it/",
@@ -23,8 +23,8 @@
         "order": "Acquista",
         "on": "su",
         "shipping": "Spedizione disponibile in tutto il mondo.",
-        "year_error": "L'anno di inizio deve essere superiore al 1950.",
-        "not_available": "Questo libro non è ancora disponibile",
+        "year_error": "L'anno di inizio deve essere superiore al 1583.",
+        "not_available": "Questo libro può essere reso disponibile <a href='mailto:pierre.carbonnelle@gmail.com' title='Richiesta per un nuovo anno di inizio'>su richiesta</a>.",
         "lulu_tooltip": "Lulu.com è un servizio di stampa su richiesta"
     },
     "modal": {
@@ -39,7 +39,7 @@
         "journal": "Diario",
         "growth": "Crescita personale",
         "starting_year_val": "Anno di inizio: ",
-        "starting_year_range": "selezionabile dal 1950 ad oggi",
+        "starting_year_range": "selezionabile dal 1583 ad oggi",
         "design_val": "Design neutro: ",
         "design_text": "adatto a qualsiasi lingua",
         "binding_val": "Rilegatura rigida: ",
