@@ -65,10 +65,10 @@
         "on": "su",
         "tips_title": "Alcuni consigli",
         "tip_1": "Imposta un promemoria per aggiornarla regolarmente (almeno una volta all'anno).",
-        "tip_2": "Hai molto da scrivere? Usa un quaderno di supporto: ti basterà indicare il numero di pagina nella tua agenda.",
+        "tip_2": "Hai molto da scrivere? Usa un quaderno companion: ti basterà indicare il numero di pagina nella tua agenda.",
         "tip_3": "Conservala in un luogo sicuro: è qualcosa di prezioso.",
         "tip_4": "Condividila con gli amici: ti conosceranno meglio.",
-        "order_companion": "Ordina il taccuino di accompagnamento"
+        "order_companion": "Ordina il quaderno companion"
     },
     "share": {
         "think_of_someone": "Ti fa pensare a qualcuno?",
