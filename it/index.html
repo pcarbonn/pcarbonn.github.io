@@ -60,14 +60,14 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "17.49",
-        "priceCurrency": "EUR",
-        "priceValidUntil": "2026-12-31",
+        "price": "__i18n:product.price__",
+        "priceCurrency": "__i18n:product.currency__",
+        "priceValidUntil": "__i18n:product.price_valid_until__",
         "availability": "https://schema.org/InStock",
         "url": "__i18n:meta.url__",
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
-          "applicableCountry": ["FR", "DE", "ES", "IT", "BE", "CH", "US", "GB"],
+          "applicableCountry": __i18n:product.shipping_countries__,
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 30,
           "returnMethod": "https://schema.org/ReturnByMail",
@@ -78,13 +78,14 @@
           "@type": "OfferShippingDetails",
           "shippingRate": {
             "@type": "MonetaryAmount",
-            "value": "6.00",
-            "currency": "EUR"
+            "value": "__i18n:product.shipping_rate__",
+            "currency": "__i18n:product.currency__"
           },
           "shippingDestination": {
             "@type": "DefinedRegion",
-            "addressCountry": ["FR", "DE", "ES", "IT", "BE", "CH", "US", "GB"]
-          },
+            "addressCountry": __i18n:product.shipping_countries__
+          }
+,
           "deliveryTime": {
             "@type": "ShippingDeliveryTime",
             "handlingTime": {
@@ -545,6 +546,7 @@
             <div class="max-w-4xl mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-black mb-8 uppercase leading-none">
                     __i18n:order_bottom.title__</h2>
+
                 <div class="flex flex-col items-center gap-2 mt-12">
                     <!-- Tips Section -->
                     <div class="mt-4 mb-2 max-w-lg mx-auto text-left pt-6">
@@ -569,6 +571,22 @@
                                 <span>__i18n:order_bottom.tip_4__</span>
                             </li>
                         </ul>
+                    </div>
+
+                    <!-- Fulfillment Disclaimer (GMC Compliance) -->
+                    <div id="policies"
+                        class="mt-12 p-6 bg-white/5 border border-white/10 rounded-sm text-left max-w-2xl mx-auto">
+                        <h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#22B5F0] mb-3">
+                            __i18n:footer.fulfillment_title__</h3>
+                        <p class="text-xs text-white/60 leading-relaxed mb-4">
+                            __i18n:footer.fulfillment_text__
+                        </p>
+                        <div class="flex flex-wrap gap-4 text-[10px] font-black uppercase tracking-widest">
+                            <a href="__i18n:footer.shipping_url__" target="_blank" rel="noopener"
+                                class="text-white hover:text-[#22B5F0] underline underline-offset-4">__i18n:footer.shipping__</a>
+                            <a href="__i18n:footer.returns_url__" target="_blank" rel="noopener"
+                                class="text-white hover:text-[#22B5F0] underline underline-offset-4">__i18n:footer.returns__</a>
+                        </div>
                     </div>
 
                     <div class="mt-8 pt-6 border-t border-white/10 w-full flex justify-center">
@@ -639,6 +657,10 @@
                 __i18n:footer.rights__
             </div>
             <div class="flex space-x-6 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+                <a href="__i18n:footer.shipping_url__" target="_blank" rel="noopener"
+                    class="hover:text-[#22B5F0]">__i18n:footer.shipping__</a>
+                <a href="__i18n:footer.returns_url__" target="_blank" rel="noopener"
+                    class="hover:text-[#22B5F0]">__i18n:footer.returns__</a>
                 <a href="mailto:pierre.carbonnelle@gmail.com" class="hover:text-[#22B5F0]">__i18n:footer.contact__</a>
             </div>
         </div>

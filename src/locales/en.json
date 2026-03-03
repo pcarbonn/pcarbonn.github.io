@@ -78,6 +78,19 @@
     },
     "footer": {
         "rights": "© 2026 Pierre Carbonnelle. All rights reserved.",
-        "contact": "Contact"
+        "contact": "Contact",
+        "shipping": "Shipping & Delivery",
+        "returns": "Returns & Refunds",
+        "fulfillment_title": "Fulfillment & Policies",
+        "fulfillment_text": "The 100-Year Agenda is printed and fulfilled through our partner, Lulu.com. Pricing, shipping rates, and return policies are determined by Lulu.com and may vary by destination.",
+        "shipping_url": "https://help.lulu.com/en/support/solutions/articles/64000255307-shipping-the-basics",
+        "returns_url": "https://help.lulu.com/en/support/solutions/articles/64000255307-shipping-the-basics"
+    },
+    "product": {
+        "price": "17.49",
+        "currency": "EUR",
+        "price_valid_until": "2026-12-31",
+        "shipping_rate": "6.00",
+        "shipping_countries": "[\"FR\", \"DE\", \"ES\", \"IT\", \"BE\", \"CH\", \"US\", \"GB\"]"
     }
 }

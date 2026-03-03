@@ -77,7 +77,20 @@
         "copy_fail": "Échec du copier"
     },
     "footer": {
-        "rights": "© 2026 Pierre Carbonnelle. Tous droits réservés.",
-        "contact": "Contact"
+        "rights": "© 2026 Pierre Carbonnelle. All rights reserved.",
+        "contact": "Contact",
+        "shipping": "Livraison & Expédition",
+        "returns": "Retours & Remboursements",
+        "fulfillment_title": "Expédition & Politiques",
+        "fulfillment_text": "L'Agenda de 100 Ans est imprimé et expédié par notre partenaire, Lulu.com. Les tarifs, les délais de livraison et les conditions de retour sont fixés par Lulu.com et peuvent varier selon la destination.",
+        "shipping_url": "https://help.lulu.com/fr/support/solutions/articles/64000255307-shipping-the-basics",
+        "returns_url": "https://help.lulu.com/fr/support/solutions/articles/64000255307-shipping-the-basics"
+    },
+    "product": {
+        "price": "17.49",
+        "currency": "EUR",
+        "price_valid_until": "2026-12-31",
+        "shipping_rate": "6.00",
+        "shipping_countries": "[\"FR\", \"DE\", \"ES\", \"IT\", \"BE\", \"CH\", \"US\", \"GB\"]"
     }
 }
