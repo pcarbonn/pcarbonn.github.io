@@ -153,32 +153,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (langSelector) langSelector.addEventListener('change', handleLangChange);
     if (langSelectorMobile) langSelectorMobile.addEventListener('change', handleLangChange);
 
-    // --- Mobile Menu Toggle ---
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIconPath = document.getElementById('menu-icon-path');
-
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.contains('hidden');
-            if (isHidden) {
-                mobileMenu.classList.remove('hidden');
-                // Change icon to X (close)
-                menuIconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+    // --- Sticky CTA Visibility ---
+    const stickyCTA = document.getElementById('sticky-cta');
+    const heroSection = document.getElementById('hero');
+    if (stickyCTA && heroSection) {
+        window.addEventListener('scroll', () => {
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            if (window.scrollY > heroBottom - 100) {
+                stickyCTA.classList.remove('translate-y-full');
             } else {
-                mobileMenu.classList.add('hidden');
-                // Change icon back to hamburger
-                menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                stickyCTA.classList.add('translate-y-full');
             }
-        });
-
-        // Close menu when a link is clicked
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-            });
         });
     }
 });
@@ -357,45 +342,71 @@ document.addEventListener('DOMContentLoaded', () => {
     now.setMonth(now.getMonth() - 10);
     const defaultYear = now.getFullYear();
 
-    if (yearInput) yearInput.value = defaultYear;
-    if (yearInputBottom) yearInputBottom.value = defaultYear;
+    const yearInputSticky = document.getElementById('start-year-sticky');
+    const stickyOrderBtn = document.getElementById('sticky-order-btn');
 
-    if (yearInput && yearInputBottom) {
-        function validateYear(input, btn, errorElement, otherInput) {
-            const val = parseInt(input.value);
+    // Sync all available inputs to the default year
+    [yearInput, yearInputBottom, yearInputSticky].forEach(input => {
+        if (input) input.value = defaultYear;
+    });
+
+    if (yearInput && yearInputBottom && yearInputSticky) {
+        const allInputs = [
+            { input: yearInput, btn: addToCartBtn, error: yearError, loc: 'hero' },
+            { input: yearInputBottom, btn: addToCartBtnBottom, error: yearErrorBottom, loc: 'bottom' },
+            { input: yearInputSticky, btn: stickyOrderBtn, error: null, loc: 'sticky' }
+        ];
+
+        function validateAll(changedInput) {
+            const val = parseInt(changedInput.value);
+            let isValid = false;
+            let errorMessage = "";
+            let errorType = "none";
+
             if (isNaN(val) || val < 1000 || val > 9999) {
-                errorElement.classList.add('invisible');
-                btn.disabled = true;
-            }
-            else if (val < 1583) {
-                errorElement.innerHTML = errorElement.getAttribute('data-error-above-1583') || "The starting year must be above 1583.";
-                errorElement.classList.remove('invisible');
-                btn.disabled = true;
+                isValid = false;
+            } else if (val < 1583) {
+                isValid = false;
+                errorType = "above-1583";
             } else {
                 const row = compact.find(r => r[0] === val.toString());
                 if (row) {
-                    errorElement.classList.add('invisible');
-                    btn.disabled = false;
+                    isValid = true;
                 } else {
-                    errorElement.innerHTML = errorElement.getAttribute('data-error-not-available') || "This book is not yet available";
-                    errorElement.classList.remove('invisible');
-                    btn.disabled = true;
+                    isValid = false;
+                    errorType = "not-available";
                 }
             }
-            // Sync other input
-            if (otherInput.value !== input.value) {
-                otherInput.value = input.value;
-                // Also clear other error/enable other btn just in case
-                const otherError = input === yearInput ? yearErrorBottom : yearError;
-                const otherBtn = input === yearInput ? addToCartBtnBottom : addToCartBtn;
-                otherError.classList = errorElement.classList;
-                otherError.innerHTML = errorElement.innerHTML;
-                otherBtn.disabled = btn.disabled;
-            }
+
+            // Apply state to all inputs
+            allInputs.forEach(item => {
+                item.input.value = changedInput.value;
+                if (item.btn) item.btn.disabled = !isValid;
+                if (item.error) {
+                    if (errorType === "above-1583") {
+                        item.error.innerHTML = item.error.getAttribute('data-error-above-1583') || "The starting year must be above 1583.";
+                        item.error.classList.remove('invisible');
+                    } else if (errorType === "not-available") {
+                        item.error.innerHTML = item.error.getAttribute('data-error-not-available') || "This book is not yet available";
+                        item.error.classList.remove('invisible');
+                    } else {
+                        item.error.classList.add('invisible');
+                    }
+                }
+            });
         }
 
-        yearInput.addEventListener('input', () => validateYear(yearInput, addToCartBtn, yearError, yearInputBottom));
-        yearInputBottom.addEventListener('input', () => validateYear(yearInputBottom, addToCartBtnBottom, yearErrorBottom, yearInput));
+        allInputs.forEach(item => {
+            item.input.addEventListener('input', () => validateAll(item.input));
+            if (item.btn) {
+                item.btn.addEventListener('click', () => {
+                    trackEvent("Order", { location: item.loc, year: item.input.value });
+                    // Use hero error element for sticky button if needed, or just validate silently
+                    const errorEl = item.error || yearError;
+                    handleOrder(item.input.value, errorEl);
+                });
+            }
+        });
 
         function handleOrder(year, errorElement) {
             const row = compact.find(r => r[0] === year.toString());
@@ -408,16 +419,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorElement.classList.remove('invisible');
             }
         }
-
-        // --- Tracking Order Clicks ---
-        addToCartBtn.addEventListener('click', () => {
-            trackEvent("Order", { location: "hero", year: yearInput.value });
-            handleOrder(yearInput.value, yearError);
-        });
-        addToCartBtnBottom.addEventListener('click', () => {
-            trackEvent("Order", { location: "bottom", year: yearInputBottom.value });
-            handleOrder(yearInputBottom.value, yearErrorBottom);
-        });
     }
 
     // --- Tracking Share Clicks ---

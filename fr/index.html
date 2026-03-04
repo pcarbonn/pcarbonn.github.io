@@ -152,7 +152,7 @@
                 class="text-lg md:text-xl font-black tracking-tighter uppercase whitespace-nowrap hover:text-[#22B5F0] transition">__i18n:hero.title__
             </a>
 
-            <!-- Mobile Menu Toggle -->
+            <!-- Mobile Menu -->
             <div class="flex items-center md:hidden gap-2">
                 <!-- Language Switcher (kept visible on mobile for easy access) -->
                 <div class="relative inline-block">
@@ -174,13 +174,6 @@
                         </svg>
                     </div>
                 </div>
-
-                <button id="mobile-menu-btn" class="text-gray-800 p-2 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
             </div>
 
             <!-- Desktop Nav -->
@@ -210,17 +203,6 @@
                     </div>
                 </div>
             </nav>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu"
-            class="hidden md:hidden bg-white border-t border-gray-100 py-4 px-4 flex flex-col items-end space-y-4 shadow-xl">
-            <a href="#features"
-                class="text-[10px] font-bold uppercase tracking-widest hover:text-[#22B5F0] transition">__i18n:nav.features__</a>
-            <a href="#use"
-                class="text-[10px] font-bold uppercase tracking-widest hover:text-[#22B5F0] transition">__i18n:nav.usage__</a>
-            <a href="#order"
-                class="text-[10px] font-bold uppercase tracking-widest hover:text-[#22B5F0] transition">__i18n:nav.tips__</a>
         </div>
     </header>
 
@@ -666,6 +648,25 @@
             </div>
         </div>
     </footer>
+
+    <div id="sticky-cta"
+        class="fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t-2 border-[#22B5F0] flex items-center justify-between z-40 transition-transform translate-y-full md:hidden gap-4 shadow-[0_-8px_30px_rgb(0,0,0,0.08)]">
+        <div class="flex flex-col min-w-0">
+            <span
+                class="text-[10px] font-black uppercase tracking-widest text-[#22B5F0] truncate">__i18n:hero.title__</span>
+            <div class="flex items-baseline gap-2">
+                <span class="text-sm font-black text-[#0A101A]">17.49 €</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-2">
+            <input type="number" id="start-year-sticky" name="start-year-sticky"
+                class="w-16 bg-gray-50 border border-gray-200 rounded-sm py-2 px-2 text-xs font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-9">
+            <button id="sticky-order-btn"
+                class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-2 px-4 rounded-sm text-[10px] uppercase tracking-widest shadow-lg shadow-[#22B5F0]/20 transition-all h-9 flex items-center justify-center">
+                __i18n:hero.order__
+            </button>
+        </div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
     <script data-goatcounter="https://100-year-agenda.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
