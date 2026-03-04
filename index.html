@@ -145,8 +145,7 @@
 <body class="bg-white text-[#0A101A] antialiased">
 
     <!-- Header / Nav (Sticky) -->
-    <header
-        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-3 md:py-4 transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm py-3 md:py-4 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <a href="#hero"
                 class="text-lg md:text-xl font-black tracking-tighter uppercase whitespace-nowrap hover:text-[#22B5F0] transition">__i18n:hero.title__
@@ -209,110 +208,121 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section id="hero"
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex flex-col md:flex-row gap-12 scroll-mt-20 items-center justify-center">
-            <!-- Product Image -->
-            <div class="w-full md:w-[45%] flex justify-center items-start">
-                <div id="look-inside-wrapper"
-                    class="relative group w-fit h-fit max-h-[60vh] md:max-h-[70vh] cursor-pointer"
-                    onclick="window.openBookModal()">
+        <section id="hero" class="relative bg-white pt-8 md:pt-12 pb-24 md:pb-32 scroll-mt-20">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-12 items-center justify-center">
+                <!-- Product Image -->
+                <div class="w-full md:w-[45%] flex justify-center items-start">
+                    <div id="look-inside-wrapper"
+                        class="relative group w-fit h-fit max-h-[60vh] md:max-h-[70vh] cursor-pointer"
+                        onclick="window.openBookModal()">
 
-                    <!-- Cover Image -->
-                    <picture>
-                        <source srcset="/front_cover.png" media="(min-width: 769px)">
-                        <img src="/front_cover_mobile.png" alt="100-Year Agenda Cover"
-                            class="h-auto max-h-[60vh] md:max-h-[70vh] w-auto max-w-sm block relative z-10 rounded-r-sm shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-                    </picture>
+                        <!-- Cover Image -->
+                        <picture>
+                            <source srcset="/front_cover.png" media="(min-width: 769px)">
+                            <img src="/front_cover_mobile.png" alt="100-Year Agenda Cover"
+                                class="h-auto max-h-[60vh] md:max-h-[70vh] w-auto max-w-sm block relative z-10 rounded-r-sm shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                        </picture>
 
-                    <div
-                        class="absolute -bottom-6 left-0 right-0 text-center text-[10px] text-gray-400 uppercase font-black tracking-widest">
-                        A4
+                        <div
+                            class="absolute -bottom-6 left-0 right-0 text-center text-[10px] text-gray-400 uppercase font-black tracking-widest">
+                            A4
+                        </div>
+
+                        <!-- Bouton d'ouverture -->
+                        <div id="look-inside-btn-container" class="absolute bottom-0 right-0 translate-y-1/2 z-30">
+                            <button onclick="window.openBookModal()"
+                                class="bg-[#EF4444] hover:bg-[#DC2626] text-white text-sm font-bold py-2 px-6 rounded-full shadow-lg transition-colors whitespace-nowrap">
+                                __i18n:hero.look_inside__
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="w-full md:w-[55%] flex flex-col justify-center">
+                    <nav
+                        class="text-xs font-medium text-gray-400 mb-6 uppercase tracking-widest flex flex-wrap items-center gap-2">
+                        <a href="https://100-year-agenda.com/"
+                            class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_agenda__</a>
+                        <span>/</span>
+                        <a href="__i18n:meta.url__"
+                            class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_life_planning__</a>
+                    </nav>
+
+                    <h1 class="text-4xl md:text-5xl font-black leading-tight mb-2 tracking-tight">__i18n:hero.title__
+                    </h1>
+                    <p class="text-lg font-medium text-gray-500 mb-8 italic">__i18n:hero.subtitle__</p>
+
+                    <div class="flex items-baseline gap-4 mb-2">
+                        <span class="text-3xl font-black text-[#0A101A]">17.49 €</span>
+                        <!--<span class="text-sm font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">In Stock</span>-->
+                    </div>
+                    <p class="text-[10px] md:text-xs font-black text-gray-400 mb-8 uppercase tracking-[0.2em]">
+                        __i18n:hero.specs__</p>
+
+                    <div class="mb-8">
+                        <div class="flex flex-wrap items-end gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label for="start-year"
+                                    class="text-[10px] text-gray-400 uppercase font-black tracking-widest">__i18n:hero.starting_year__</label>
+                                <input type="number" id="start-year" name="start-year"
+                                    class="w-24 bg-gray-50 border border-gray-200 rounded-full py-4 px-4 text-sm font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px]">
+                            </div>
+
+                            <button id="add-to-cart"
+                                class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-9 rounded-full transition shadow-lg shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
+                                __i18n:hero.order__
+                            </button>
+                            <div
+                                class="inline-flex items-baseline gap-1.5 text-xs font-bold text-gray-400 whitespace-nowrap">
+                                <span>__i18n:hero.on__</span>
+                                <a href="https://www.lulu.com/shop" target="_blank"
+                                    class="inline-flex items-center gap-1 text-[#0A101A] hover:text-[#22B5F0] transition-all group relative">
+                                    <span
+                                        class="border-b border-gray-200 group-hover:border-[#22B5F0] pb-0.5">Lulu.com</span>
+                                    <!-- Tooltip -->
+                                    <span
+                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-[#0A101A] text-white text-[10px] font-black uppercase tracking-widest rounded-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
+                                        __i18n:hero.lulu_tooltip__
+                                    </span>
+                                    <svg class="w-3 h-3 opacity-30 group-hover:opacity-100 transition-opacity"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-6">
+                            <p id="year-error" class="text-xs text-red-500 font-bold mt-2 invisible"
+                                data-error-above-1583="__i18n:hero.year_error__"
+                                data-error-not-available="__i18n:hero.not_available__">
+                                __i18n:hero.year_error__
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Bouton d'ouverture -->
-                    <div id="look-inside-btn-container" class="absolute bottom-0 right-0 translate-y-1/2 z-30">
-                        <button onclick="window.openBookModal()"
-                            class="bg-[#EF4444] hover:bg-[#DC2626] text-white text-sm font-bold py-2 px-6 rounded-full shadow-lg transition-colors whitespace-nowrap">
-                            __i18n:hero.look_inside__
-                        </button>
-                    </div>
+                    <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest">
+                        __i18n:hero.shipping__
+                    </p>
                 </div>
             </div>
 
-            <!-- Product Details -->
-            <div class="w-full md:w-[55%] flex flex-col justify-center">
-                <nav
-                    class="text-xs font-medium text-gray-400 mb-6 uppercase tracking-widest flex flex-wrap items-center gap-2">
-                    <a href="https://100-year-agenda.com/"
-                        class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_agenda__</a>
-                    <span>/</span>
-                    <a href="__i18n:meta.url__" class="hover:text-[#22B5F0]">__i18n:nav.breadcrumb_life_planning__</a>
-                </nav>
-
-                <h1 class="text-4xl md:text-5xl font-black leading-tight mb-2 tracking-tight">__i18n:hero.title__</h1>
-                <p class="text-lg font-medium text-gray-500 mb-8 italic">__i18n:hero.subtitle__</p>
-
-                <div class="flex items-baseline gap-4 mb-2">
-                    <span class="text-3xl font-black text-[#0A101A]">17.49 €</span>
-                    <!--<span class="text-sm font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">In Stock</span>-->
-                </div>
-                <p class="text-[10px] md:text-xs font-black text-gray-400 mb-8 uppercase tracking-[0.2em]">
-                    __i18n:hero.specs__</p>
-
-                <div class="mb-8">
-                    <div class="flex flex-wrap items-end gap-4">
-                        <div class="flex flex-col gap-2">
-                            <label for="start-year"
-                                class="text-[10px] text-gray-400 uppercase font-black tracking-widest">__i18n:hero.starting_year__</label>
-                            <input type="number" id="start-year" name="start-year"
-                                class="w-24 bg-gray-50 border border-gray-200 rounded-sm py-4 px-4 text-sm font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px]">
-                        </div>
-
-                        <button id="add-to-cart"
-                            class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-9 rounded-sm transition shadow-lg shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
-                            __i18n:hero.order__
-                        </button>
-                        <div
-                            class="inline-flex items-baseline gap-1.5 text-xs font-bold text-gray-400 whitespace-nowrap">
-                            <span>__i18n:hero.on__</span>
-                            <a href="https://www.lulu.com/shop" target="_blank"
-                                class="inline-flex items-center gap-1 text-[#0A101A] hover:text-[#22B5F0] transition-all group relative">
-                                <span
-                                    class="border-b border-gray-200 group-hover:border-[#22B5F0] pb-0.5">Lulu.com</span>
-                                <!-- Tooltip -->
-                                <span
-                                    class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-[#0A101A] text-white text-[10px] font-black uppercase tracking-widest rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
-                                    __i18n:hero.lulu_tooltip__
-                                </span>
-                                <svg class="w-3 h-3 opacity-30 group-hover:opacity-100 transition-opacity" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="h-6">
-                        <p id="year-error" class="text-xs text-red-500 font-bold mt-2 invisible"
-                            data-error-above-1583="__i18n:hero.year_error__"
-                            data-error-not-available="__i18n:hero.not_available__">
-                            __i18n:hero.year_error__
-                        </p>
-                    </div>
-                </div>
-
-
-
-                <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest">
-                    __i18n:hero.shipping__
-                </p>
+            <!-- Curve Divider to Features -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform translate-y-[1px]">
+                <svg class="relative block w-[calc(111%+1.3px)] h-[35px] md:h-[65px]" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,120V60C150,30,450,110,600,60C750,10,1050,90,1200,60V120H0Z" class="fill-[#F5F7F9]">
+                    </path>
+                </svg>
             </div>
         </section>
 
 
         <!-- Modal for Look inside-->
         <div id="modalOverlay" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
-            <div class="bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden relative">
+            <div class="bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden relative">
                 <!-- Barre de titre & Fermeture -->
                 <div class="flex justify-between items-center p-4 border-b shrink-0">
                     <h2 class="text-lg font-semibold">__i18n:modal.title__</h2>
@@ -327,7 +337,8 @@
                 </div>
 
                 <!-- Zone du Livre -->
-                <div id="bookWrapper" class="flex-1 bg-gray-200 p-4 md:p-8 min-h-0 overflow-hidden relative">
+                <div id="bookWrapper"
+                    class="flex-1 bg-gray-200 rounded-b-3xl p-4 md:p-8 min-h-0 overflow-hidden relative">
                     <div id="bookContainer" class="w-full h-full mx-auto md:block hidden"></div>
                     <div id="bookSlider"
                         class="w-full h-full mx-auto flex overflow-x-auto snap-x snap-mandatory md:hidden"></div>
@@ -356,11 +367,11 @@
         </div>
 
         <!-- Features Section -->
-        <section id="features" class="bg-[#F5F7F9] py-24 border-y border-gray-100 scroll-mt-20">
+        <section id="features" class="relative bg-[#F5F7F9] pt-12 pb-24 md:pb-32 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-20">
                     <div
-                        class="md:w-1/2 flex flex-col justify-center bg-white p-12 rounded-sm border border-gray-100 shadow-sm">
+                        class="md:w-1/2 flex flex-col justify-center bg-white p-12 rounded-[2.5rem] border border-gray-100/50 shadow-xl">
                         <h3 class="text-xl font-black mb-4 uppercase tracking-tight">__i18n:features.why_title__</h3>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">
                             __i18n:features.why_text__
@@ -400,18 +411,26 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Curve Divider to Use -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform translate-y-[1px]">
+                <svg class="relative block w-[calc(111%+1.3px)] h-[35px] md:h-[65px]" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,120V40C400,100,800,0,1200,40V120H0Z" class="fill-white"></path>
+                </svg>
+            </div>
         </section>
 
         <!-- Use Section -->
-        <section id="use" class="py-24 scroll-mt-20">
+        <section id="use" class="relative py-24 md:pb-32 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-black mb-4 tracking-tight uppercase">__i18n:gift.title__</h2>
-                    <div class="h-1 w-16 bg-[#22B5F0] mx-auto"></div>
+                    <div class="h-1.5 w-12 bg-[#22B5F0] mx-auto rounded-full"></div>
                 </div>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100/50">
                         <div class="text-[#22B5F0] mb-6">
                             <!-- Heart (Parents) -->
                             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -423,7 +442,7 @@
                         <h3 class="text-lg font-black mb-3 uppercase tracking-tight">__i18n:gift.parents_title__</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">__i18n:gift.parents_text__</p>
                     </div>
-                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100/50">
                         <div class="text-[#22B5F0] mb-6">
                             <!-- Academic Cap (Graduation) -->
                             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -435,7 +454,7 @@
                         <h3 class="text-lg font-black mb-3 uppercase tracking-tight">__i18n:gift.graduation_title__</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">__i18n:gift.graduation_text__</p>
                     </div>
-                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100/50">
                         <div class="text-[#22B5F0] mb-6">
                             <!-- Users (Wedding) -->
                             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -447,7 +466,7 @@
                         <h3 class="text-lg font-black mb-3 uppercase tracking-tight">__i18n:gift.wedding_title__</h3>
                         <p class="text-gray-500 text-sm leading-relaxed">__i18n:gift.wedding_text__</p>
                     </div>
-                    <div class="bg-white p-8 rounded-sm shadow-md border border-gray-100">
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100/50">
                         <div class="text-[#22B5F0] mb-6">
                             <!-- Sparkles (Reflection/Legacy) -->
                             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -501,7 +520,7 @@
                             </svg>
                             <!-- Tooltip-like message -->
                             <span id="copy-feedback"
-                                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#0A101A] text-white text-[10px] font-black uppercase tracking-widest py-1 px-3 rounded opacity-0 transition-opacity pointer-events-none">
+                                class="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#0A101A] text-white text-[10px] font-black uppercase tracking-widest py-1 px-3 rounded-full opacity-0 transition-opacity pointer-events-none">
                                 __i18n:share.copy_success__
                             </span>
                         </button>
@@ -520,11 +539,18 @@
                 </div>
 
             </div>
+
+            <!-- Curve Divider to Order -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform translate-y-[1px]">
+                <svg class="relative block w-[calc(111%+1.3px)] h-[35px] md:h-[65px]" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,120V20C300,80,900,-40,1200,20V120H0Z" class="fill-[#0A101A]"></path>
+                </svg>
             </div>
         </section>
 
         <!-- Order Section -->
-        <section id="order" class="bg-[#0A101A] py-24 text-white text-center scroll-mt-20">
+        <section id="order" class="relative bg-[#0A101A] py-24 text-white text-center scroll-mt-20">
             <div class="max-w-4xl mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-black mb-8 uppercase leading-none">
                     __i18n:order_bottom.title__</h2>
@@ -563,11 +589,11 @@
                                     <label for="start-year-bottom"
                                         class="text-[10px] text-white/40 uppercase font-black tracking-widest">__i18n:order_bottom.starting_year__</label>
                                     <input type="number" id="start-year-bottom" name="start-year-bottom"
-                                        class="w-24 bg-white/5 border border-white/10 rounded-sm py-4 px-4 text-sm font-bold text-white focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px] [color-scheme:dark]">
+                                        class="w-24 bg-white/5 border border-white/10 rounded-full py-4 px-4 text-sm font-bold text-white focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-[52px] [color-scheme:dark]">
                                 </div>
 
                                 <button id="add-to-cart-bottom"
-                                    class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-white/10 disabled:text-white/20 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-9 rounded-sm transition shadow-2xl shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
+                                    class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-white/10 disabled:text-white/20 disabled:cursor-not-allowed text-[#000083] font-black py-4 px-9 rounded-full transition shadow-2xl shadow-[#22B5F0]/20 tracking-wider text-sm h-[52px] flex items-center justify-center">
                                     __i18n:order_bottom.order__
                                 </button>
                                 <div
@@ -602,7 +628,7 @@
                                 <a id="order-companion"
                                     href="https://www.lulu.com/shop/pierre-carbonnelle/the-100-year-agenda-companion/paperback/product-kv6e56p.html"
                                     target="_blank"
-                                    class="bg-[#22B5F0]/10 hover:bg-[#22B5F0]/20 text-[#22B5F0] font-black py-2.5 px-6 rounded-sm transition-all duration-300 shadow-[0_0_10px_rgba(34,181,240,0.2)] hover:shadow-[0_0_20px_rgba(34,181,240,0.4)] tracking-wider text-[11px] uppercase flex items-center justify-center border-2 border-[#22B5F0] hover:scale-105">
+                                    class="bg-[#22B5F0]/10 hover:bg-[#22B5F0]/20 text-[#22B5F0] font-black py-2.5 px-6 rounded-full transition-all duration-300 shadow-[0_0_10px_rgba(34,181,240,0.2)] hover:shadow-[0_0_20px_rgba(34,181,240,0.4)] tracking-wider text-[11px] uppercase flex items-center justify-center border-2 border-[#22B5F0] hover:scale-105">
                                     __i18n:order_bottom.order_companion__
                                 </a>
                             </div>
@@ -611,7 +637,7 @@
 
                     <!-- Fulfillment Disclaimer (GMC Compliance) -->
                     <div id="policies"
-                        class="mt-12 p-6 bg-white/5 border border-white/10 rounded-sm text-left max-w-2xl mx-auto">
+                        class="mt-12 p-6 bg-white/5 border border-white/10 rounded-3xl text-left max-w-2xl mx-auto">
                         <h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#22B5F0] mb-3">
                             __i18n:footer.fulfillment_title__</h3>
                         <p class="text-xs text-white/60 leading-relaxed mb-4">
@@ -627,12 +653,20 @@
 
                 </div>
             </div>
+
+            <!-- Curve Divider to Footer -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform translate-y-[1px]">
+                <svg class="relative block w-[calc(111%+1.3px)] h-[25px] md:h-[45px]" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,120V70C400,50,800,90,1200,70V120H0Z" class="fill-[#F9FAFB]"></path>
+                </svg>
+            </div>
         </section>
     </main>
 
 
     <!-- Footer -->
-    <footer class="bg-white py-12 border-t border-gray-100">
+    <footer class="bg-gray-50/50 py-12">
         <div
             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-sm font-black uppercase tracking-tighter opacity-50">__i18n:hero.title__</div>
@@ -650,7 +684,7 @@
     </footer>
 
     <div id="sticky-cta"
-        class="fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md border-t-2 border-[#22B5F0] flex items-center justify-between z-40 transition-transform translate-y-full md:hidden gap-4 shadow-[0_-8px_30px_rgb(0,0,0,0.08)]">
+        class="fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur-md flex items-center justify-between z-40 transition-transform translate-y-full md:hidden gap-4 shadow-[0_-15px_40px_rgba(0,0,0,0.1)]">
         <div class="flex flex-col min-w-0">
             <span
                 class="text-[10px] font-black uppercase tracking-widest text-[#22B5F0] truncate">__i18n:hero.title__</span>
@@ -660,9 +694,9 @@
         </div>
         <div class="flex items-center gap-2">
             <input type="number" id="start-year-sticky" name="start-year-sticky"
-                class="w-16 bg-gray-50 border border-gray-200 rounded-sm py-2 px-2 text-xs font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-9">
+                class="w-16 bg-gray-50 border border-gray-200 rounded-full py-2 px-2 text-xs font-bold focus:outline-none focus:ring-1 focus:ring-[#22B5F0] focus:border-[#22B5F0] transition h-9">
             <button id="sticky-order-btn"
-                class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-2 px-4 rounded-sm text-[10px] uppercase tracking-widest shadow-lg shadow-[#22B5F0]/20 transition-all h-9 flex items-center justify-center">
+                class="bg-[#22B5F0] hover:bg-[#1DA8DE] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed text-[#000083] font-black py-2 px-4 rounded-full text-[10px] uppercase tracking-widest shadow-lg shadow-[#22B5F0]/20 transition-all h-9 flex items-center justify-center">
                 __i18n:hero.order__
             </button>
         </div>
