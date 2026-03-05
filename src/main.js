@@ -326,7 +326,7 @@ window.closeBookModal = () => {
     // flipBook.destroy(); flipBook = null;
 };
 
-// --- Starting Year Validation ---
+// --- Start year Validation ---
 document.addEventListener('DOMContentLoaded', () => {
     const yearInput = document.getElementById('start-year');
     const addToCartBtn = document.getElementById('add-to-cart');
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (item.btn) item.btn.disabled = !isValid;
                 if (item.error) {
                     if (errorType === "above-1583") {
-                        item.error.innerHTML = item.error.getAttribute('data-error-above-1583') || "The starting year must be above 1583.";
+                        item.error.innerHTML = item.error.getAttribute('data-error-above-1583') || "The start year must be above 1583.";
                         item.error.classList.remove('invisible');
                     } else if (errorType === "not-available") {
                         item.error.innerHTML = item.error.getAttribute('data-error-not-available') || "This book is not yet available";

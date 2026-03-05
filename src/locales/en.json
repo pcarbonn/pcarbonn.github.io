@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "The 100-Year Agenda - A Life Journal",
-        "description": "The 100-Year Agenda is designed to preserve the story of a lifetime. Track milestones, reflections, and memories with this unique journal. Starting years from 1583 to present available.",
+        "description": "The 100-Year Agenda is designed to preserve the story of a lifetime. Track milestones, reflections, and memories with this unique journal. Start years from 1583 to present available.",
         "og_description": "To preserve the story of a lifetime. A unique journal for tracking milestones, reflections, and documenting a century-long journey.",
         "social_image": "https://100-year-agenda.com/social.png",
         "url": "https://100-year-agenda.com/",
@@ -19,11 +19,11 @@
         "subtitle": "To preserve the story of a lifetime.",
         "specs": "107 A4 pages • Hardcover",
         "look_inside": "Look inside",
-        "starting_year": "Starting Year",
+        "starting_year": "Start year",
         "order": "Order",
         "on": "on",
         "shipping": "Worldwide Shipping available.",
-        "year_error": "The starting year must be above 1583.",
+        "year_error": "The start year must be above 1583.",
         "not_available": "This book can be made available <a href='mailto:pierre.carbonnelle@gmail.com' title='Request for new start year'>on request</a>.",
         "lulu_tooltip": "Lulu.com is a print-on-demand publishing service"
     },
@@ -38,7 +38,7 @@
         "history": "History",
         "journal": "Journal",
         "growth": "Personal Growth",
-        "starting_year_val": "Starting year: ",
+        "starting_year_val": "Start year: ",
         "starting_year_range": "selectable from 1583 to present",
         "design_val": "Language-neutral design: ",
         "design_text": "suitable for use in any language",
@@ -60,7 +60,7 @@
     },
     "order_bottom": {
         "title": "Start Telling Your Story Today",
-        "starting_year": "Starting Year",
+        "starting_year": "Start year",
         "order": "Order",
         "on": "on",
         "tips_title": "Some tips",
