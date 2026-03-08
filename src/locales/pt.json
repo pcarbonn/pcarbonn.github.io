@@ -1,8 +1,8 @@
 {
     "meta": {
         "title": "A Agenda de 100 Anos – Um Diário para a Vida",
-        "description": "A Agenda de 100 Anos foi concebida para preservar o relato de uma vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1583 e o presente.",
-        "og_description": "Para preservar o relato de uma vida. Um diário único para registar marcos, reflexões e documentar uma jornada de um século.",
+        "description": "A Agenda de 100 Anos foi concebida para preservar o relato de toda uma vida. Registe marcos, reflexões e memórias com este diário único. Anos de início disponíveis entre 1583 e o presente.",
+        "og_description": "Para preservar o relato de toda uma vida. Um diário único para registar marcos, reflexões e documentar uma jornada de um século.",
         "social_image": "https://100-year-agenda.com/social-pt.png",
         "url": "https://100-year-agenda.com/pt/",
         "lang": "pt"
@@ -16,7 +16,7 @@
     },
     "hero": {
         "title": "A Agenda de 100 Anos",
-        "subtitle": "Para preservar o relato de uma vida.",
+        "subtitle": "Para preservar o relato de toda uma vida.",
         "specs": "107 páginas A4 • Capa dura",
         "look_inside": "Ver interior",
         "starting_year": "Ano de início",
@@ -34,7 +34,7 @@
     "features": {
         "section_title": "Características",
         "why_title": "Por que utilizar esta agenda?",
-        "why_text": "A Agenda de 100 Anos não é um organizador comum: é um registo duradouro do relato de uma vida. Oferece um espaço dedicado para documentar os marcos que realmente importam — celebrações familiares, conquistas profissionais, acompanhamento de saúde e reflexões pessoais.<br><br>Ao abranger um século inteiro, esta agenda convida a afastar-se do ritmo acelerado do presente digital e a reconectar-se com o que é verdadeiramente essencial.",
+        "why_text": "A Agenda de 100 Anos não é um organizador comum: é um registo duradouro do relato de toda uma vida. Oferece um espaço dedicado para documentar os marcos que realmente importan — celebrações familiares, conquistas profissionais, acompanhamento de saúde e reflexões pessoais.<br><br>Ao abranger um século inteiro, esta agenda convida a afastar-se do ritmo acelerado do presente digital e a reconectar-se com o que é verdadeiramente essencial.",
         "history": "História",
         "journal": "Diário",
         "growth": "Crescimento pessoal",
