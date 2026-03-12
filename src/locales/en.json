@@ -24,7 +24,7 @@
         "on": "on",
         "shipping": "Worldwide Shipping available.",
         "year_error": "The start year must be above 1583.",
-        "not_available": "This book can be made available <a href='mailto:pierre.carbonnelle@gmail.com' title='Request for new start year'>on request</a>.",
+        "not_available": "This book can be made available <a href='mailto:pierre.carbonnelle@gmail.com' title='Request for new start year'>on request</a> for free.",
         "lulu_tooltip": "Lulu.com is a print-on-demand publishing service"
     },
     "modal": {
@@ -56,7 +56,7 @@
         "wedding_title": "For a wedding",
         "wedding_text": "A diary for two, shared over a lifetime.",
         "you_title": "For you",
-        "you_text": "A space to reflect on the past and tell your story."
+        "you_text": "A space to reflect on the past and tell your story. Or the story of your parents."
     },
     "order_bottom": {
         "title": "Start Telling Your Story Today",

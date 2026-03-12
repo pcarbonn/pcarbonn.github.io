@@ -24,7 +24,7 @@
         "on": "su",
         "shipping": "Spedizione disponibile in tutto il mondo.",
         "year_error": "L'anno di inizio deve essere superiore al 1583.",
-        "not_available": "Questo libro può essere reso disponibile <a href='mailto:pierre.carbonnelle@gmail.com' title='Richiesta per un nuovo anno di inizio'>su richiesta</a>.",
+        "not_available": "Questo libro può essere reso disponibile <a href='mailto:pierre.carbonnelle@gmail.com' title='Richiesta per un nuovo anno di inizio'>su richiesta</a> gratuitamente.",
         "lulu_tooltip": "Lulu.com è un servizio di stampa su richiesta"
     },
     "modal": {
@@ -56,7 +56,7 @@
         "wedding_title": "Per un matrimonio",
         "wedding_text": "Un diario per due, da condividere lungo tutta la vita.",
         "you_title": "Per te",
-        "you_text": "Uno spazio per fermarti, riflettere e raccontare la tua storia."
+        "you_text": "Uno spazio per fermarti, riflettere e raccontare la tua storia. O la storia dei tuoi genitori."
     },
     "order_bottom": {
         "title": "Inizia oggi a scrivere la tua storia",

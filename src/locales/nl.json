@@ -24,7 +24,7 @@
         "on": "op",
         "shipping": "Wereldwijde verzending beschikbaar.",
         "year_error": "Het startjaar moet na 1583 liggen.",
-        "not_available": "Dit boek kan <a href='mailto:pierre.carbonnelle@gmail.com' title='Aanvraag voor een nieuw startjaar'>op aanvraag</a> beschikbaar worden gesteld.",
+        "not_available": "Dit boek kan <a href='mailto:pierre.carbonnelle@gmail.com' title='Aanvraag voor een nieuw startjaar'>op aanvraag</a> gratis beschikbaar worden gesteld.",
         "lulu_tooltip": "Lulu.com is een print-on-demand uitgeverij"
     },
     "modal": {
@@ -56,7 +56,7 @@
         "wedding_title": "Voor een huwelijk",
         "wedding_text": "Een dagboek voor twee — om samen een leven lang te delen.",
         "you_title": "Voor uzelf",
-        "you_text": "Een plek om stil te staan bij het verleden en uw eigen verhaal te schrijven."
+        "you_text": "Een plek om stil te staan bij het verleden en uw eigen verhaal te schrijven. Of het verhaal van uw ouders."
     },
     "order_bottom": {
         "title": "Begin vandaag met het vastleggen van uw verhaal",

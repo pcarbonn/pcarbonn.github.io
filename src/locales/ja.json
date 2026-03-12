@@ -24,7 +24,7 @@
         "on": "で",
         "shipping": "世界中へ配送いたします。",
         "year_error": "開始年は1583年以降である必要があります。",
-        "not_available": "この本は<a href='mailto:pierre.carbonnelle@gmail.com' title='開始年のリクエスト'>リクエスト</a>に応じて提供可能です。",
+        "not_available": "この本は<a href='mailto:pierre.carbonnelle@gmail.com' title='開始年のリクエスト'>リクエスト</a>に応じて、無料で提供可能です。",
         "lulu_tooltip": "Lulu.com はプリントオンデマンドの出版サービスです"
     },
     "modal": {
@@ -56,7 +56,7 @@
         "wedding_title": "結婚のお祝いに",
         "wedding_text": "二人で綴る、これからの人生の記録。",
         "you_title": "あなた自身へ",
-        "you_text": "これまでを振り返り、自分の物語を静かに綴るための場所。"
+        "you_text": "これまでを振り返り、自分の物語を静かに綴るための場所。または、ご両親の物語にも。"
     },
     "order_bottom": {
         "title": "今日から物語を書き始めませんか",

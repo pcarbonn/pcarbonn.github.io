@@ -24,7 +24,7 @@
         "on": "sur",
         "shipping": "Livraison dans le monde entier.",
         "year_error": "L'année de départ doit être supérieure à 1583.",
-        "not_available": "Ce livre peut être rendu disponible <a href='mailto:pierre.carbonnelle@gmail.com' title='Demande pour une nouvelle année de départ'>sur demande</a>.",
+        "not_available": "Ce livre peut être rendu disponible <a href='mailto:pierre.carbonnelle@gmail.com' title='Demande pour une nouvelle année de départ'>sur demande</a> gratuitement.",
         "lulu_tooltip": "Lulu.com est un service d'impression à la demande"
     },
     "modal": {
@@ -56,7 +56,7 @@
         "wedding_title": "Pour un mariage",
         "wedding_text": "Un journal à deux, à partager tout au long d'une vie.",
         "you_title": "Pour vous",
-        "you_text": "Un espace pour prendre du recul et raconter votre histoire."
+        "you_text": "Un espace pour prendre du recul et raconter votre histoire. Ou celle de vos parents."
     },
     "order_bottom": {
         "title": "Commencez à raconter votre histoire dès aujourd'hui",

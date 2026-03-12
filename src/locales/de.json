@@ -24,7 +24,7 @@
         "on": "auf",
         "shipping": "Weltweiter Versand verfügbar.",
         "year_error": "Das Startjahr muss nach 1583 liegen.",
-        "not_available": "Dieses Buch kann <a href='mailto:pierre.carbonnelle@gmail.com' title='Anfrage für ein neues Startjahr'>auf Anfrage</a> zur Verfügung gestellt werden.",
+        "not_available": "Dieses Buch kann <a href='mailto:pierre.carbonnelle@gmail.com' title='Anfrage für ein neues Startjahr'>auf Anfrage</a> kostenlos zur Verfügung gestellt werden.",
         "lulu_tooltip": "Lulu.com ist ein Print-on-Demand-Dienst"
     },
     "modal": {
@@ -56,7 +56,7 @@
         "wedding_title": "Zur Hochzeit",
         "wedding_text": "Ein Tagebuch für zwei – gemeinsam über ein ganzes Leben.",
         "you_title": "Für Sie",
-        "you_text": "Ein Raum, um innezuhalten und Ihre eigene Geschichte zu erzählen."
+        "you_text": "Ein Raum, um innezuhalten und Ihre eigene Geschichte zu erzählen. Oder die Geschichte Ihrer Eltern."
     },
     "order_bottom": {
         "title": "Beginnen Sie noch heute, Ihre Geschichte festzuhalten",
