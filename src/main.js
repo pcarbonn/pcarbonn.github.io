@@ -1,5 +1,6 @@
 import "./input.css";
 import { PageFlip } from "page-flip";
+import { updatePriceDisplays } from "./pricing.js";
 
 let flipBook = null;
 const getImages = () => {
@@ -111,6 +112,7 @@ function updateLookInsideVisibility() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    updatePriceDisplays();
     updateLookInsideVisibility();
     window.addEventListener('resize', () => {
         updateLookInsideVisibility();
