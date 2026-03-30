@@ -635,21 +635,6 @@
                         </div>
                     </div>
 
-                    <!-- Fulfillment Disclaimer (GMC Compliance) -->
-                    <div id="policies"
-                        class="mt-12 p-6 bg-white/5 border border-white/10 rounded-3xl text-left max-w-2xl mx-auto">
-                        <h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#22B5F0] mb-3">
-                            __i18n:footer.fulfillment_title__</h3>
-                        <p class="text-xs text-white/60 leading-relaxed mb-4">
-                            __i18n:footer.fulfillment_text__
-                        </p>
-                        <div class="flex flex-wrap gap-4 text-[10px] font-black uppercase tracking-widest">
-                            <a href="__i18n:footer.shipping_url__" target="_blank" rel="noopener"
-                                class="text-white hover:text-[#22B5F0] underline underline-offset-4">__i18n:footer.shipping__</a>
-                            <a href="__i18n:footer.returns_url__" target="_blank" rel="noopener"
-                                class="text-white hover:text-[#22B5F0] underline underline-offset-4">__i18n:footer.returns__</a>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -664,21 +649,32 @@
         </section>
     </main>
 
+    <footer class="bg-gray-50 pt-12 pb-32 md:pb-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between gap-12 text-xs text-gray-600 font-medium tracking-tight">
+                <!-- Business Info & Contact -->
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <span class="block font-black uppercase tracking-widest mb-3 text-gray-900">__i18n:footer.business_title__</span>
+                        <p class="leading-relaxed">
+                            <span class="block font-bold text-gray-800">__i18n:footer.business_name__</span>
+                            __i18n:footer.address__<br>
+                            __i18n:footer.phone__<br>
+                            <a href="mailto:pierre.carbonnelle@gmail.com" class="text-[#22B5F0] hover:underline font-bold transition">pierre.carbonnelle@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-50/50 pt-12 pb-32 md:pb-12">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-sm font-black uppercase tracking-tighter opacity-50">__i18n:hero.title__</div>
-            <div class="text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em]">
-                __i18n:footer.rights__
-            </div>
-            <div class="flex space-x-6 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
-                <a href="__i18n:footer.shipping_url__" target="_blank" rel="noopener"
-                    class="hover:text-[#22B5F0]">__i18n:footer.shipping__</a>
-                <a href="__i18n:footer.returns_url__" target="_blank" rel="noopener"
-                    class="hover:text-[#22B5F0]">__i18n:footer.returns__</a>
-                <a href="mailto:pierre.carbonnelle@gmail.com" class="hover:text-[#22B5F0]">__i18n:footer.contact__</a>
+                <!-- Fulfillment Disclaimer -->
+                <div class="md:text-right md:max-w-xs md:ml-auto flex flex-col justify-end">
+                    <p class="leading-relaxed opacity-80">
+                        __i18n:footer.fulfillment_text__
+                        <a href="__i18n:footer.shipping_url__" target="_blank" rel="noopener" class="underline decoration-[#22B5F0]/30 hover:decoration-[#22B5F0] transition-all">__i18n:footer.shipping__</a>
+                        __i18n:footer.and__
+                        <a href="__i18n:footer.returns_url__" target="_blank" rel="noopener" class="underline decoration-[#22B5F0]/30 hover:decoration-[#22B5F0] transition-all">__i18n:footer.returns__</a>
+                        __i18n:footer.policies__.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>

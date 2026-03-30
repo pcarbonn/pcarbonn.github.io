@@ -82,9 +82,15 @@
         "shipping": "配送について",
         "returns": "返品について",
         "fulfillment_title": "配送とポリシーについて",
-        "fulfillment_text": "「100年アジェンダ」は、提携先であるLulu.comを通じて印刷・配送されます。価格、送料、返品ポリシーはLulu.comによって決定され、配送先によって異なる場合があります。",
+        "fulfillment_text": "「100年アジェンダ」は、提携先であるLulu.comを通じて印刷・配送されます。Lulu.comの",
+        "and": "および",
         "shipping_url": "https://help.lulu.com/en/support/solutions/articles/64000255307-shipping-the-basics",
-        "returns_url": "https://help.lulu.com/en/support/solutions/articles/64000255307-shipping-the-basics"
+        "returns_url": "https://help.lulu.com/en/support/solutions/articles/64000255307-shipping-the-basics",
+        "business_title": "事業者情報",
+        "address": "Avenue Lambeau, 106, B-1200 Woluwe-Saint-Lambert, Belgium",
+        "phone": "+32 476 76 66 67",
+        "business_name": "Pierre Carbonnelle",
+        "policies": "ポリシー"
     },
     "product": {
         "price": "17.49",

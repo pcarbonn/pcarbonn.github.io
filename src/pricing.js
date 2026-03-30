@@ -13,22 +13,17 @@ export const PRICING = {
  * Detect the preferred currency based on browser metadata (navigator.languages)
  */
 export function detectCurrency() {
-    const languages = navigator.languages || [navigator.language];
+    // 1. Check URL path for language-based defaults
+    const path = window.location.pathname;
+    if (path.startsWith('/fr/')) return 'EUR';
+    if (path.startsWith('/de/')) return 'EUR';
+    if (path.startsWith('/es/')) return 'EUR';
+    if (path.startsWith('/it/')) return 'EUR';
+    if (path.startsWith('/nl/')) return 'EUR';
+    if (path.startsWith('/pt/')) return 'EUR';
 
-    for (const lang of languages) {
-        const l = lang.toLowerCase();
-        if (l.includes('-us')) return 'USD';
-        if (l.includes('-gb')) return 'GBP';
-        if (l.includes('-au')) return 'AUD';
-        if (l.includes('-ca')) return 'CAD';
-        // European Euro-zone countries (common ones for this site)
-        if (l.startsWith('fr') || l.startsWith('de') || l.startsWith('es') ||
-            l.startsWith('it') || l.startsWith('nl') || l.startsWith('pt') ||
-            l.startsWith('be') || l.startsWith('at') || l.startsWith('ie') ||
-            l.startsWith('fi') || l.startsWith('gr') || l.startsWith('pt')) {
-            return 'EUR';
-        }
-    }
+    // 2. Check browser languages
+    const languages = navigator.languages || [navigator.language];
 
     // Default based on general language if no country code matched
     const primaryLang = languages[0].split('-')[0].toLowerCase();

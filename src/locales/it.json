@@ -82,9 +82,15 @@
         "shipping": "Spedizione e Consegna",
         "returns": "Resi",
         "fulfillment_title": "Evasione e Politiche",
-        "fulfillment_text": "The 100-Year Agenda viene stampato e spedito tramite il nostro partner, Lulu.com. I prezzi, le tariffe di spedizione e le politiche di reso sono stabiliti da Lulu.com e possono variare a seconda della destinazione.",
+        "fulfillment_text": "The 100-Year Agenda viene stampato e spedito tramite il nostro partner, Lulu.com. Consulta le loro politiche di",
+        "and": "e di",
         "shipping_url": "https://help.lulu.com/it/support/solutions/articles/64000255307-shipping-the-basics",
-        "returns_url": "https://help.lulu.com/it/support/solutions/articles/64000255307-shipping-the-basics"
+        "returns_url": "https://help.lulu.com/it/support/solutions/articles/64000255307-shipping-the-basics",
+        "business_title": "Informazioni sull'azienda",
+        "address": "Avenue Lambeau, 106, B-1200 Woluwe-Saint-Lambert, Belgio",
+        "phone": "+32 476 76 66 67",
+        "business_name": "Pierre Carbonnelle",
+        "policies": ""
     },
     "product": {
         "price": "17.49",
