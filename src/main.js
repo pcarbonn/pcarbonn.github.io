@@ -112,6 +112,7 @@ function updateLookInsideVisibility() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    autoRedirect();
     updatePriceDisplays();
     updateLookInsideVisibility();
     window.addEventListener('resize', () => {
@@ -132,6 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (newLang === currentLang) return;
 
+        // Save manual preference to avoid future auto-redirects
+        localStorage.setItem('lang_pref', newLang);
+
         let targetUrl;
         if (newLang === 'en') {
             // Redirect from /lang/ to /
@@ -149,6 +153,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (targetUrl) {
             window.location.href = targetUrl;
+        }
+    }
+
+    function autoRedirect() {
+        const currentPath = window.location.pathname;
+        const languages = ["fr", "es", "nl", "de", "it", "pt", "ja"];
+
+        // Only redirect from root if NO preference is set
+        if (currentPath === '/' && !localStorage.getItem('lang_pref')) {
+            const browserLangs = navigator.languages || [navigator.language];
+
+            for (const bl of browserLangs) {
+                const shortBL = bl.split('-')[0].toLowerCase();
+                if (languages.includes(shortBL)) {
+                    // Record preference so we don't redirect again in the same session/future
+                    localStorage.setItem('lang_pref', shortBL);
+                    window.location.href = `/${shortBL}/`;
+                    return;
+                }
+                // If English is preferred, stay here and stop
+                if (shortBL === 'en') break;
+            }
         }
     }
 
