@@ -51,6 +51,7 @@ export default defineConfig({
         pt: path.resolve(__dirname, "pt/index.html"),
         ja: path.resolve(__dirname, "ja/index.html"),
         "XMT-IDE": path.resolve(__dirname, "XMT-IDE/index.html"),
+        "XMT-doc": path.resolve(__dirname, "XMT-IDE/doc.html"),
       },
     },
   },
