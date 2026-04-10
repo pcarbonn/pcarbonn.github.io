@@ -90,13 +90,34 @@
         "address": "Avenue Lambeau, 106, B-1200 Woluwe-Saint-Lambert, België",
         "phone": "+32 476 76 66 67",
         "business_name": "Pierre Carbonnelle",
-        "policies": ""
+        "privacy": "Privacybeleid",
+        "tos": "Algemene Voorwaarden",
+        "shipping_returns": "Verzending en Retourneren",
+        "policies": "evenals ons eigen beleid:"
+    },
+    "shipping": {
+        "title": "Verzending en Retourneren",
+        "intro": "De 100-Jaar Agenda wordt op aanvraag gedrukt en verzonden door onze partner Lulu.com.",
+        "rates_title": "Verzendkosten",
+        "rates_text": "De verzendkosten worden berekend bij het afrekenen. Ter indicatie: de kosten voor België en Nederland bedragen circa 7.00 €.",
+        "times_title": "Levertijden",
+        "times_text": "Productie: 3 tot 5 werkdagen.<br>Verzending: 3 tot 10 werkdagen afhankelijk van de bestemming.",
+        "returns_title": "Retourbeleid",
+        "returns_text": "Aangezien dit een print-on-demand product is, worden retourzendingen alleen geaccepteerd bij fabricagefouten of beschadigde artikelen. Neem binnen 30 dagen na ontvangst contact met ons op."
+    },
+    "privacy": {
+        "title": "Privacybeleid",
+        "text": "Wij respecteren uw privacy. Deze site verzamelt geen directe persoonlijke gegevens. Uw betalings- en verzendinformatie wordt bij uw bestelling uitsluitend beheerd door Lulu.com."
+    },
+    "tos": {
+        "title": "Algemene Voorwaarden",
+        "text": "<b>Identiteit</b> : Pierre Carbonnelle, Avenue Lambeau 106, 1200 Brussel, België.<br><b>Product</b> : De 100-Jaar Agenda is een print-on-demand (POD) product.<br><b>Bestelling</b> : Transacties en levering worden afgehandeld door onze partner Lulu.com.<br><b>Prijs</b> : De getoonde prijs is 17.49 € exclusief verzendkosten."
     },
     "product": {
         "price": "17.49",
         "currency": "EUR",
         "price_valid_until": "2026-12-31",
-        "shipping_rate": "6.00",
+        "shipping_rate": "7.00",
         "shipping_countries": "[\"FR\", \"DE\", \"ES\", \"IT\", \"BE\", \"CH\", \"US\", \"GB\"]"
     }
 }

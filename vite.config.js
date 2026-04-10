@@ -43,13 +43,16 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
-        fr: path.resolve(__dirname, "fr/index.html"),
-        es: path.resolve(__dirname, "es/index.html"),
-        nl: path.resolve(__dirname, "nl/index.html"),
-        de: path.resolve(__dirname, "de/index.html"),
-        it: path.resolve(__dirname, "it/index.html"),
-        pt: path.resolve(__dirname, "pt/index.html"),
-        ja: path.resolve(__dirname, "ja/index.html"),
+        tos: path.resolve(__dirname, "tos.html"),
+        privacy: path.resolve(__dirname, "privacy.html"),
+        shipping_returns: path.resolve(__dirname, "shipping-returns.html"),
+        ...locales.filter(l => l !== "en").reduce((acc, locale) => {
+          acc[locale] = path.resolve(__dirname, `${locale}/index.html`);
+          acc[`${locale}_tos`] = path.resolve(__dirname, `${locale}/tos.html`);
+          acc[`${locale}_privacy`] = path.resolve(__dirname, `${locale}/privacy.html`);
+          acc[`${locale}_shipping_returns`] = path.resolve(__dirname, `${locale}/shipping-returns.html`);
+          return acc;
+        }, {}),
         "XMT-IDE": path.resolve(__dirname, "XMT-IDE/index.html"),
         "XMT-doc": path.resolve(__dirname, "XMT-doc/index.html"),
       },

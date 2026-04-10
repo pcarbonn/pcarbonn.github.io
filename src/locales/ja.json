@@ -90,13 +90,34 @@
         "address": "Avenue Lambeau, 106, B-1200 Woluwe-Saint-Lambert, Belgium",
         "phone": "+32 476 76 66 67",
         "business_name": "Pierre Carbonnelle",
-        "policies": "ポリシー"
+        "privacy": "プライバシーポリシー",
+        "tos": "利用規約",
+        "shipping_returns": "配送と返品",
+        "policies": "また、当サイト独自のポリシーもご確認ください："
+    },
+    "shipping": {
+        "title": "配送と返品",
+        "intro": "「100年アジェンダ」はオンデマンドで印刷され、パートナーであるLulu.comによって配送されます。",
+        "rates_title": "配送料",
+        "rates_text": "配送料はチェックアウト時に計算されます。目安として、日本への配送は約1,000円〜となります。",
+        "times_title": "配送時間",
+        "times_text": "製造：3〜5営業日。<br>配送：目的地に応じて3〜10営業日。",
+        "returns_title": "返品ポリシー",
+        "returns_text": "オンデマンド印刷製品のため、返品は製造上の欠陥または破損品のみ受け付けます。受け取り後30日以内にご連絡ください。"
+    },
+    "privacy": {
+        "title": "プライバシーポリシー",
+        "text": "私たちはあなたのプライバシーを尊重します。このサイトは直接的な個人データを収集しません。お支払いおよび配送情報は、注文時にLulu.comによってのみ管理されます。"
+    },
+    "tos": {
+        "title": "利用規約",
+        "text": "<b>発行者</b>：Pierre Carbonnelle, Avenue Lambeau 106, 1200 Brussels, Belgium.<br><b>製品</b>：100年アジェンダはオンデマンド印刷（POD）製品です。<br><b>注文</b>：取引と配送はパートナーであるLulu.comによって処理されます。<br><b>価格</b>：表示価格は17.49ユーロ（配送料別）です。"
     },
     "product": {
         "price": "17.49",
         "currency": "EUR",
         "price_valid_until": "2026-12-31",
-        "shipping_rate": "6.00",
+        "shipping_rate": "7.00",
         "shipping_countries": "[\"FR\", \"DE\", \"ES\", \"IT\", \"BE\", \"CH\", \"US\", \"GB\"]"
     }
 }

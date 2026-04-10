@@ -82,7 +82,7 @@
         "shipping": "Versand & Lieferung",
         "returns": "Rückgabe",
         "fulfillment_title": "Abwicklung & Richtlinien",
-        "fulfillment_text": "The 100-Year Agenda wird über unseren Partner Lulu.com gedruckt und versendet. Siehe deren Richtlinien für",
+        "fulfillment_text": "The 100-Year Agenda wird von Lulu.com gedruckt. Siehe deren",
         "and": "und",
         "shipping_url": "https://help.lulu.com/de/support/solutions/articles/64000255307-shipping-the-basics",
         "returns_url": "https://help.lulu.com/de/support/solutions/articles/64000255307-shipping-the-basics",
@@ -90,13 +90,34 @@
         "address": "Avenue Lambeau, 106, B-1200 Woluwe-Saint-Lambert, Belgien",
         "phone": "+32 476 76 66 67",
         "business_name": "Pierre Carbonnelle",
-        "policies": ""
+        "privacy": "Datenschutzerklärung",
+        "tos": "Allgemeine Geschäftsbedingungen",
+        "shipping_returns": "Versand & Rückgabe",
+        "policies": "sowie unsere eigenen Richtlinien:"
+    },
+    "shipping": {
+        "title": "Versand & Rückgabe",
+        "intro": "Die 100-Jahre-Agenda wird auf Anfrage gedruckt und von unserem Partner Lulu.com versendet.",
+        "rates_title": "Versandkosten",
+        "rates_text": "Die Versandkosten werden an der Kasse berechnet. Zur Orientierung: Der Versand nach Deutschland, Österreich und in die EU beträgt ca. 7.00 €.",
+        "times_title": "Lieferzeiten",
+        "times_text": "Produktion: 3 bis 5 Werktage.<br>Versand: 3 bis 10 Werktage je nach Bestimmungsort.",
+        "returns_title": "Rückgabebedingungen",
+        "returns_text": "Da es sich um ein Print-on-Demand-Produkt handelt, werden Rücksendungen nur bei Herstellungsfehlers oder beschädigten Artikeln akzeptiert. Bitte kontaktieren Sie uns innerhalb von 30 Tagen nach Erhalt."
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "text": "Wir respektieren Ihre Privatsphäre. Diese Website sammelt keine direkten personenbezogenen Daten. Ihre Zahlungs- und Versandinformationen werden bei Ihrer Bestellung ausschließlich von Lulu.com verwaltet."
+    },
+    "tos": {
+        "title": "Allgemeine Geschäftsbedingungen",
+        "text": "<b>Identität</b>: Pierre Carbonnelle, Avenue Lambeau 106, 1200 Brüssel, Belgien.<br><b>Produkt</b>: Die 100-Jahre-Agenda ist ein Print-on-Demand (POD)-Werk.<br><b>Bestellung</b>: Transaktionen und Lieferung werden von unserem Partner Lulu.com abgewickelt.<br><b>Preis</b>: Der angezeigte Preis beträgt 17.49 € zuzüglich Versandkosten."
     },
     "product": {
         "price": "17.49",
         "currency": "EUR",
         "price_valid_until": "2026-12-31",
-        "shipping_rate": "6.00",
+        "shipping_rate": "7.00",
         "shipping_countries": "[\"FR\", \"DE\", \"ES\", \"IT\", \"BE\", \"CH\", \"US\", \"GB\"]"
     }
 }

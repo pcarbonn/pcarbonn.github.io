@@ -663,17 +663,40 @@
                             <a href="mailto:pierre.carbonnelle@gmail.com" class="text-[#22B5F0] hover:underline font-bold transition">pierre.carbonnelle@gmail.com</a>
                         </p>
                     </div>
+
+                    <!-- Payment Methods -->
+                    <div class="flex items-center gap-4 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                        <!-- Visa -->
+                        <svg class="h-5 w-auto" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.423 21.042l2.302-14.126h3.692l-2.302 14.126h-3.692zm14.77-13.818c-.808-.31-2.07-.643-3.637-.643-3.601 0-6.136 1.889-6.155 4.603-.02 1.996 1.808 3.109 3.188 3.775 1.416.684 1.892 1.12 1.886 1.728-.012.932-1.134 1.357-2.181 1.357-1.458 0-2.238-.22-3.435-.74l-.474-.225-.506 3.097c.846.384 2.408.718 4.03.734 3.827 0 6.326-1.871 6.353-4.77.027-1.589-.96-2.793-3.078-3.791-1.282-.65-2.07-1.087-2.062-1.748.01-.606.688-1.233 2.174-1.233 1.235-.021 2.13.265 2.825.558l.337.158.533-3.048zm6.545 8.95c.346.93 1.673 4.542 1.673 4.542l.307-.803c-.346-.93-3.21-8.527-3.21-8.527l-.307.803c.346.93 1.537 4.14 1.537 4.14l-4.227-10.165h-3.899l6.385 14.869h3.541l1.838-4.859-3.638-8.527h-3.899s2.449 5.86 3.899 9.327zM6.92 6.916C5.068 6.916 3.518 7.989 2.83 9.608L.153 15.939c-.105.253-.153.535-.153.812 0 1.258 1.054 2.291 2.342 2.291h4.298c1.378 0 1.967-.847 2.232-1.479l1.062-2.527h4.484l.423-2.527H8.536l-1.616-9.608z" fill="#0A101A"/>
+                        </svg>
+                        <!-- Mastercard -->
+                        <svg class="h-6 w-auto" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="10" fill="#0A101A" fill-opacity="0.8"/>
+                            <circle cx="22" cy="10" r="10" fill="#0A101A" fill-opacity="0.5"/>
+                        </svg>
+                        <!-- PayPal -->
+                        <svg class="h-5 w-auto" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.9 7.4c.3 3.3-1.6 5.3-4.9 5.3h-1.3c-.4 0-.7.3-.8.7l-1 6.5c0 .2-.2.4-.4.4h-3.2c-.3 0-.4-.2-.4-.5l1.6-10.3c.1-.4.4-.7.8-.7h3.3c3.2 0 5.8-1.1 6.3-4.4.1-.7.1-1.3-.1-1.9.3.4.6.9.7 1.5z" fill="#0A101A"/>
+                            <path d="M18.8 3.5c-.8-1.5-2.6-2.1-5.1-2.1H6.9c-.6 0-1.1.5-1.2 1.1L2.8 19.3c0 .3.2.5.5.5h4.1c.3 0 .6-.2.7-.5l1.2-7.5c.1-.6.6-1.1 1.2-1.1h1.1c4.5 0 8.1-1.8 8.9-6.8.1-.6.1-1.2 0-1.7-.2-1.5-.7-2.6-1.7-3.7z" fill="#0A101A" fill-opacity="0.6"/>
+                        </svg>
+                    </div>
                 </div>
 
                 <!-- Fulfillment Disclaimer -->
-                <div class="md:text-right md:max-w-xs md:ml-auto flex flex-col justify-end">
-                    <p class="leading-relaxed opacity-80">
+                <div class="md:text-right md:max-w-md md:ml-auto flex flex-col justify-end">
+                    <p class="leading-relaxed opacity-80 mb-4">
                         __i18n:footer.fulfillment_text__
                         <a href="__i18n:footer.shipping_url__" target="_blank" rel="noopener" class="underline decoration-[#22B5F0]/30 hover:decoration-[#22B5F0] transition-all">__i18n:footer.shipping__</a>
                         __i18n:footer.and__
                         <a href="__i18n:footer.returns_url__" target="_blank" rel="noopener" class="underline decoration-[#22B5F0]/30 hover:decoration-[#22B5F0] transition-all">__i18n:footer.returns__</a>
                         __i18n:footer.policies__.
                     </p>
+                    <div class="flex flex-wrap md:justify-end gap-x-6 gap-y-2 font-black uppercase tracking-widest text-[10px]">
+                        <a href="shipping-returns.html" class="hover:text-[#22B5F0] transition">__i18n:footer.shipping_returns__</a>
+                        <a href="tos.html" class="hover:text-[#22B5F0] transition">__i18n:footer.tos__</a>
+                        <a href="privacy.html" class="hover:text-[#22B5F0] transition">__i18n:footer.privacy__</a>
+                    </div>
                 </div>
             </div>
         </div>

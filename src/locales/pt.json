@@ -90,13 +90,34 @@
         "address": "Avenue Lambeau, 106, B-1200 Woluwe-Saint-Lambert, Bélgica",
         "phone": "+32 476 76 66 67",
         "business_name": "Pierre Carbonnelle",
-        "policies": "políticas"
+        "privacy": "Política de Privacidade",
+        "tos": "Termos de Serviço",
+        "shipping_returns": "Envios e Devoluções",
+        "policies": "bem como as nossas próprias políticas:"
+    },
+    "shipping": {
+        "title": "Envios e Devoluções",
+        "intro": "A Agenda de 100 Anos é impressa sob demanda e enviada pelo nosso parceiro Lulu.com.",
+        "rates_title": "Custos de envio",
+        "rates_text": "Os custos de envio são calculados na finalização da compra. Como orientação, o envio para Portugal e para a UE é de aproximadamente 7.00 €.",
+        "times_title": "Prazos de entrega",
+        "times_text": "Produção: 3 a 5 dias úteis.<br>Envio: 3 a 10 dias úteis, dependendo do destino.",
+        "returns_title": "Política de devolução",
+        "returns_text": "Por ser um produto impresso sob demanda, as devoluções só são aceites por defeitos de fabricação ou artigos danificados. Entre em contacto connosco no prazo de 30 dias após a receção."
+    },
+    "privacy": {
+        "title": "Política de Privacidade",
+        "text": "Respeitamos a sua privacidade. Este site não recolhe quaisquer dados pessoais diretos. As suas informações de pagamento e envio são geridas exclusivamente pela Lulu.com ao efetuar a sua encomenda."
+    },
+    "tos": {
+        "title": "Termos de Serviço",
+        "text": "<b>Identidade</b> : Pierre Carbonnelle, Avenue Lambeau 106, 1200 Bruxelas, Bélgica.<br><b>Produto</b> : A Agenda de 100 Anos é uma obra de impressão sob demanda (POD).<br><b>Encomenda</b> : As transações e a entrega são geridas pelo nosso parceiro Lulu.com.<br><b>Preço</b> : O preço apresentado é de 17.49 € excluindo o envio."
     },
     "product": {
         "price": "17.49",
         "currency": "EUR",
         "price_valid_until": "2026-12-31",
-        "shipping_rate": "6.00",
+        "shipping_rate": "7.00",
         "shipping_countries": "[\"FR\", \"DE\", \"ES\", \"IT\", \"BE\", \"CH\", \"US\", \"GB\"]"
     }
 }
